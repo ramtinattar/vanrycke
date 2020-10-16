@@ -1,0 +1,191 @@
+<section data-section-type="faq" data-section-id="{{ section.id }}">
+  <div class="container container--large">
+    <div class="PageHeader">
+      <h1 class="h1-k faq__header">
+        {{ section.settings.header }}
+      </h1>
+    </div>
+    <div class="Grid faq__container">
+      <div class="faq__content">
+        {%- for block in section.blocks -%}
+          <div class="Grid__Cell 1/3--lap-and-up 1/2--tablet">
+              <div class="faq__block"
+                style="background-color:{{section.settings.bg_color}}">
+                <div class="h3-k faq__title">
+                  {{ block.settings.title  }}
+                </div>
+                <div class="faq__questions">
+                  {%- if block.settings.question-1 != ""-%}
+                    <div class="faq__question" data-answer="1-{{ block.id }}" data-block-id="{{ block.id }}">
+                      {{ block.settings.question-1 }}
+                    </div>
+                  {%- endif -%}
+                  {%- if block.settings.question-2 != ""-%}
+                    <div class="faq__question" data-answer="2-{{ block.id }}" data-block-id="{{ block.id }}">
+                      {{ block.settings.question-2 }}
+                    </div>
+                  {%- endif -%}
+                  {%- if block.settings.question-3 != ""-%}
+                    <div class="faq__question" data-answer="3-{{ block.id }}" data-block-id="{{ block.id }}">
+                      {{ block.settings.question-3 }}
+                    </div>
+                  {%- endif -%}
+                  {%- if block.settings.question-4 != ""-%}
+                    <div class="faq__question" data-answer="4-{{ block.id }}" data-block-id="{{ block.id }}">
+                      {{ block.settings.question-4 }}
+                    </div>
+                  {%- endif -%}
+                  {%- if block.settings.question-5 != ""-%}
+                    <div class="faq__question" data-answer="5-{{ block.id }}" data-block-id="{{ block.id }}">
+                      {{ block.settings.question-5 }}
+                    </div>
+                  {%- endif -%}
+                </div>
+                <div class="faq__answers">
+                  {%- if block.settings.answer-1 != ""-%}
+                    <div class="faq__answer" id="1-{{ block.id }}">
+                      <div class="text--b faq__answer--pad">
+                        {{ block.settings.question-1 }}
+                      </div>
+                      {{ block.settings.answer-1 }}
+                    </div>
+                  {%- endif -%}
+                  {%- if block.settings.answer-2 != ""-%}
+                    <div class="faq__answer" id="2-{{ block.id }}">
+                      <div class="text--b faq__answer--pad">
+                        {{ block.settings.question-2 }}
+                      </div>
+                      {{ block.settings.answer-2 }}
+                    </div>
+                  {%- endif -%}
+                  {%- if block.settings.answer-3 != ""-%}
+                    <div class="faq__answer" id="3-{{ block.id }}">
+                      <div class="text--b faq__answer--pad">
+                        {{ block.settings.question-3 }}
+                      </div>
+                      {{ block.settings.answer-3 }}
+                    </div>
+                  {%- endif -%}
+                  {%- if block.settings.answer-4 != ""-%}
+                    <div class="faq__answer" id="4-{{ block.id }}">
+                      <div class="text--b faq__answer--pad">
+                        {{ block.settings.question-4 }}
+                      </div>
+                      {{ block.settings.answer-4 }}
+                    </div>
+                  {%- endif -%}
+                  {%- if block.settings.answer-5 != ""-%}
+                    <div class="faq__answer" id="5-{{ block.id }}">
+                      <div class="text--b faq__answer--pad">
+                        {{ block.settings.question-5 }}
+                      </div>
+                      {{ block.settings.answer-5 }}
+                    </div>
+                  {%- endif -%}
+                </div>
+                <div class="faq__close Drawer__Close Icon-Wrapper--clickable" id='{{ block.id }}' data-action="close-drawer" data-drawer-id="faq">
+                  {%- include 'icon' with 'close' -%}
+                </div>
+              </div>
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "FAQ",
+  "settings": [
+    {
+      "type": "text",
+      "id": "header",
+      "label": "Header title",
+      "default": "FAQ",
+      "info": "Titre de la page",
+      "placeholder": "On repond a vos questions"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Block color",
+      "info": "Choose the  background color of blocks"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "title",
+      "name": "Block title",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Default"
+        },
+        {
+          "type":   "range",
+          "id":     "title_size",
+          "min":       5,
+          "max":       45,
+          "step":      1,
+          "unit":      "px",
+          "label":     "Title size",
+          "default":   25
+        },
+        {
+          "type": "text",
+          "id": "question-1",
+          "label": "Question"
+        },
+        {
+          "type": "richtext",
+          "id": "answer-1",
+          "label": "Answer"
+        },
+        {
+          "type": "text",
+          "id": "question-2",
+          "label": "Question"
+        },
+        {
+          "type": "richtext",
+          "id": "answer-2",
+          "label": "Answer"
+        },
+        {
+          "type": "text",
+          "id": "question-3",
+          "label": "Question"
+        },
+        {
+          "type": "richtext",
+          "id": "answer-3",
+          "label": "Answer"
+        },
+        {
+          "type": "text",
+          "id": "question-4",
+          "label": "Question"
+        },
+        {
+          "type": "richtext",
+          "id": "answer-4",
+          "label": "Answer"
+        },
+        {
+          "type": "text",
+          "id": "question-5",
+          "label": "Question"
+        },
+        {
+          "type": "richtext",
+          "id": "answer-5",
+          "label": "Answer"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

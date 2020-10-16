@@ -1,0 +1,34 @@
+{% comment %}
+  We want control over our error text, so we'll loop through them.
+
+  Alternatively, you can use the default layout to generate a
+  <ul> wrapped with <div class="errors">
+    - {{ form.errors | default_errors }}
+{% endcomment %}
+{% if form.errors %}
+  <div class="note form-error small">
+    <p>
+      <SPAN CLASS="language language-fra">DÉSOLÉ, QUELQUE CHOSE N'A PAS FONCTIONNÉ. CORRIGEZ LES CHAMPS SUIVANTS :</SPAN>
+    </p>
+
+    <ul class="disc">
+      {% for field in form.errors %}
+
+        {% comment %}
+          Check if it's a generic 'form' error and don't show the {{ field }}
+        {% endcomment %}
+
+        {% if field == 'form' %}
+          <li>
+            {{ form.errors.messages[field] }}
+          </li>
+        {% else %}
+          <li>
+            <span class="language language-fra">Le champs <strong>{{ field | replace: 'body', 'Message' }}</strong> ne peut pas rester vide</span>
+          </li>
+        {% endif %}
+
+      {% endfor %}
+     </ul>
+  </div>
+{% endif %}

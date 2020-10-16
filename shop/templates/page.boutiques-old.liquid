@@ -1,0 +1,115 @@
+<div class="row all-content rte boutiqueContent">
+	<div class="col-md-6 col-md-offset-3 contour">
+		{{ page.content }}
+	</div>
+	<div class="col-md-3">
+		<div class="container-right">
+			{%comment%}<h1 id="country-name"></h1>{%endcomment%}
+			<div id="page-content">
+			</div>
+		</div>
+	</div>
+  <div class="powr-map" id="a61f1ed7_1576694541"></div>
+</div>
+
+<style>
+	#boutique{text-align:center;margin-top:70px;}
+	.ce_text.block h1{cursor:pointer;text-transform:uppercase}
+	.adresses{display:none;}
+
+	.boutiqueContent h1 {
+		font-size: 9px;
+		font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		letter-spacing: 2.3px;
+		line-height: 18px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #231F20;}
+
+		.boutiqueContent h2 {
+			text-align: right;
+			font-family: Helvetica;
+			font-weight: bold;
+			font-size: 12px;
+			text-transform: uppercase;
+			letter-spacing: 2.3px;
+			line-height: 12px;
+		/*
+		text-align:right;
+		font-size: 13px;
+		font-family: Times, Times Regular, TimesNewRoman, "Times New Roman", Baskerville, Georgia, serif;
+		line-height: 18px;
+		letter-spacing: 0.05em;
+		font-style: italic;
+		font-weight: bold;
+		color: #231F20;
+		text-transform: uppercase;
+		margin: 0;*/
+	}
+
+	.boutiqueContent p {
+		font-family: Helvetica;
+		font-size: 8px;
+		text-transform: uppercase;
+		letter-spacing: 2.3px;
+		line-height: 14.5px;
+		text-align: right;
+		margin-bottom: 40px
+		/*
+		text-align:right;
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		font-size: 12px;
+		color: #231F20;
+		line-height: 18px;
+		letter-spacing: 0.1em;
+		font-style: normal;
+		font-weight: normal;
+		text-transform: normal;
+	margin-bottom: 21px;*/}
+
+	#country-name{text-align: left;font-family: Helvetica;font-size: 14px;font-weight: bold;}
+</style>
+<script>
+
+
+	$('h1').hover(
+		function() {
+			$( this ).css("font-weight", "bold" );
+		}, function() {
+			$( this ).css("font-weight", "inherit" );
+		}
+	);
+
+
+
+
+	$('h1').click(function()
+	{
+		if($(window).width() >= 992)
+		{
+			$("h1.bold").removeClass("bold");
+			$(this).addClass("bold");
+			$("#page-content").empty();
+			var html = $(this).parent().find('.adresses').clone();
+			$("#page-content").append(html);
+			$("#page-content").find('.adresses').toggle('fold');
+		}
+		else
+		{
+			$('.boutiqueContent h2').css('text-align', 'center');
+			$('.boutiqueContent p').css('text-align', 'center');
+			$('.adresses').css('padding-top', '40px');
+			$('.adresses').hide();
+			$($(this).parent().find('.adresses')).toggle();
+		}
+	});
+
+
+
+	// ADD BOLD IN MENU
+	$(document).ready(function(){
+		var current_page = {{page.id}};
+		$('#page-'+current_page).addClass('bold');
+	});
+
+</script>

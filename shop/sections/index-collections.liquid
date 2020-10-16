@@ -1,0 +1,81 @@
+<div class="container">
+  <div class="Grid Grid--thin">
+    {%- for block in section.blocks -%}
+      {%- assign collection = collections[block.settings.collection_handle] -%}
+      <div class="Grid__Cell 1/2--lap-and-up">
+        <a href="{{ collection.url }}">
+          <div class="index-collections__collection">
+            {%- include 'smart-image' with   {
+             image: block.settings.image,
+             class: 'collections__collection-image',
+             w: 800,
+             h: 800,
+             lazyload: false
+             } -%}
+
+             <div class="collections__collection-content">
+               <h3 class="h1-k" style='color:{{block.settings.color}}'>{{ collection.title }}</h3>
+               <button type="button" name="button" class="Button hidden--pocket">{{ block.settings.button_text }}</button>
+             </div>
+          </div>
+        </a>
+      </div>
+    {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Collection list",
+  "max_blocks": 18,
+  "settings": [
+
+  ],
+  "blocks": [
+    {
+      "type": "collection",
+      "name": "Collection",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection_handle",
+          "label": "Collection"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button text"
+        },
+        {
+          "type": "color",
+          "id": "color",
+          "label": "Title color"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "category": "Collection",
+      "name": "Collection list (NEW)",
+      "settings": {},
+      "blocks": [
+        {
+          "type": "collection"
+        },
+        {
+          "type": "collection"
+        },
+        {
+          "type": "collection"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

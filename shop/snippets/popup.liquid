@@ -1,0 +1,21 @@
+<div class="popup" id="{{id}}">
+
+  <div class="popup__wrapper">
+    <div class="popup__close">
+      {%- include 'icon' with 'close' -%}
+    </div>
+    <div class="popup__content">
+      {%- if title != blank -%}
+      <div class="h1-k popup__content-title">
+        {{ title }}
+      </div>
+      {%- endif -%}
+      <div class="popup__content-text rte">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+
+
+
+</div>

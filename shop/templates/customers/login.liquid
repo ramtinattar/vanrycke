@@ -1,0 +1,58 @@
+<div class="container generic">
+  <h1 class="h1-k PageHeader">Se connecter</h1>
+
+  <div class="form__login">
+    {% form 'customer_login', class: "form form--center" %}
+
+      {%- if form.errors -%}
+        <div class="form__group text">
+          <div class="form__errors">
+            {{ form.errors | default_errors }}
+          </div>
+        </div>
+      {%- endif -%}
+
+      <div class="form__group">
+        <label class="form__label" for="customer[email]">Email</label>
+        <input class="form__input" type="email" name="customer[email]" placeholder="Email" />
+      </div>
+
+      <div class="form__group">
+        <label class="form__label" for="customer[password]">Mot de passe</label>
+        <input class="form__input" type="password" name="customer[password]" placeholder="Mot de passe" />
+        <span class="form__label--hint text text--xs" action-show-reset>Mot de passe oublié ?</span>
+      </div>
+
+      <button type="submit" name="button" class="Button Button--full">
+        Valider
+      </button>
+      <a class="form__group--hint" href="/account/register">
+        <button class="Button Button--Secondary Button--full" type="button" name="button">
+          Je n'ai pas encore de compte
+        </button>
+      </a>
+    {% endform %}
+  </div>
+  {% form 'recover_customer_password', class: "form form--center"  %}
+      {% if form.errors %}
+        <div class="form__group text">
+          <div class="form__errors">
+            {{ form.errors | default_errors }}
+          </div>
+        </div>
+      {% endif %}
+
+      <div class="form__reset">
+        <p class="text">Entrez votre email pour recevoir un nouveau mot de passe.</p>
+        <div class="form__group form__group-global">
+          <label class="form__label" for="email">Email</label>
+          <input class="form__input" type="email" name="email" placeholder="votre e-mail" />
+        </div>
+        <button type="submit" name="button" class="Button Button--full">
+          Recevoir l'email
+        </button>
+
+      </div>
+  {% endform %}
+  </div>
+</div>

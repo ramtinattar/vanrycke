@@ -1,0 +1,108 @@
+<h1 class="h1-k PageHeader centered">{{ page.title }}</h1>
+  <div class="container__colorbackgroundNOT">
+    <div class="container container--small">
+      <div class="Grid">
+        {% for block in section.blocks %}
+
+          <div class="Grid__Cell {% cycle '1/2--tablet-and-up', '1/2--tablet-and-up', '' %}">
+            <div class="presse__block">
+
+              {%- if block.settings.image != blank  -%}
+                {%- include 'smart-image' with   {
+                   image:  block.settings.image,
+                   class: 'celebrite__image',
+                   w: 200,
+                   lazyload: true
+                } -%}
+              {%- endif -%}
+
+
+              {%- if block.settings.title != blank -%}
+
+
+                {%- if block.settings.product_handle != blank -%}
+                  <a href= "/products/{{block.settings.product_handle}}?variant={{block.settings.id_variant}}" >
+                {%- endif -%}
+
+                  <div class= "presse__block-2">
+
+                    {%- unless block.settings.product_image == blank -%}
+                       {%- include 'smart-image' with   {
+                         image: block.settings.product_image,
+                         class: 'celebrite__image-over',
+                         w: 800,
+                         lazyload: false
+                       } -%}
+                     {%- endunless -%}
+
+
+                     <div class="presse__block-2-title">
+                       {{ block.settings.title }}
+                     </div>
+
+                  </div>
+
+
+                {%- if block.settings.product_handle != blank -%}
+                  </a>
+                {%- endif -%}
+
+              {%- endif -%}
+            </div>
+          </div>
+
+
+
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+
+{% schema %}
+{
+  "name": "Page presse",
+  "settings": [
+  ],
+  "blocks": [
+    {
+      "type": "content",
+      "name": "Content",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "info": "Content title"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "image"
+        },
+        {
+          "type": "text",
+          "id": "id_variant",
+          "label": "Variant id",
+          "info": "Pour afficher une variante specifique du produit écrivez ici l'id de la variant que vous pouvez retrouver dans l'url de la page produit",
+          "placeholder": "1234"
+        },
+        {
+          "type": "header",
+          "content": "Produit"
+        },
+        {
+          "type": "product",
+          "id": "product_handle",
+          "label": "Product link",
+          "info": "Used to create a link to this product"
+        },
+        {
+          "type": "image_picker",
+          "id": "product_image",
+          "label": "Image produit"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,27 @@
+<div class="container">
+  <video class="index-video" autoplay loop playsinline muted>
+    <source src="{{ section.settings.video_url }}" type="video/mp4">
+  </video>
+</div>
+
+
+
+{% schema %}
+{
+  "name": "Video Only (NEW)",
+  "settings": [
+    {
+      "type": "text",
+      "id": "video_url",
+      "label": "Video url",
+      "info": "Upload your video [here](/admin/files)"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Video Only (NEW)",
+      "category": "Media"
+    }
+  ]
+}
+{% endschema %}

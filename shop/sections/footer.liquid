@@ -1,0 +1,243 @@
+
+{%- if template.name == 'page' or template.name == 'blog' or template == 'customers/account' or template == 'customers/order' or template == 'customers/addresses' -%}
+  {%- assign add_top_margin = true -%}
+{%- else -%}
+  {%- assign add_top_margin = false -%}
+{%- endif -%}
+
+{%- if template == 'page.collections' -%}
+  {%- assign add_top_margin = false -%}
+{%- endif -%}
+
+<footer id="section-{{ section.id }}" class="Footer {% if section.blocks.size <= 2 %}Footer--center{% endif %} {% if add_top_margin %}Footer--withMargin{% endif %}" role="contentinfo">
+  <div class="container">
+    {%- if section.blocks.size > 0 -%}
+      <div class="Footer__Inner">
+        {%- for block in section.blocks -%}
+          <div class="Footer__Block Footer__Block--{{ block.type }}" {{ block.shopify_attributes }}>
+            {%- case block.type -%}
+              {%- when 'text' -%}
+                {%- if block.settings.title != blank -%}
+                  <h2 class="Footer__Title Heading u-h6">{{ block.settings.title | escape }}</h2>
+                {%- endif -%}
+
+                {%- if block.settings.content != blank -%}
+                  <div class="Footer__Content Rte">
+                    {{ block.settings.content }}
+                  </div>
+                {%- endif -%}
+
+                {%- if block.settings.show_social_media -%}
+                  {% include 'social-media', class: 'Footer__Social', spacing: 'loose' %}
+                {%- endif -%}
+
+              {%- when 'links' -%}
+                {%- assign linklist = linklists[block.settings.menu] -%}
+
+                {%- if linklist != empty -%}
+                  <h2 class="Footer__Title Heading u-h6">{{ linklist.title | escape }}</h2>
+
+                  <ul class="Linklist">
+                    {%- for link in linklist.links -%}
+                        {%- if link.title contains "FAQ" or link.title contains "Contactez" or link.title contains "Contact us" or link.title contains "CGV" or link.title contains "TERMS AND SALES CONDITIONS" or link.title contains "GENERAL TERMS OF USE" or link.title contains "CGU" or link.title contains "MENTIONS" or link.title contains "Legal" or link.title contains "retour" or link.title contains "Ship" -%}
+                          <li class="Linklist__Item">
+                            <div class="Link Link--primary">
+                              <a href="{{ link.url }}" class="Link Link--primary">{{ link.title | escape }}</a>
+                            </div>
+                          </li>
+                        {%- else -%}
+							
+                    {% if request.locale.iso_code == 'en' %}
+                     {%- assign page_handle = link.url | remove : "/en/pages/" -%}
+                    {% else %}
+                          {%- assign page_handle = link.url | remove : "/pages/" -%}
+                    {% endif %}
+                          <li class="Linklist__Item">
+                            <div class="Link Link--primary" action-show-popup data-target="{{ page_handle }}">
+                              {{ link.title | escape }}
+                            </div>
+                          </li>
+                          {%- include 'popup' with {
+                            id: page_handle,
+                            title: pages[page_handle].title,
+                            content: pages[page_handle].content
+                          } -%}
+                          
+                        {%- endif -%}
+
+                    {%- endfor -%}
+                  </ul>
+                {%- endif -%}
+
+              {%- when 'newsletter' -%}
+
+				{{ block.settings.nl_html }}
+            
+            {%- comment %}
+            
+            
+            
+                {% form 'customer', class: "form" %}
+                  <div class="form__group">
+                    <input type="hidden" name="contact[tags]" value="newsletter, footer">
+                    <input class="form__input" type="email" name="contact[email]"
+                    required placeholder="S'inscrire à la newsletter" />
+                  </div>
+                  <div class="form__group">
+                    <button class="Button form__submit" type="submit" name="button">
+                      valider
+                    </button>
+                  </div>
+                {% endform %}
+
+ 
+                  	This is a foo
+                  {%- if block.settings.title != blank -%}
+                    <h2 class="Footer__Title Heading u-h6">{{ block.settings.title | escape }}</h2>
+                  {%- endif -%}
+
+                  {%- if block.settings.content != blank -%}
+                    <div class="Footer__Content Rte">
+                      {{ block.settings.content }}
+                    </div>
+                  {%- endif -%}
+
+                  {%- form 'customer', id: 'footer-newsletter', class: 'Footer__Newsletter Form' -%}
+                    {%- if form.posted_successfully? -%}
+                      <p class="Form__Alert Alert Alert--success">{{ 'footer.newsletter.success' | t }}</p>
+                    {%- else -%}
+                      {%- if form.errors -%}
+                        <p class="Form__Alert Alert Alert--error">{{ form.errors.messages['email'] }}</p>
+                      {%- endif -%}
+
+                      <input type="hidden" name="contact[tags]" value="newsletter">
+                      <input type="email" name="contact[email]" class="Form__Input" aria-label="{{ 'footer.newsletter.input' | t }}" placeholder="{{ 'footer.newsletter.input' | t }}" required>
+                      <button type="submit" class="Form__Submit Button Button--primary">{{ 'footer.newsletter.submit' | t }}</button>
+                    {%- endif -%}
+                  {%- endform -%}
+                {% endcomment -%}
+
+            {%- endcase -%}
+          </div>
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+
+    <div class="Footer__Aside">
+      <div class="Footer__Copyright">
+        <a href="{{ routes.root_url }}" class="Footer__StoreName Heading u-h7 Link Link--secondary">© {{ shop.name }}</a>
+        <p class="text text--s">Thème propulsé par <a href="https://kercambre.com" target="_blank">Kercambre</a></p>
+      </div>
+
+      {%- if section.settings.show_payment_methods -%}
+        {%- capture payment_methods -%}
+          {%- for type in shop.enabled_payment_types -%}
+            <li class="HorizontalList__Item">{{ type | payment_type_svg_tag }}</li>
+          {%- endfor -%}
+        {%- endcapture -%}
+
+        {%- if payment_methods != blank -%}
+          <ul class="Footer__PaymentList HorizontalList">
+            {{ payment_methods }}
+          </ul>
+        {%- endif -%}
+      {%- endif -%}
+    </div>
+  </div>
+</footer>
+
+{% schema %}
+{
+  "name": "Footer",
+  "class": "shopify-section--footer",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_payment_methods",
+      "label": "Show payment methods",
+      "info": "Payment method icons are automatically displayed based on your Shopify payment methods.",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text",
+      "name": "Text / social media",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "About the shop"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Text",
+          "default": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.</p>"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_social_media",
+          "label": "Show social media",
+          "info": "Make sure to have properly configured your social media in the theme settings.",
+          "default": true
+        }
+      ]
+    },
+    {
+      "type": "links",
+      "name": "Links",
+      "settings": [
+        {
+          "type": "link_list",
+          "id": "menu",
+          "label": "Menu",
+          "info": "This menu won't show dropdown items."
+        }
+      ]
+    },
+    {
+      "type": "newsletter",
+      "name": "Newsletter",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Customers who subscribe will have their email address added to the \"accepts marketing\" [customer list](/admin/customers?query=&accepts_marketing=1)."
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Newsletter"
+        },
+        {
+          "type": "html",
+          "id": "nl_html",
+          "label": "html",
+          "default": "<div class='klaviyo-form-Ru6qjj'></div>"
+        }
+      ]
+    }
+  ],
+  "default": {
+    "blocks": [
+      {
+        "type": "text",
+        "settings": {}
+      },
+      {
+        "type": "links",
+        "settings": {
+          "menu": "footer"
+        }
+      },
+      {
+        "type": "newsletter",
+        "settings": {}
+      }
+    ]
+  }
+}
+{% endschema %}

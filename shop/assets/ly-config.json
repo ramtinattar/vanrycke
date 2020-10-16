@@ -1,0 +1,88 @@
+{
+  "switcher": {
+    "version": "2.0.2",
+    "customCSS": "",
+    "languageDetection": true,
+    "languageDetectionDefault": "fr",
+    "breakpoints": [
+      {
+        "key": 0,
+        "label": "0px",
+        "config": {
+          "type": "custom",
+          "corner": "top_right",
+          "position": "absolute",
+          "show_flags": false,
+          "show_label": true,
+          "show_custom_name": true,
+          "show_name": false,
+          "show_iso_code": false,
+          "round_flags": false,
+          "is_dark": false,
+          "is_transparent": true,
+          "dropdown_open": false,
+          "h_space": 17,
+          "v_space": 54,
+          "switcherLabel": "show_custom_name",
+          "rectangle_icons": true,
+          "switcherIcons": "rectangle_icons",
+          "fontsize": 10,
+          "text_color": "#000000",
+          "bg_color": "#ffffff",
+          "arrow_size": 100,
+          "arrow_width": 2,
+          "arrow_filled": false
+        }
+      },
+      {
+        "key": 1000,
+        "label": "1000px",
+        "config": {
+          "type": "links",
+          "corner": "top_right",
+          "position": "fixed",
+          "show_flags": false,
+          "show_label": true,
+          "show_custom_name": true,
+          "show_name": false,
+          "show_iso_code": false,
+          "round_flags": false,
+          "is_dark": false,
+          "is_transparent": true,
+          "dropdown_open": false,
+          "h_space": 54,
+          "v_space": 0,
+          "switcherLabel": "show_custom_name",
+          "rectangle_icons": true,
+          "switcherIcons": "rectangle_icons",
+          "fontsize": 14,
+          "text_color": "#000000",
+          "bg_color": "#ffffff",
+          "arrow_size": 100,
+          "arrow_width": 2,
+          "arrow_filled": false
+        }
+      }
+    ],
+    "languages": [
+      {
+        "iso_code": "fr",
+        "root_url": "\/",
+        "name": "French",
+        "primary": true,
+        "domain": false,
+        "published": true,
+        "custom_name": "Français"
+      },
+      {
+        "iso_code": "en",
+        "root_url": "\/en",
+        "name": "English",
+        "primary": false,
+        "domain": false,
+        "published": true,
+        "custom_name": false
+      }
+    ]
+  }
+}

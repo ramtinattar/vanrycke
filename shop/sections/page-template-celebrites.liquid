@@ -1,0 +1,129 @@
+<h1 class="h1-k PageHeader centered">{{ page.title }}</h1>
+  <div class="">
+    <div class="container container--small">
+
+
+      <div class="Grid">
+
+
+        {%- for block in section.blocks -%}
+
+
+          <script type="text/javascript" nemologs>console.log("------");</script>
+          <script type="text/javascript" nemologs>console.log("On est sur {{block.id}}");</script>
+          <script type="text/javascript" nemologs>console.log("Image celeb {{block.settings.image}}");</script>
+
+          {%- if block.settings.image != blank -%}
+            <div class="Grid__Cell 1/2--tablet-and-up">
+              <div class="celebrite__block">
+                {%- include 'smart-image' with   {
+                   image:  block.settings.image,
+                   w: 200,
+                   class: 'celebrite__image',
+                   lazyload: true
+                } -%}
+              </div>
+            </div>
+
+            <div class="Grid__Cell 1/2--tablet-and-up">
+              <div class="celebrite__block">
+
+                  {%- include 'smart-image' with   {
+                     image:  block.settings.image,
+                     w: 200,
+                     class: 'celebrite__image',
+                     lazyload: true
+                  } -%}
+
+
+
+                    <div class= "celebrite__block-2">
+
+                      {%- if block.settings.product_title != "" -%}
+                      
+                          {%- if block.settings.product_handle != blank -%}
+                            <a href= "/products/{{ block.settings.product_handle }}" >
+                          {%- endif -%}
+
+
+                             {%- include 'smart-image' with   {
+                               image: block.settings.product_image,
+                               w: 200,
+                               class: 'celebrite__image-over',
+                               lazyload: true
+                             } -%}
+                             {%- if block.settings.title != blank -%}
+                               <div class="celebrite__name-tag h1-k">
+                                 {{ block.settings.title }} porte {{ block.settings.product_title }}
+                               </div>
+                             {%- endif -%}
+
+
+                         {%- if block.settings.product_handle != blank -%}
+                            </a>
+                         {%- endif -%}
+
+
+                      {%- endif -%}
+                   </div>
+              </div>
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+
+{% schema %}
+{
+  "name": "Page célébrités",
+  "settings": [
+  ],
+  "blocks": [
+    {
+      "type": "content",
+      "name": "Content",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Célébrité"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Nom",
+          "info": "Nom de la celebrites",
+          "placeholder": "Eva Longoria"
+        },
+        {
+          "type": "header",
+          "content": "Produit"
+        },
+
+        {
+          "type": "product",
+          "id": "product_handle",
+          "label": "Product link",
+          "info": "Used to create a link to this product"
+        },
+        {
+          "type": "text",
+          "id": "product_title",
+          "label": "Titre du produit",
+          "info": "Si tu laisses vides, rien n'apparaitra du tout"
+        },
+        {
+          "type": "image_picker",
+          "id": "product_image",
+          "label": "Image produit"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

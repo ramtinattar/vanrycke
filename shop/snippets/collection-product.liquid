@@ -1,0 +1,171 @@
+{%- assign split_options            =   '' | split: '' -%}
+{%- assign lock_options             =   '' | split: '' -%}
+
+
+{%- for option in product.options -%}
+  {%- comment %}
+  	DECIDE TO SPLIT OR NOT THE CURRENT PRODUCT OPTIONS
+  {% endcomment -%}
+  {%- if option_split contains option -%}
+    {%- assign split_op = 'split' | split: '------' -%}
+  {%- else -%}
+    {%- assign split_op = 'not' | split: '------' -%}
+  {%- endif -%}
+  {% assign split_options = split_options | concat: split_op %}
+
+  {%- comment %}
+  	DECIDE WETHER OR NOT THE PRODUCT OPTION IS LOCKED BY A URL FILTER
+  {% endcomment -%}
+  {%- assign locker = 'unlock' | split: '------' -%}
+  {%- for key_value in url_params_product_options -%}
+    {%- assign param_key      =    key_value | split: "_" | first -%}
+    {%- if option == param_key -%}
+      {%- assign locker = 'lock' | split: '------' -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {% assign lock_options = lock_options | concat: locker %}
+{%- endfor -%}
+
+{%- comment %}
+	FOR EVERY VARIANT, CREATE A SIMPLER VERSION OF VARIANT TITLE
+  AND MINIMIFY TO UNIQ ONE TO DECIDE HOW MANY UNIQ OPTIONS EXISTS
+{% endcomment -%}
+{%- assign only_split_variant_values = "" | split: "" -%}
+{%- for v in product.variants -%}
+  {%- capture simple_variant_value -%}
+    {%- if split_options[0] == "split" -%}{{v.option1}}{%- else -%}---{%- endif -%}/
+    {%- if split_options[1] == "split" -%}{{v.option2}}{%- else -%}---{%- endif -%}/
+    {%- if split_options[2] == "split" -%}{{v.option3}}{%- else -%}---{%- endif -%}
+  {%- endcapture -%}
+  {%- assign simple_variant_value = simple_variant_value | split: '------' -%}
+  {%- assign only_split_variant_values =  only_split_variant_values | concat: simple_variant_value -%}
+{%- endfor -%}
+{%- assign only_split_variant_values = only_split_variant_values | uniq -%}
+
+
+{%- comment %}
+	FOR EACH UNIQ PRODUCT OPTION VALUES COMBINAISON
+  	FIND THE RELATED VARIANTS
+{% endcomment -%}
+
+{%- assign total_variants_stock = 0 -%}
+
+{%- for simple_variant in only_split_variant_values -%}
+  {%- assign featured_variant         =   null -%}
+  {%- assign simple_variantArray      =   simple_variant | split: '/' %}
+
+  {%- comment %}
+    Pour chaque combinaison simplifiée, je dois trouver le premier variant qui correspond
+  {% endcomment -%}
+
+
+  {%- for v in product.variants -%}
+
+    {%- capture variant_important_values -%}
+    	{%- if split_options[0] == "split" -%}{{v.option1}}{%- else -%}---{%- endif -%}/
+    	{%- if split_options[1] == "split" -%}{{v.option2}}{%- else -%}---{%- endif -%}/
+    	{%- if split_options[2] == "split" -%}{{v.option3}}{%- else -%}---{%- endif -%}
+    {%- endcapture -%}
+
+    {%- if simple_variant == variant_important_values -%}
+      
+
+      {%- if featured_variant == null -%}
+         	{%- assign featured_variant = v -%}
+      {%- elsif featured_variant.available == false and v.available -%}
+        	{%- assign featured_variant = v -%}
+      {%- endif -%}
+
+
+	  {%- assign total_variants_stock = total_variants_stock | plus: v.inventory_quantity  -%}
+
+    {%- endif -%}
+
+
+  {%- endfor -%}
+
+
+  {%- comment %}
+    CANCEL OR NOT FEATURED VARIANT BASED ON URL SEARCH OPTIONS
+  {% endcomment -%}
+  {%- for option_locker in lock_options -%}
+    {%- if option_locker == "lock" -%}
+      {%- assign option_index = forloop.index0 -%}
+      {%- assign product_option_name = product.options[option_index] -%}
+      {%- assign variant_featured_value = featured_variant.options[option_index] -%}
+      {%- capture blabla -%}{{product_option_name}}_{{variant_featured_value}}{%- endcapture -%}
+      {%- unless url_params_product_options contains blabla -%}
+      {% assign featured_variant = null %}
+      {%- endunless -%}
+    {%- endif -%}
+  {%- endfor -%}
+
+  {%- comment %}
+  	JUST IN CASE I HAVE RECEIVED A FORCE VARIANT
+  {% endcomment -%}
+  {%- if force_variant != "" -%}
+    {%- for v in product.variants -%}
+      {%- if v.id == force_variant -%}
+        {% assign featured_variant = v %}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endif -%}
+
+  {%- if featured_variant != null -%}
+  {%- capture class -%}{%- cycle '1/2', '1/2', '' -%}{%- endcapture -%}
+  <div    class="Grid__Cell
+          1/{{ mobile_items_per_row }}--phone
+          1/{{ tablet_items_per_row }}--tablet-and-up
+          1/{{ desktop_items_per_row }}--{% if section.settings.filter_position == 'drawer' %}lap-and-up collection__custom-grid{% else %}desk{% endif %}"
+          data-{{product.options[0] | handleize }}="{{featured_variant.options[0] | handleize }}"
+          data-{{product.options[1] | handleize }}="{{featured_variant.options[1] | handleize }}"
+          data-{{product.options[2] | handleize }}="{{featured_variant.options[2] | handleize }}"
+          data-option_1="{{ featured_variant.options[0] | handleize }}"
+          data-option_2="{{ featured_variant.options[1] | handleize }}"
+          data-option_3="{{ featured_variant.options[2] | handleize }}"
+          data-categories="{{ product.type | handleize}}"
+          >
+      <div class="collection__product"
+            data-price="{{ featured_variant.price | money_with_currency }}">
+        <a href="{{ product.url | within: collection }}?variant={{ featured_variant.id }}">
+          <div class="collection__product-images">
+            <img class="collection__product-image"
+                  src="{{ featured_variant.image | img_url: '500x' }}"
+                  >
+                  {%- comment %}
+      {%- include 'collection-product-variant-images', with product -%}
+                  {% endcomment -%}
+
+          </div>
+        </a>
+
+        {%- if featured_variant.available == false -%}
+        <div class="collection__product-tags">
+          <div class="tag text text--xs">victime de son succès</div>
+        </div>
+        {%- endif -%}
+        
+        {%- if total_variants_stock < 2 and total_variants_stock > 0 -%}
+        
+          <div class="collection__product-tags">
+            <div class="tag text text--xs">dernière pièce</div>
+          </div>
+        
+        {%- endif -%}
+
+        
+        
+
+        <div class="collection__product-info">
+          <h3 class="collection__product-title h2-k">{{ product.title }}</h3>
+          <div class="collection__product-variant-title text text--b">
+            {{ featured_variant.metafields.global.subtitle }}
+          </div>
+          <div class="collection__product-variant-price text text--b">
+            {{ featured_variant.price | money_without_trailing_zeros }}
+          </div>
+        </div>
+      </div>
+    </div>
+    {%- endif -%}
+{%- endfor -%}

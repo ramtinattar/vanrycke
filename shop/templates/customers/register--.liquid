@@ -1,0 +1,179 @@
+{% comment %}
+This template will be automatically generated for you if the file doesn't exist,
+but where's the fun in having no control? Define your layout below.
+
+The 'layout settings.customer_layout' line is inserted at the top of every customer account template.
+Your theme's settings determine to use the 'default' or 'theme' customer templates.
+More info:
+- http://www.tetchi.ca/shopify-theme-from-scratch-part-11/
+{% endcomment %}
+
+{% layout settings.customer_layout %}
+<div class="row page__content">
+	<div class="col-md-6 col-md-offset-3 contour">
+		<div class="row">
+	<div class="col-md-6 col-md-offset-3">
+		<div class="create-an-account">
+			<h1 class="centered" style="margin-bottom: 20px">
+				<span class="language language-fra">Créer un compte</span>
+				<span class="language language-eng">Create an account</span>
+			</h1>
+
+
+			{% form 'create_customer' %}
+					{% include 'form-errors-custom' %}
+					<div class="select-language">
+						<div class="my-checkbox lang fra" value="language-fra"></div>
+						<div class="space small">
+							<span class="language language-fra">Français</span>
+							<span class="language language-eng">French</span>
+						</div>
+						<div class="my-checkbox lang eng" value="language-eng"></div>
+						<div class="space small">
+							<span class="language language-fra">Anglais</span>
+							<span class="language language-eng">English</span>
+						</div>
+					</div>
+
+					<div class="select-gender">
+						<div class="my-checkbox gender female" value="female"></div>
+						<div class="space small">
+							<span class="language language-fra">Mme</span>
+							<span class="language language-eng">Ms</span>
+						</div>
+						<div class="my-checkbox gender male" value="male"></div>
+						<div class="space small">
+							<span class="language language-fra">M.</span>
+							<span class="language language-eng">Mr</span>
+						</div>
+					</div>
+					<input type="radio" name="customer[tags]" value="female" style='display:none;'>
+					<div id="first_name">
+					<label for="first_name">
+						<span class="language language-fra">Prénom</span>
+						<span class="language language-eng">First name</span>
+						<em>*</em>
+					</label>
+					<input type="text" value="" name="customer[first_name]" id="first_name" {% if form.errors contains "first_name" %} class="error"{% endif %} >
+					</div>
+
+					<div id="last_name">
+					<label for="last_name">
+						<span class="language language-fra">Nom</span>
+						<span class="language language-eng">Last name</span>
+						<em>*</em>
+					</label>
+					<input type="text" value="" name="customer[last_name]" id="last_name" {% if form.errors contains "last_name" %} class="error"{% endif %} >
+					</div>
+
+					<div id="email">
+					<label for="email">e-mail<em>*</em></label>
+					<input type="email" value="" name="customer[email]" id="email" {% if form.errors contains "email" %} class="error"{% endif %}  >
+					</div>
+
+					<div id="create_password">
+					<label for="password">
+						<span class="language language-fra">Mot de passe</span>
+						<span class="language language-eng">Password</span>
+						<em>*</em>
+					</label>
+					<input type="password" value="" name="customer[password]" id="create_password" {% if form.errors contains "password" %} class="error"{% endif %}>
+					</div>
+
+					<div class="buttons-set">
+					<p>
+						<button type="submit" class="btn-login harman_btn5" value="S'inscrire">
+							<span class="language language-fra">S'inscrire</span>
+							<span class="language language-eng">Sign up</span>
+						</button>
+					</p>
+					</div>
+
+					{% endform %}
+
+
+					<div class="centered" style="margin-bottom:20px">
+						<span class="language language-fra small">ou</span>
+						<span class="language language-eng small">or</span>
+					</div>
+					<div class="centered">
+						<a href="/account">
+						<button class="white-btn">
+							<span class="language language-fra">S'identifier</span>
+							<span class="language language-eng">Sign in</span>
+						</button>
+						</a>
+					</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			{% comment %}
+			This form must use 'create_customer'
+			{% endcomment %}
+			{% comment %}
+			{% form 'create_customer' %}
+			{% include 'form-errors-custom' %}
+			<div id="first_name">
+				<label for="first_name" {% if settings.enable_multilang %}data-translate="customers.register.first_name"{%endif%}>{{ 'customers.register.first_name' | t }}<em>*</em></label>
+				<input type="text" value="" name="customer[first_name]" id="first_name" {% if form.errors contains "first_name" %} class="error"{% endif %} >
+			</div>
+
+			<div id="last_name">
+				<label for="last_name" {% if settings.enable_multilang %}data-translate="customers.register.last_name"{%endif%}>{{ 'customers.register.last_name' | t }}<em>*</em></label>
+				<input type="text" value="" name="customer[last_name]" id="last_name" {% if form.errors contains "last_name" %} class="error"{% endif %} >
+			</div>
+
+			<div id="email">
+				<label for="email" {% if settings.enable_multilang %}data-translate="customers.register.email"{%endif%}>{{ 'customers.register.email' | t }}<em>*</em></label>
+				<input type="email" value="" name="customer[email]" id="email" {% if form.errors contains "email" %} class="error"{% endif %}  >
+			</div>
+
+			<div id="create_password">
+				<label for="password" {% if settings.enable_multilang %}data-translate="customers.register.password"{%endif%}>{{ 'customers.register.password' | t }}<em>*</em></label>
+				<input type="password" value="" name="customer[password]" id="create_password" {% if form.errors contains "password" %} class="error"{% endif %}>
+			</div>
+
+			<div class="buttons-set">
+
+				<button type="submit" class="btn-login harman_btn5">
+					<span class="language language-fra">S'identifier</span>
+					<span class="language language-eng">Log in</span>
+				</button>
+
+
+			</div>
+			<div class="small separator centered">
+				<span class="language language-fra">ou</span>
+				<span class="language language-eng">or</span>
+			</div>
+			<div>
+				<button class="white-btn" href="/account/login">
+					<span class="language language-fra">S'identifier</span>
+					<span class="language language-eng">Sign in</span>
+				</button>
+			</div>
+			{% endform %}
+			{%endcomment%}
+		</div>
+	</div>
+</div>
+	</div>
+</div>

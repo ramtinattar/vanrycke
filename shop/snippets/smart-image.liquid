@@ -1,0 +1,64 @@
+{%- comment %}
+
+{%- include 'smart-image' with   {
+    image: ,
+    class: '',
+    h: ,
+    w: ,
+    lazyload:
+  } -%}
+
+{% endcomment -%}
+
+
+{%- comment %}
+	SET THE LOWEST RESOLUTION IMAGE URL
+{% endcomment -%}
+{%- capture image_base_size -%}{{w}}x{{h}}{%- endcapture -%}
+
+{%- if lazyload -%}
+  {%- comment %}
+  	GET ALL THE 10 NEXT SCREEN RESOLUTIONS FROM THE MIN WIDTH
+  {% endcomment -%}
+  {%- capture screen_resolutions -%}
+    {%- for i in (1..10) -%}
+      {{ w | times: i }}{%- unless forloop.last -%},{%- endunless -%}
+    {%- endfor -%}
+  {%- endcapture -%}
+
+  {%- comment %}
+  	PUT THEM IN AN ARRAY
+  {% endcomment -%}
+  {%- assign screen_resolutions = screen_resolutions | split: ',' -%}
+
+  {%- comment %}
+    CREATE THE FULL IMAGE URLS FOR EACH RESOLUTIONS
+  {% endcomment -%}
+  {%- capture img_responsive_sources -%}
+  {%- for resolution in screen_resolutions -%}
+    {%- capture image_responsive_size -%}
+      {%- if w != blank -%}{{ w | times: forloop.index }}{%- endif -%}x{%- if h != blank -%}{{ h | times: forloop.index }}{%- endif -%}
+    {%- endcapture -%}
+    {{ image | img_url: image_responsive_size, crop: 'center' }} {{ resolution }}w{%- unless forloop.last -%},{%- endunless -%}
+  {%- endfor -%}
+  {%- endcapture -%}
+
+  <img
+      class="{{ class }} Image--lazyLoad"
+      src="{{ image | img_url: image_base_size, crop: 'center' }}"
+      alt="{{ image.alt }}"
+      data-sizes="auto"
+      {% if variants_ids != '' %}
+      variants_ids="{{variants_ids}}"
+      {% endif %}
+      data-srcset="{{ img_responsive_sources }}"
+          >
+{%- else -%}
+<img
+    class="{{ class }}"
+    src="{{ image | img_url: image_base_size, crop: 'center'  }}"
+    {% if variants_ids != '' %}
+    variants_ids="{{variants_ids}}"
+    {% endif %}
+    alt="{{ image.alt }}">
+{%- endif -%}

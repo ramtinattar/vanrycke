@@ -1,0 +1,201 @@
+
+{% assign count = 0 %}
+{% for type in collection.all_types %}
+  {% assign count = count | plus: 1 %}
+{% endfor %}
+{%- if collection.title contains "Bagues" or
+  collection.title contains "Bracelets" or
+  collection.title contains "Mono" or
+  collection.title contains "Colliers"
+  or count == 1 or count == 0 -%}
+{%- else -%}
+    <div class="filter__option" >
+      <div class="filter__option-title  Heading hidden-lap-and-up">
+        Categories
+      </div>
+      <div class="CollectionToolbar__Item CollectionToolbar__Item--filter
+      filter__option-title Heading Text--subdued u-h6 hidden-pocket ">
+        Categories
+        <span class="filter__option-indicator" data-option-name="Categories" ></span>
+      <span>
+          <svg class="Icon Icon--select-arrow" role="presentation" viewBox="0 0 19 12">
+            <polyline fill="none" stroke="currentColor" points="17 2 9.5 10 2 2"
+            fill-rule="evenodd" stroke-width="2" stroke-linecap="square"></polyline>
+          </svg>
+        </span>
+      </div>
+
+      <div  class="Popover Popover--alignRight Popover--positionBottom
+      filter__option-values Collapsible Collapsible--padded Collapsible--autoExpand--hidden-pocket"
+          style="overflow: visible;">
+          {%- for type in collection.all_types -%}
+          <div
+              class="filter__value Popover__Value Link"
+              data-cat="product_categories"
+              data-key-handle="categories"
+              data-value="{{ type }}"
+              data-value-handle="{{ type | handleize }}">
+                {{- type -}}
+                {{colection.all_types.length}}
+          </div>
+          {%- endfor -%}
+      </div>
+      <div  class="filter__option-values Collapsible hidden-lap-and-up">
+        {%- for type in collection.all_types -%}
+        <div
+            class="filter__value Link text"
+            data-cat="product_categories"
+            data-key-handle="categories"
+            data-value="{{ type }}"
+            data-value-handle="{{ type | handleize }}">
+            {{- type -}}
+        </div>
+      {%- endfor -%}
+      </div>
+    </div>
+{%- endif -%}
+
+{%- assign options_to_split                     =   settings.collection_split_options -%}
+{%- assign options_to_split_array               =   options_to_split | split: ',' -%}
+{%- assign option_values_array_of_array         =   '' | split: '' -%}
+
+{%- for option_to_split in options_to_split_array -%}
+{%- assign all_option_values = '' | split: '' -%}
+
+    {%- for product in collection.products limit: 1000 -%}
+      {%- for product_option in product.options_with_values -%}
+        {%- if option_to_split == product_option.name -%}
+
+            {%- for value in product_option.values -%}
+
+              {%- assign value_handle = value | handleize -%}
+                {%- assign value_arr = value | split: '---------------' -%}
+                {%- assign all_option_values = all_option_values | concat: value_arr  -%}
+                {%- assign all_option_values = all_option_values | uniq | sort -%}
+            {%- endfor -%}
+
+
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endfor -%}
+
+    {%- assign all_option_values = all_option_values | uniq | sort -%}
+    {%- unless all_option_values.size == 0 or all_option_values.size == 1-%}
+    <div class="filter__option">
+
+
+      <div class="filter__option-title  Heading hidden-lap-and-up">
+        {{- option_to_split -}}
+      </div>
+
+
+      <div class="CollectionToolbar__Item CollectionToolbar__Item--filter
+          filter__option-title Heading Text--subdued u-h6 hidden-pocket">
+            {{- option_to_split -}}
+            <span class="filter__option-indicator" data-option-name="{{option_to_split}}"></span>
+            <span>
+              <svg class="Icon Icon--select-arrow" role="presentation" viewBox="0 0 19 12">
+                <polyline fill="none" stroke="currentColor" points="17 2 9.5 10 2 2"
+                fill-rule="evenodd" stroke-width="2" stroke-linecap="square"></polyline>
+              </svg>
+            </span>
+      </div>
+
+      <div  class="Popover Popover--alignRight Popover--positionBottom
+            filter__option-values Collapsible Collapsible--padded Collapsible--autoExpand--hidden-pocket"
+            style="overflow: visible;">
+            {%- assign final_list = "" | split : '' -%}
+            {%- if all_option_values contains "Rose" -%}
+              {%- assign value = "Rose" | split: '--------' -%}
+              {%- assign final_list = final_list | concat : value -%}
+            {%- endif -%}
+            {%- if all_option_values contains "Blanc" -%}
+              {%- assign value = "Blanc" | split: '--------' -%}
+              {%- assign final_list = final_list | concat : value -%}
+            {%- endif -%}
+            {%- if all_option_values contains "Jaune" -%}
+              {%- assign value = "Jaune" | split: '--------' -%}
+              {%- assign final_list = final_list | concat : value -%}
+            {%- endif -%}
+            {%- for v in all_option_values -%}
+              {%- if final_list contains v -%}
+              {%- else -%}
+                {%- assign value = v | split: '--------' -%}
+                {%- assign final_list = final_list | concat : value -%}
+              {%- endif -%}
+            {%- endfor -%}
+
+            {%- for v in final_list -%}
+              <div
+                  class="filter__value Popover__Value Link"
+                  data-cat="product_options"
+                  data-key="{{option_to_split}}"
+                  data-key-handle="{{option_to_split | handle }}"
+                  data-value="{{v}}"
+                  data-value-handle="{{v | handleize }}">
+                    {{- v -}}
+              </div>
+            {%- endfor -%}
+      </div>
+
+
+      <div  class="filter__option-values Collapsible hidden-lap-and-up">
+        
+        {%- assign final_list = "" | split : '' -%}
+            {%- if all_option_values contains "Rose" -%}
+              {%- assign value = "Rose" | split: '--------' -%}
+              {%- assign final_list = final_list | concat : value -%}
+            {%- endif -%}
+            {%- if all_option_values contains "Blanc" -%}
+              {%- assign value = "Blanc" | split: '--------' -%}
+              {%- assign final_list = final_list | concat : value -%}
+            {%- endif -%}
+            {%- if all_option_values contains "Jaune" -%}
+              {%- assign value = "Jaune" | split: '--------' -%}
+              {%- assign final_list = final_list | concat : value -%}
+            {%- endif -%}
+            {%- for v in all_option_values -%}
+              {%- if final_list contains v -%}
+              {%- else -%}
+                {%- assign value = v | split: '--------' -%}
+                {%- assign final_list = final_list | concat : value -%}
+              {%- endif -%}
+            {%- endfor -%}
+
+            {%- for v in final_list -%}
+              <div
+                  class="filter__value Popover__Value Link"
+                  data-cat="product_options"
+                  data-key="{{option_to_split}}"
+                  data-key-handle="{{option_to_split | handle }}"
+                  data-value="{{v}}"
+                  data-value-handle="{{v | handleize }}">
+                    {{- v -}}
+              </div>
+        {%- endfor -%}
+        
+        
+        {%comment%}
+        
+            {%- for v in all_option_values -%}
+              <div
+                  class="filter__value Link filter__button text mobile"
+                  data-cat="product_options"
+                  data-key="{{option_to_split}}"
+                  data-key-handle="{{option_to_split | handle }}"
+                  data-value="{{v}}"
+                  data-value-handle="{{v | handleize }}">
+                  {{- v -}}
+              </div>
+            {%- endfor -%}
+
+        {% endcomment %}
+        
+        
+      </div>
+
+    </div>
+  {%- endunless -%}
+
+
+{%- endfor -%}

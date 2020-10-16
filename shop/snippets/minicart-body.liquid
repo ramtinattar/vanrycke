@@ -1,0 +1,30 @@
+<div class="minicart__body">
+  <div class="minicart__item" rv-each-item="kercambreCartJS.CartJS.cart.items">
+    <div class="Grid Grid--thin">
+      <div class="Grid__Cell {% if template contains 'cart'%}1{% else %}2{% endif %}/5">
+        <img class="minicart__image" rv-src="item.image" >
+      </div>
+      <div class="Grid__Cell 3/5 minicart__info">
+        <div class="h4-k text minicart__item-title" rv-text="item.product_title"></div>
+        <div class="text text--b minicart__item-subtitle" rv-text="item.properties.subtitle">
+        </div>
+        <div class="text text--b minicart__item-price" rv-text="item.price | money">
+        </div>
+        <div class="text text--xs" rv-text="item.options_with_values | size">
+        </div>
+        <div class="minicart__item-quantity text">
+          <span action-cart-adjust
+                data-method="remove"
+                rv-data-line="index"> < </span>
+          <span rv-text="item.quantity"></span>
+          <span action-cart-adjust
+                data-method="add"
+                rv-data-line="index"> > </span>
+        </div>
+        <div class="text text--xs" action-cart-adjust data-method="delete" rv-data-line="index">
+          Supprimer
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

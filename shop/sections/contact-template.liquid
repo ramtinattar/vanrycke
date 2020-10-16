@@ -1,0 +1,93 @@
+{% include 'contact-template' %}
+{% schema %}
+  {
+    "name": "Contact",
+    "settings": [
+		 {
+        "type": "textarea",
+        "id": "contact_top",
+        "label": "Content top",
+        "default": "Content"
+      },
+
+      {
+        "type": "textarea",
+        "id": "contact_bottom",
+        "label": "Content bottom",
+        "default": "Content"
+      },
+      {
+        "type": "text",
+        "id": "contact_title",
+        "label": "Contact Title",
+        "default": "title"
+      },
+      {
+        "type": "checkbox",
+        "id": "display_google_map",
+        "label": "Enable Google Maps?",
+        "default": true
+      },
+      {
+        "type": "textarea",
+        "id": "google_map_code",
+        "label": "Google Map Code"
+      },
+	{
+        "type": "header",
+        "content": "Block Bottom"
+      },
+      {
+        "type": "checkbox",
+        "id": "display_block_bottom",
+        "label": "Enable Block Bottom?",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "contact_block_title",
+        "label": "Title",
+        "default": "title"
+      },
+	  {
+            "type": "image_picker",
+            "id": "contact_block1",
+            "label": "Block Images 1"
+          },
+      {
+        "type": "textarea",
+        "id": "contact_block_bottom1",
+        "label": "Content bottom",
+        "default": "Content"
+      },
+	  {
+            "type": "image_picker",
+            "id": "contact_block2",
+            "label": "Block Images 2"
+          },
+      {
+        "type": "textarea",
+        "id": "contact_block_bottom2",
+        "label": "Content bottom",
+        "default": "Content"
+      },
+	  {
+            "type": "image_picker",
+            "id": "contact_block3",
+            "label": "Block Images 3"
+          },
+      {
+        "type": "textarea",
+        "id": "contact_block_bottom3",
+        "label": "Content bottom",
+        "default": "Content"
+      }
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,38 @@
+{%- assign products_info            = product_links | split: ',' -%}
+{%- assign first_product_handle     = products_info | first | split: '/' | first -%}
+{%- assign first_product            = all_products[first_product_handle] -%}
+<div class="page__product">
+
+  {%- if products_info.size > 0 -%}
+  <a href="{{first_product.url}}?variant={{products_info | first | split: '/' | last }}">
+  {%- endif -%}
+  
+    <img
+      class="page__product-image"
+      src="{{ image | img_url: '1200x' }}"
+      alt="{{ image.alt }}">
+    {%- if products_info.size > 0 -%}
+      <div class="page__product-infos">
+      {%- for info in products_info -%}
+        {%- assign product_handle = info | split: '/' | first -%}
+        {%- assign featured_variant =  info | split: '/' | last | plus: 0 -%}
+        {%- assign product = all_products[product_handle] -%}
+        {%- for v in product.variants -%}
+          {%- if v.id == featured_variant -%}
+            {%- assign featured_variant = v -%}
+          {%- endif -%}
+        {%- endfor -%}
+        <div class="page__product-info">
+          <a href="{{product.url}}?variant={{featured_variant.id}}">
+            {{ product.title }} <span class="page__product-price">- {{ featured_variant.price | money_without_trailing_zeros }}</span><br>
+            <span class="page__product-variant">{{ featured_variant.option1 }} - {{ featured_variant.option2 }}</span>
+          </a><br>
+        </div>
+      {%- endfor -%}
+    </div>
+    {%- endif -%}
+
+  {%- if products_info.size > 0 -%}
+  </a>
+  {%- endif -%}
+</div>

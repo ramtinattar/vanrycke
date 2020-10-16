@@ -1,0 +1,27 @@
+<div class="" style= "margin-top: {{section.settings.custom_space}}px">
+</div>
+
+{% schema %}
+{
+  "name": "Background video",
+  "settings": [
+    {
+      "type":     "range",
+      "id":       "custom_space",
+      "min":      0,
+      "max":      200,
+      "step":     10,
+      "unit":     "px",
+      "label":    "Space size",
+      "default":  20
+    }
+  ],
+  "presets": [
+    {
+      "category": "Element",
+      "name": "White space",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,778 @@
+// --------------------------------------------------
+// Flexbox SASS mixins
+// The spec: http://www.w3.org/TR/css3-flexbox
+// --------------------------------------------------
+// Flexbox display
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+// The 'flex' shorthand
+// - applies to: flex items
+// <positive-number>, initial, auto, or none
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+     -moz-box-flex: $values;
+      -webkit-flex: $values;
+  	  -ms-flex: $values;
+  	      flex: $values;
+}
+// Flex Flow Direction
+// - applies to: flex containers
+// row | row-reverse | column | column-reverse
+@mixin flex-direction($direction) {
+  -webkit-flex-direction: $direction;
+     -moz-flex-direction: $direction;
+      -ms-flex-direction: $direction;
+          flex-direction: $direction;
+}
+// Flex Line Wrapping
+// - applies to: flex containers
+// nowrap | wrap | wrap-reverse
+@mixin flex-wrap($wrap) {
+  -webkit-flex-wrap: $wrap;
+     -moz-flex-wrap: $wrap;
+      -ms-flex-wrap: $wrap;
+          flex-wrap: $wrap;
+}
+// Flex Direction and Wrap
+// - applies to: flex containers
+// <flex-direction> || <flex-wrap>
+@mixin flex-flow($flow) {
+  -webkit-flex-flow: $flow;
+     -moz-flex-flow: $flow;
+      -ms-flex-flow: $flow;
+          flex-flow: $flow;
+}
+// Display Order
+// - applies to: flex items
+// <integer>
+@mixin order($val) {
+  -webkit-box-ordinal-group: $val;
+     -moz-box-ordinal-group: $val;
+  	     -ms-flex-order: $val;
+  	      -webkit-order: $val;
+  		      order: $val;
+}
+// Flex grow factor
+// - applies to: flex items
+// <number>
+@mixin flex-grow($grow) {
+  -webkit-flex-grow: $grow;
+     -moz-flex-grow: $grow;
+      -ms-flex-grow: $grow;
+          flex-grow: $grow;
+}
+// Flex shrink
+// - applies to: flex item shrink factor
+// <number>
+@mixin flex-shrink($shrink) {
+  -webkit-flex-shrink: $shrink;
+     -moz-flex-shrink: $shrink;
+      -ms-flex-shrink: $shrink;
+          flex-shrink: $shrink;
+}
+// Flex basis
+// - the initial main size of the flex item
+// - applies to: flex itemsnitial main size of the flex item
+// <width>
+@mixin flex-basis($width) {
+  -webkit-flex-basis: $width;
+     -moz-flex-basis: $width;
+      -ms-flex-basis: $width;
+          flex-basis: $width;
+}
+// Axis Alignment
+// - applies to: flex containers
+// flex-start | flex-end | center | space-between | space-around
+@mixin justify-content($justify) {
+  -webkit-justify-content: $justify;
+     -moz-justify-content: $justify;
+      -ms-justify-content: $justify;
+          justify-content: $justify;
+            -ms-flex-pack: $justify;
+}
+// Packing Flex Lines
+// - applies to: multi-line flex containers
+// flex-start | flex-end | center | space-between | space-around | stretch
+@mixin align-content($align) {
+  -webkit-align-content: $align;
+     -moz-align-content: $align;
+      -ms-align-content: $align;
+          align-content: $align;
+}
+// Cross-axis Alignment
+// - applies to: flex containers
+// flex-start | flex-end | center | baseline | stretch
+@mixin align-items($align) {
+  -webkit-align-items: $align;
+     -moz-align-items: $align;
+      -ms-align-items: $align;
+       -ms-flex-align: $align;
+          align-items: $align;
+}
+// Cross-axis Alignment
+// - applies to: flex items
+// auto | flex-start | flex-end | center | baseline | stretch
+@mixin align-self($align) {
+  -webkit-align-self: $align;
+     -moz-align-self: $align;
+      -ms-align-self: $align;
+          align-self: $align;
+}
+@mixin flexcc(){
+  @include flexbox;
+  @include justify-content(center);
+  @include align-items(center)
+}
+
+// Browser Prefixes
+@mixin transform($transforms) {
+	-webkit-transform: $transforms;
+	-moz-transform: $transforms;
+	-ms-transform: $transforms;
+	transform: $transforms;
+}
+// Rotate
+@mixin rotate ($deg) {
+	@include transform(rotate(#{$deg}deg));
+}
+// Scale
+@mixin scale($scale) {
+	@include transform(scale($scale));
+}
+// Translate
+@mixin translate ($x, $y) {
+	@include transform(translate($x, $y));
+}
+// Skew
+@mixin skew ($x, $y) {
+	@include transform(skew(#{$x}deg, #{$y}deg));
+}
+// Transform Origin
+@mixin transform-origin ($origin) {
+    	-webkit-transform-origin: $origin;
+    	-moz-transform-origin: $origin;
+	-ms-transform-origin: $origin;
+	transform-origin: $origin;
+}
+/*! Avalanche | MIT License | @colourgarden */
+
+@mixin transition($args: all 1s) {
+  -webkit-transition: $args;
+     -moz-transition: $args;
+      -ms-transition: $args;
+       -o-transition: $args;
+          transition: $args;
+}
+
+
+//
+// $thumb:            "screen and (max-width: 559px)";
+// $handheld:         "screen and (min-width: 560px) and (max-width: 800px)";
+// $handheld-and-up:  "screen and (min-width: 560px)";
+// $pocket:           "screen and (max-width: 767px)";
+// $lap:              "screen and (min-width: 768px) and (max-width: 1023px)";
+// $lap-to-desk:      "screen and (min-width: 768px) and (max-width: 1279px)";
+// $lap-and-up:       "screen and (min-width: 768px)";
+// $before-desk:      "screen and (max-width: 1023px)";
+// $desk:             "screen and (min-width: 1024px)";
+// $before-widescreen:"screen and (max-width: 1279px)";
+// $widescreen:       "screen and (min-width: 1280px)";
+// $mediumscreen:     "screen and (min-width: 1440px)";
+// $huge:             "screen and (min-width: 1700px)";
+// $retina:           "screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx)";
+
+$phone:            "screen and (max-width: 640px)";
+$tablet:           "screen and (min-width: 641px) and (max-width: 1007px)";
+$tablet-and-up:    "screen and (min-width: 641px)";
+$pocket:           "screen and (max-width: 1007px)";
+$lap:              "screen and (min-width: 1008px) and (max-width: 1239px)";
+$lap-and-up:       "screen and (min-width: 1008px)";
+$desk:             "screen and (min-width: 1240px)";
+$widescreen:       "screen and (min-width: 1500px)";
+
+
+@mixin av-mq($alias) {
+  @if $alias == "thumb" {
+    @media #{$thumb} {
+      @content;
+    }
+  } @else if $alias == "handheld" {
+    @media #{$handheld} {
+      @content;
+    }
+  } @else if $alias == "handheld-and-up" {
+    @media #{$handheld-and-up} {
+      @content;
+    }
+  } @else if $alias == "pocket" {
+    @media #{$pocket} {
+      @content;
+    }
+  } @else if $alias == "lap" {
+    @media #{$lap} {
+      @content;
+    }
+  } @else if $alias == "lap-to-desk" {
+    @media #{$lap-to-desk} {
+      @content;
+    }
+  } @else if $alias == "lap-and-up" {
+    @media #{$lap-and-up} {
+      @content;
+    }
+  } @else if $alias == "before-desk" {
+    @media #{$before-desk} {
+      @content;
+    }
+  } @else if $alias == "desk" {
+    @media #{$desk} {
+      @content;
+    }
+  } @else if $alias == "before-widescreen" {
+    @media #{$before-widescreen} {
+      @content;
+    }
+  } @else if $alias == "widescreen" {
+    @media #{$widescreen} {
+      @content;
+    }
+  } @else if $alias == "mediumscreen" {
+    @media #{$mediumscreen} {
+      @content;
+    }
+  } @else if $alias == "huge" {
+    @media #{$huge} {
+      @content;
+    }
+  } @else if $alias == "retina" {
+    @media #{$retina} {
+      @content;
+    }
+  }
+}
+
+@include av-mq("pocket"){
+  .hidden--pocket{
+    display: none!important;
+  }
+};
+
+@include av-mq("lap-and-up"){
+  .hidden--lap-and-up{
+    display: none!important;
+  }
+};
+
+// BUTTON OVERIDE
+.Button{
+  @include transition(all 0.3s);
+
+
+  background-color: black;
+  color: white;
+
+  &:before, &:after{
+    display: none;
+  }
+  &:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+  }
+}
+.Button--Secondary{
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  &:hover{
+    background-color: black;
+    color: white;
+  }
+}
+
+// FLICKITY GLOBAL OVERIDES
+.flickity-prev-next-button{
+  background: transparent!important;
+  svg{
+    height: 28px;
+  }
+}
+
+// CONTAINERS
+.container{
+  max-width: 1400px;
+  padding: 0 20px;
+  margin: auto;
+}
+.container--small{
+  max-width: 1100px;
+}
+.container--xs{
+  max-width: 800px;
+}
+.container--larger{
+  max-width: 1600px;
+}
+
+// GENERIC LAYOUT
+.generic{
+  text-align: center;
+}
+
+// GRID OVERIDE
+.Grid--thin{
+  margin: 0 0 0 -10px;
+  .Grid__Cell{
+    padding: 0 0 0 10px;
+  }
+
+}
+
+
+////// SECTIONS /////
+// INDEX VIDEO
+.index-video{
+  width: 100%;
+}
+.slider{
+  position: relative;
+}
+// INDEX SLIDER SECTION
+.slide{
+  position: relative;
+  width: 33.333333%;
+  @include flexbox;
+  @include av-mq('pocket'){
+    width: 100%;
+  };
+}
+.slide--center{
+  @include align-items(center);
+}
+.slide--bottom{
+  @include align-items(flex-end);
+}
+.slide--top{
+  @include align-items(flex-start);
+}
+.slide__media{
+  width: 100%;
+}
+.slide__subtitle{
+  margin-top: 17px;
+  margin-bottom: 25px;
+}
+.slide__content{
+  z-index: 1;
+  width: 100%;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  @include translate(-50%, -50%);
+}
+.slide__content--center{
+  text-align: center;
+
+}
+.slide__content--left{
+
+}
+.slide__content--right{
+  text-align: right;
+}
+@include av-mq("pocket"){
+  .slide{
+  }
+  .slide__title{
+    font-size: 50px!important;
+  }
+  .slide__content{
+  }
+}
+// INDEX COLLECTIONS LIST NEW
+.index-collections__collection{
+  position: relative;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.collections__collection-image{
+  width: 100%;
+}
+.collections__collection-content{
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  @include translate(-50%, -50%);
+  .h1-k{
+    margin-bottom: 20px;
+  }
+}
+
+.ImageHero__Button{
+  margin-top: 20px;
+}
+
+.presse__block-2-title{
+
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  text-align: center;
+  width: 100%;
+}
+
+// COLLECTION NEW
+.collection__header{
+  width: 100%;
+}
+.collection__image{
+  width: 100%;
+
+}
+.collection__title{
+  text-align: center;
+  padding: 60px 0;
+}
+@include av-mq('pocket'){
+  .collection__header-image-c{
+    height: 50vh;
+
+  }
+  .collection__image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .collection__title{
+    padding: 30px 0;
+  }
+};
+
+// NEW FORM
+.form{
+  // background-color: white;
+  @include flexbox;
+  @include flex-wrap(wrap);
+  max-width: 400px;
+}
+.form--center{
+  margin: auto;
+}
+.form--shrink{
+
+  margin: 3rem auto;
+}
+.form__reset{
+  display: none;
+}
+.form__errors{
+  margin: 20px 0;
+  color: #ff4817bd;
+}
+.form__group{
+  @include flexbox;
+  @include flex-direction(column);
+  margin: auto;
+  width: 100%;
+  position: relative;
+  margin-bottom: 1.14rem;
+}
+.form__group--transparent{
+  .form__input{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid white;
+    padding-left: 0;
+    padding-right: 0;
+    opacity: 1;
+    color: white;
+    &::placeholder {
+      color:white /* Chrome, Firefox, Opera, Safari 10.1+ */
+    }
+    &:-ms-input-placeholder {
+      color:white /* Internet Explorer 10-11 */
+    }
+    &:-ms-input-placeholder {
+      color:white /* Microsoft Edge */
+    }
+    &:focus{
+     border-bottom: 1px solid white;
+     outline: none;
+    }
+  }
+  .form__submit{
+    background-color: transparent;
+    border: 0;
+    color: white;
+    padding-right: 0;
+  }
+}
+.form__group--small{
+  width: calc(50% - 0.5rem);
+  &:nth-child(2n){
+    margin-left: 1rem;
+  }
+}
+.form__group--uniq{
+  @include flex-direction(row);
+  margin-bottom: 0;
+  .form__input{
+
+  }
+  .form__submit{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+  }
+}
+.form__group--horizontal{
+  @include flexbox;
+  @include flex-direction(row);
+  @include align-items(center);
+}
+.form__group-checkbox{
+  margin-right: 10px;
+}
+.form__label{
+  display: none;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+
+}
+.form__input, .form__textarea, .form__select{
+  color: black;
+  font-size: 1rem;
+  border: 1px solid #b3b3b3;
+  width: 100%;
+
+  // DIMENSIONS
+  // margin stays the same like this because relative to root size
+  margin: 1.14rem 0rem;
+
+  // padding is relative to current font size !
+  padding: 1em 1.2em;
+
+  transition: border 0.1s ease-in-out;
+
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: uppercase;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  -webkit-appearance: textfield;
+  background-color: white;
+  -webkit-rtl-ordering: logical;
+  cursor: text;
+  margin: 0em;
+  font: 400 11px system-ui;
+
+
+  // VANRYCKE
+  font-family: Helvetica , serif;
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 2.3px;
+  line-height: 14.5px;
+
+
+
+  &:focus{
+   border: 0px;
+   border: 1px solid black;
+   outline: none;
+  }
+
+  &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    opacity: 0.5; /* Firefox */
+    border-bottom-color: rgb(145, 144, 157);
+    display: none;
+    // font-size: 0.8em;
+  	font-weight: 100;
+  	color: #1b1b1b;
+  	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    background: white;
+    border-bottom-color: rgb(145, 144, 157);
+    font-weight: 100;
+    color: #1b1b1b;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  &:-ms-input-placeholder { /* Microsoft Edge */
+    background: white;
+    border-bottom-color: rgb(145, 144, 157);
+    font-weight: 100;
+    color: #1b1b1b;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+.form__input--text{
+  border: none;
+  text-decoration: underline;
+  color:inherit;
+  cursor: pointer;
+  background-color: transparent;
+}
+.form__select{
+  background-image: url("//cdn.shopify.com/s/files/1/0078/1058/0553/t/210/assets/ico-select.svg?243608");
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-position: right center;
+  background-image: url(//cdn.shopify.com/s/files/1/0078/1058/0553/t/210/assets/ico-select.svg?243608);
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+.form__textarea{
+  min-height: 140px;
+}
+.form__group--hint{
+  text-align: center;
+  width: 100%;
+  opacity: 0.8;
+  margin-top: 14px;
+}
+.form__label--hint{
+  cursor: pointer;
+  opacity: 0.8;
+  text-align: right;
+  text-decoration: underline;
+  margin-top: 10px;
+  text-decoration-color: #b3b3b3;
+}
+.form__response{
+  margin-bottom: 40px;
+}
+// POUR LES FORM PLUS DISCRET
+.form--secondary{
+  .form__input{
+
+  }
+}
+@include av-mq('tablet-and-up'){
+
+};
+@include av-mq('pocket'){
+
+  .form__textarea{
+    min-height: 80px;
+  }
+  .form__group--uniq{
+    @include flex-direction(column);
+    .form__input, .form__submit{
+      width: 100%;
+      margin-right: 0;
+    }
+    .form__submit{
+      width: auto;
+    }
+  }
+};
+
+
+
+// PAGE BLOCKS
+.page__block{
+  margin-bottom: 30px;
+}
+.page__banner{
+  height: 50vh;
+  width: 100%;
+  @include flexcc;
+  position: relative;
+}
+.page__banner-image{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.page__banner-content{
+    position: absolute;
+  //z-index: 10;
+}
+.page__banner-title{
+  text-align: center;
+}
+.page__block-content-image{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.page__title{
+  margin: 50px 0!important;
+}
+.page__title--center{
+  text-align: center;
+}
+.page__button{
+  width: 100%;
+  text-align: center;
+}
+
+
+
+// SEARCH OVERIDE
+.Search__Inner{
+  .PageLayout__Section.PageLayout__Section--secondary{
+    display: none;
+  }
+}
+
+// NAV 
+.SidebarMenu .Text--subdued{
+	color: black;
+}
+.Icon-Wrapper--clickable{
+  .Icon{
+  	fill : black;
+  }
+}
+
+
+// NAV OVERIDE
+.Drawer__Content{
+  overflow: scroll
+}
+
+@include av-mq('pocket'){
+
+  
+  .SidebarMenu__Nav.SidebarMenu__Nav--primary{
+
+  }
+  .Drawer--fromLeft .Drawer__Container{ 
+  
+  }
+}
+
+.SidebarMenu__Nav.SidebarMenu__Nav--primary{
+  .Collapsible__Button{
+    text-align: left;
+  }
+
+
+  .Collapsible__Content .Linklist__Item .Text--subdued{
+    color: black;
+  }
+}
+
+
+// INSTAFEED OVERIDE
+.btn.without-tagged-product.source-instagram{
+  &:after{
+    background: black!important;
+  }
+}

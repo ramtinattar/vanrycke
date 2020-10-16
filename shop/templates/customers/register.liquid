@@ -1,0 +1,118 @@
+<div class="container generic">
+    <h1 class="h1-k PageHeader">Créer un compte</h1>
+    <div class="form__login">
+      {% form 'create_customer', class: "form form--center" %}
+          {%- if form.errors -%}
+            <div class="form__group">
+              <div class="form__error">
+                {{ form.errors | default_errors }}
+              </div>
+            </div>
+          {%- endif -%}
+          <div class="form__group form__group--small">
+            <label class="form__label" for="customer[first_name]">Prénom*</label>
+            <input class="form__input" type="text" name="customer[first_name]" placeholder="Prénom" required/>
+          </div>
+          <div class="form__group form__group--small">
+            <label class="form__label" for="customer[last_name]">Nom*</label>
+            <input class="form__input" type="text" name="customer[last_name]" placeholder="Nom" />
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="customer[email]">Email*</label>
+            <input class="form__input" type="email" name="customer[email]" placeholder="Email" required/>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="customer_password">Mot de passe*</label>
+            <input class="form__input" type="password" name="customer[password]" placeholder="Mot de passe" required/>
+          </div>
+          <div class="form__group form__group--horizontal">
+            <input class="form__group-checkbox" type="checkbox" name="" checked>
+            <div class="text text--s">
+              S'inscrire à la newsletter
+            </div>
+          </div>
+          <div class="form__group form__group--horizontal">
+            <input class="form__group-checkbox" type="checkbox" name="" required>
+            <div class="text text--s">
+              Je suis d’accord avec les CGV et CGU
+            </div>
+          </div>
+          <button type="submit" name="button" class="Button Button--full">
+            Valider
+          </button>
+          <a class="form__group--hint" href="/account/login">
+            <button class="Button Button--Secondary Button--full" type="button" name="button">
+              J'ai déjà un compte
+            </button>
+          </a>
+
+          {% endform %}
+    </div>
+</div>
+
+
+
+
+
+
+
+<!-- <section data-section-id="reset-password" data-section-type="reset-password">
+  <div class="Container">
+    <div class="PageContent PageContent--fitScreen PageContent--extraNarrow reset-password__content">
+      {%- form 'create_customer', name: 'create_customer', class: 'Form Form--spacingTight', id: 'create_customer' -%}
+        <header class="Form__Header">
+          <h1 class="Form__Title Heading u-h1 page__title">{{ 'customer.register.title' | t }}</h1>
+          <p class="Form__Legend">{{ 'customer.register.description' | t }}</p>
+        </header>
+
+        {%- if form.errors -%}
+          <div class="Form__Alert Alert Alert--error">
+            <ul class="Alert__ErrorList">
+              {%- for field in form.errors -%}
+                {%- if field == 'form' -%}
+                  <li class="Alert__ErrorItem">{{ form.errors.messages[field] }}</li>
+                {%- else -%}
+                  <li class="Alert__ErrorItem"><strong>{{ form.errors.translated_fields[field] }}</strong> {{ form.errors.messages[field] }}</li>
+                {%- endif -%}
+              {%- endfor -%}
+            </ul>
+          </div>
+        {%- endif -%}
+
+        {%- if request.locale.iso_code == 'ja' -%}
+          <div class="Form__Item">
+            <input type="text" class="Form__Input" name="customer[last_name]" aria-label="{{ 'customer.register.last_name' | t }}" placeholder="{{ 'customer.register.last_name' | t }}">
+            <label class="Form__FloatingLabel">{{ 'customer.register.last_name' | t }}</label>
+          </div>
+
+          <div class="Form__Item">
+            <input type="text" class="Form__Input" name="customer[first_name]" aria-label="{{ 'customer.register.first_name' | t }}" placeholder="{{ 'customer.register.first_name' | t }}" autofocus>
+            <label class="Form__FloatingLabel">{{ 'customer.register.first_name' | t }}</label>
+          </div>
+        {%- else -%}
+          <div class="Form__Item">
+            <input type="text" class="Form__Input" name="customer[first_name]" aria-label="{{ 'customer.register.first_name' | t }}" placeholder="{{ 'customer.register.first_name' | t }}" autofocus>
+            <label class="Form__FloatingLabel">{{ 'customer.register.first_name' | t }}</label>
+          </div>
+
+          <div class="Form__Item">
+            <input type="text" class="Form__Input" name="customer[last_name]" aria-label="{{ 'customer.register.last_name' | t }}" placeholder="{{ 'customer.register.last_name' | t }}">
+            <label class="Form__FloatingLabel">{{ 'customer.register.last_name' | t }}</label>
+          </div>
+        {%- endif -%}
+
+        <div class="Form__Item">
+          <input type="email" class="Form__Input" name="customer[email]" aria-label="{{ 'customer.register.email' | t }}" placeholder="{{ 'customer.register.email' | t }}" required="required">
+          <label class="Form__FloatingLabel">{{ 'customer.register.email' | t }}</label>
+        </div>
+
+        <div class="Form__Item">
+          <input type="password" class="Form__Input" name="customer[password]" aria-label="{{ 'customer.register.password' | t }}" placeholder="{{ 'customer.register.password' | t }}" required="required">
+          <label class="Form__FloatingLabel">{{ 'customer.register.password' | t }}</label>
+        </div>
+
+        <button type="submit" class="Form__Submit Button Button--primary Button--full">{{ 'customer.register.submit' | t }}</button>
+      {%- endform -%}
+    </div>
+  </div>
+</section> -->

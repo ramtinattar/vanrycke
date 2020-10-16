@@ -1,0 +1,43 @@
+{% section 'product-template' %}
+{% section 'product-recommendations' %}
+{% section 'recently-viewed-products' %}
+
+
+
+
+<script src="https://a.klaviyo.com/media/js/onsite/onsite.js"></script>
+<script>
+    var klaviyo = klaviyo || [];
+    klaviyo.init({
+      account: "Q8WNPm", 
+      platform: "shopify",
+      list: 'MxH5FE',
+    });
+    klaviyo.enable("backinstock",{
+      trigger: {
+        alternate_anchor: "AddToCart",
+        replace_anchor: false
+      },
+      modal: {
+       headline: "{{product.name}}",
+       body_content: "{{ settings.bis_modal_content }}",
+       email_field_label: "Email",
+       button_label: "{{ settings.bis_btn }}",
+       newsletter_subscribe_label: "{{ settings.bis_subscribe}}",
+        subscription_success_label: "{{ settings.bis_confirmation }}",
+       footer_content: '',
+       additional_styles: "@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');body{font-family: 'Open Sans', sans-serif;}#klaviyo-bis-modal{position:absolute;top:50%;left:50%;transform: translate(-50%,-50%);}#container{margin-top:0;}@media screen and (max-width: 800px){#klaviyo-bis-modal{min-width:80%} }",
+       drop_background_color: "#000",
+       background_color: "#fff",
+       text_color: "#222",
+       button_text_color: "#fff",
+       button_background_color: "#000000",
+       close_button_color: "#ccc",
+       error_background_color: "#fcd6d7",
+       error_text_color: "#C72E2F",
+       success_background_color: "#d3efcd",
+       success_text_color: "#1B9500",
+       subscribe_checked: false
+      }
+    });
+</script>

@@ -1,0 +1,91 @@
+{%- for block in section.blocks -%}
+
+  {%- if block.type == "banner" -%}
+    <div class="page__block">
+      <div class="page__banner">
+          {%- include 'smart-image' with   {
+           image: block.settings.image,
+           class: 'page__banner-image',
+           w: 300,
+           lazyload: true
+           } -%}
+          {%- unless block.settings.title == "" -%}
+          <div class="page__banner-content container" >
+            <h2 class="h1-k page__banner-title" style="color: {{ section.settings.banner_txtcolor }}" >{{ block.settings.title }}</h2>
+          </div>
+          {%- endunless -%}
+      </div>
+    </div>
+  {%- endif -%}
+
+
+  {%- if block.type == "title" -%}
+    <div class="container container--small">
+      <h2 class="h{% if block.settings.h2 %}2{%else%}1{% endif %}-k page__title{% if block.settings.centered %} page__title--center{% endif %}">{{ block.settings.title }}</h2>
+    </div>
+  {%- endif -%}
+
+  {%- if block.type == "content" -%}
+    <div class="container container--small">
+      <div class="page__block">
+        {%- if block.settings.image != blank and block.settings.richtext != ""-%}
+          <div class="Grid{% if block.settings.revert %} Grid--rev{% endif %} Grid--middle">
+            <div class="Grid__Cell {{ block.settings.image_width | split: '|' | first }}--lap-and-up">
+              <img class="page__block-content-image" src="{{ block.settings.image | img_url: '600x' }}" alt="{{block.settings.image.alt}}">
+            </div>
+            <div class="Grid__Cell {{ block.settings.image_width | split: '|' | last }}--lap-and-up">
+              {%- if block.settings.title != "" -%}
+                <h2 class="h2-k">{{ block.settings.title }}</h2>
+              {%- endif -%}
+              <div class="rte">
+                {{ block.settings.richtext }}
+              </div>
+            </div>
+          </div>
+        {%- elsif block.settings.image == blank -%}
+          {%- if block.settings.title != "" -%}
+            <h2 class="h2-k {% if block.settings.title_centered %} centered{% endif %}">{{ block.settings.title }}</h2>
+          {%- endif -%}
+          <div class="rte{% if block.settings.centered %} centered{% endif %}">
+            {{ block.settings.richtext }}
+          </div>
+        {%- else -%}
+          <div class="centered">
+            <img class="page__block-content-image" src="{{ block.settings.image | img_url: '600x' }}" alt="{{block.settings.image.alt}}">
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+  {%- endif -%}
+
+  {%- if block.type == "button" -%}
+    <div class="container container--small">
+      <div class="page__block">
+        <div class="page__button">
+          <a href="{{block.settings.url}}">
+            <button type="button" name="button" class="Button">
+                {{ block.settings.text }}
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  {%- endif -%}
+
+
+  {%- if block.type == "divider" -%}
+    <div class="grid__cell ">
+      <div class="page__divider" id="block{{ block.id }}">
+
+      </div>
+      <style media="screen">
+        #block{{block.id}}{ {{block.settings.desktop}}}
+        @media screen and (max-width: 800px){
+          #block{{block.id}}{ {{block.settings.mobile}}}
+        }
+      </style>
+    </div>
+ {%- endif -%}
+
+
+{%- endfor -%}

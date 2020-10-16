@@ -1,0 +1,34 @@
+{%- assign position   =   featured_variant.image.position -%}
+
+{% capture imagesHtml %}
+<img class="collection__product-image"
+      src="{{ featured_variant.image | img_url: '500x' }}"
+      >
+<img class="collection__product-image"
+      src="{{ product.images[position] | img_url: '500x' }}"
+      >
+{% endcapture %}
+
+
+{{ imagesHtml }}
+
+{%- comment %}
+	GET THE NEXT TO PICTURE OF THE OTHER GENDER MOTHER FUCKER
+{% endcomment -%}
+{%- assign position           = featured_variant.image.position|plus: 1 -%}
+
+{%- for image in product.images offset:position -%}
+
+
+  {%- if gender != null -%}
+  <img class="collection__product-image"
+        src="{{ image | img_url: '500x' }}"
+        >
+  {% assign rank = forloop.index | plus:position %}
+  <img class="collection__product-image"
+        src="{{ product.images[rank] | img_url: '500x' }}"
+        >
+        {% break %}
+  {%- endif -%}
+
+{%- endfor -%}

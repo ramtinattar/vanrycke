@@ -1,0 +1,31 @@
+<div class="container generic">
+	<h1 class="h1-k PageHeader">{{page.title}}</h1>
+	<div class="rte contact__contentPage">
+		{{ page.content }}
+	</div>
+  <div class="form__login">
+		{% form 'contact', class: "form form--center" %}
+			{% if form.posted_successfully? %}
+			<div class="form__group text">
+				Merci, nous avons bien recu votre message.<br>
+				Nous vous recontacterons au plus vite.
+			</div>
+			{% endif %}
+      <div class="form__group">
+				<input
+					class="form__input"
+					type="email"
+					name="contact[email]"
+					placeholder="VOTRE E-MAIL"
+					value="{% if customer %}{{customer.email}}{% endif %}">
+			</div>
+			<div class="form__group">
+				<textarea class="form__input contact__text-area" type="text" name="contact[body]" placeholder=" VOTRE MESSAGE"></textarea>
+			</div>
+
+			<button class="Button  Button--full"type="submit" name="send">
+				Envoyer
+			</button>
+		{% endform %}
+	</div>
+</div>

@@ -1,0 +1,4436 @@
+{
+  "current": {
+    "heading_color": "#454545",
+    "text_color": "#454545",
+    "text_light_color": "#454545",
+    "link_color": "#454545",
+    "background": "#ffffff",
+    "light_background": "#ffffff",
+    "product_on_sale_color": "#f94c43",
+    "button_background": "#231e1a",
+    "button_text_color": "#ffffff",
+    "header_background": "#ffffff",
+    "header_heading_color": "#454545",
+    "header_light_color": "#454545",
+    "footer_background": "#ffffff",
+    "footer_heading_color": "#454545",
+    "footer_text_color": "#9d9d9d",
+    "navigation_background": "#454545",
+    "navigation_text_color": "#ffffff",
+    "newsletter_popup_background": "#454545",
+    "newsletter_popup_text_color": "#ffffff",
+    "secondary_elements_background": "#f1e4d8",
+    "secondary_elements_text_color": "#373737",
+    "heading_font": "itc_esprit_n4",
+    "heading_size": "normal",
+    "uppercase_heading": true,
+    "text_font": "helvetica_n4",
+    "base_text_font_size": 14,
+    "bis_intro": "Soyez prevenu quand votre taille revient.",
+    "bis_modal_content": "Laissez votre email pour recevoir une notification lorsque cet article reviendra en stock.",
+    "bis_btn": "Prevenez-moi quand il est disponible !",
+    "bis_subscribe": "Ajoutez moi à votre liste !",
+    "bis_confirmation": "C'est noté ! On vous previendra dès qu'il sera de retour.",
+    "collection_split_options": "Or,Diamant,Modèle",
+    "currency_conversion_enabled": false,
+    "currency_conversion_round_amounts": true,
+    "currency_conversion_supported_currencies": "USD CAD EUR GBP",
+    "currency_conversion_money_format": "money_format",
+    "show_page_transition": true,
+    "show_button_transition": false,
+    "show_image_zooming": false,
+    "show_element_staggering": true,
+    "search_mode": "product,article",
+    "product_show_price_on_hover": true,
+    "product_show_secondary_image": false,
+    "product_info_alignment": "center",
+    "product_image_size": "natural",
+    "product_list_horizontal_spacing": "small",
+    "product_list_vertical_spacing": "small",
+    "cart_type": "page",
+    "cart_enable_notes": true,
+    "cart_show_free_shipping_threshold": false,
+    "cart_free_shipping_threshold": "50",
+    "share_image": "",
+    "social_facebook": "https:\/\/www.facebook.com\/vanrycke.paris",
+    "social_twitter": "",
+    "social_pinterest": "",
+    "social_instagram": "https:\/\/instagram.com\/vanryckeparis",
+    "social_vimeo": "",
+    "social_tumblr": "",
+    "social_youtube": "",
+    "social_linkedin": "",
+    "social_snapchat": "",
+    "social_fancy": "",
+    "favicon": "shopify:\/\/shop_images\/favicon_a6022449-c80e-4f81-a510-ecef55823b43.jpg",
+    "checkout_header_image": "",
+    "checkout_logo_image": "",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "medium",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#fff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_accent_color": "#a17c5e",
+    "checkout_button_color": "#454545",
+    "checkout_error_color": "#e32c2b",
+    "sections": {
+      "sidebar-menu": {
+        "type": "sidebar-menu",
+        "settings": {
+          "primary_menu": "main-menu-1",
+          "secondary_menu": "",
+          "show_social_media": true
+        }
+      },
+      "announcement": {
+        "type": "announcement",
+        "settings": {
+          "enable_bar": true,
+          "home_page_only": true,
+          "background": "#e5e5e5",
+          "text_color": "#231e1a",
+          "content": "nouveauté rentrée 2020 : La Maison Vanrycke vous offre les frais de port!"
+        }
+      },
+      "header": {
+        "type": "header",
+        "blocks": {
+          "1570788620329": {
+            "type": "mega_menu",
+            "settings": {
+              "navigation_mega_menu": "shop",
+              "push_1_image": "shopify:\/\/shop_images\/COLLIERS_SHAMAN_3.jpg",
+              "push_1_heading": "SHAMAN",
+              "push_1_subheading": "",
+              "push_1_url": "shopify:\/\/collections\/shaman",
+              "push_2_heading": "Example heading",
+              "push_2_subheading": "Example sub-heading",
+              "push_3_heading": "Example heading",
+              "push_3_subheading": "Example sub-heading"
+            }
+          },
+          "1570790136088": {
+            "type": "mega_menu",
+            "settings": {
+              "navigation_mega_menu": "L'univers",
+              "push_1_image": "shopify:\/\/shop_images\/maison-CADRE_savoir-faire-1080-1080.jpg",
+              "push_1_heading": "La Maison",
+              "push_1_subheading": "",
+              "push_1_url": "shopify:\/\/pages\/maison",
+              "push_2_image": "shopify:\/\/shop_images\/Lise-CADRE-2-1080-1080_78364191-f943-4133-89b1-39800288dbd0.jpg",
+              "push_2_heading": "Lise Vanrycke",
+              "push_2_subheading": "",
+              "push_2_url": "shopify:\/\/pages\/lise-vanrycke-1",
+              "push_3_image": "shopify:\/\/shop_images\/margherita-1piece-savoir-faire-CADRE_savoir-faire-1080-1080.jpg",
+              "push_3_heading": "Le Savoir-Faire",
+              "push_3_subheading": "",
+              "push_3_url": "shopify:\/\/pages\/le-savoir-faire"
+            }
+          },
+          "1576079339995": {
+            "type": "mega_menu",
+            "settings": {
+              "navigation_mega_menu": "actualités",
+              "push_1_image": "shopify:\/\/shop_images\/vanrycke-header-celebrite.jpg",
+              "push_1_heading": "Célébrités",
+              "push_1_subheading": "",
+              "push_1_url": "shopify:\/\/pages\/celebrites",
+              "push_2_image": "shopify:\/\/shop_images\/vanrycke-header-presse_f41627fd-824a-4dcf-abab-106d3e5005c8.jpg",
+              "push_2_heading": "presse",
+              "push_2_subheading": "",
+              "push_2_url": "shopify:\/\/pages\/presse",
+              "push_3_heading": "",
+              "push_3_subheading": ""
+            }
+          }
+        },
+        "block_order": [
+          "1570788620329",
+          "1570790136088",
+          "1576079339995"
+        ],
+        "settings": {
+          "use_sticky_header": true,
+          "logo": "shopify:\/\/shop_images\/logo_geant2.png",
+          "logo_max_width": 130,
+          "mobile_logo_max_width": 105,
+          "navigation_menu": "main-menu-1",
+          "navigation_style": "logoLeft",
+          "show_icons": true,
+          "enable_transparent_header": false,
+          "enable_transparent_header_collection": false,
+          "show_transparent_header_border": true,
+          "transparent_text_color": "#ffffff"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "footer-1": {
+            "type": "links",
+            "settings": {
+              "menu": "besoin-daide"
+            }
+          },
+          "1573569051051": {
+            "type": "links",
+            "settings": {
+              "menu": "a-propos"
+            }
+          },
+          "footer-2": {
+            "type": "newsletter",
+            "settings": {
+              "title": "Abonnez-vous à notre newsletter",
+              "nl_html": "<div class=\"klaviyo-form-Ru6qjj\"><\/div>"
+            }
+          },
+          "footer-0": {
+            "type": "text",
+            "settings": {
+              "title": "Suivez-nous",
+              "content": "",
+              "show_social_media": true
+            }
+          }
+        },
+        "block_order": [
+          "footer-1",
+          "1573569051051",
+          "footer-2",
+          "footer-0"
+        ],
+        "settings": {
+          "show_payment_methods": true
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "show_collection_info": true,
+          "show_collection_image": true,
+          "apply_overlay": false,
+          "show_color_swatch": false,
+          "show_vendor": false,
+          "collection_image_size": "normal",
+          "show_sort_by": true,
+          "show_layout_switch": false,
+          "toolbar_position": "top",
+          "filter_position": "drawer",
+          "filter_mode": "variant",
+          "show_filter_color_swatch": false,
+          "filter_menu": "",
+          "grid_items_per_page": 16,
+          "grid_mobile_items_per_row": "2",
+          "grid_desktop_items_per_row": 3
+        }
+      },
+      "recently-viewed-products": {
+        "type": "recently-viewed-products",
+        "settings": {
+          "show_section": true,
+          "title": "Vus récemment",
+          "show_product_info": true,
+          "show_vendor": false,
+          "show_color_swatch": false
+        }
+      },
+      "collection-footer": {
+        "type": "collection-footer",
+        "settings": {
+          "show_section": false,
+          "image": "",
+          "text_color": "#ffffff",
+          "apply_overlay": true,
+          "title": "Our story",
+          "content": "<p>Add your own custom content to explain your processes...<\/p>"
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "blocks": {
+          "1576511665163": {
+            "type": "guide",
+            "settings": {
+              "product_type": "bague",
+              "page_handle": "guides-des-tailles"
+            }
+          }
+        },
+        "block_order": [
+          "1576511665163"
+        ],
+        "settings": {
+          "abcd": "sélectionner votre lettre",
+          "availability_message": "ÊTRE AVERTI",
+          "limited_message": "Épuisée",
+          "medaille_message": "ÊTRE AVERTI",
+          "tab": "livraison-et-retours",
+          "show_share_buttons": false,
+          "show_vendor": false,
+          "show_sku": false,
+          "description_below_add_to_cart": false,
+          "price_subtitle": "Prix unitaire",
+          "collection_show_price_sub": "Mono Boucle",
+          "selector_mode": "block",
+          "show_color_swatch": false,
+          "show_color_carousel": false,
+          "show_quantity_selector": true,
+          "showQuantityFor": true,
+          "collectionName": "Mono Boucle",
+          "show_inventory_quantity": false,
+          "inventory_quantity_threshold": 3,
+          "show_price_in_button": false,
+          "show_payment_button": false,
+          "image_size": "fill",
+          "stack_images": false,
+          "show_thumbnails": true,
+          "enable_image_zoom": false,
+          "reviews_enabled": false,
+          "featured_image_size": "large"
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "show_product_recommendations": false,
+          "heading": "Vous aimerez aussi",
+          "show_product_info": true,
+          "show_vendor": false,
+          "show_color_swatch": false
+        }
+      },
+      "popup": {
+        "type": "popup",
+        "settings": {
+          "show_popup": false,
+          "show_only_on_index": true,
+          "show_only_for_visitors": false,
+          "show_only_once": false,
+          "title": "Newsletter",
+          "content": "<p>Recevez les derni&egrave;res actualit&eacute;s de la marque en vous inscrivant &agrave; notre newsletter.<\/p>",
+          "show_newsletter": false,
+          "apparition_delay": 5
+        }
+      },
+      "page-template-celebrites": {
+        "type": "page-template-celebrites",
+        "blocks": {
+          "1593614292531": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-marion-cotillard-styloide.jpg",
+              "title": "Marion Cotillard",
+              "product_handle": "styloide-1",
+              "product_title": "Styloïde",
+              "product_image": "shopify:\/\/shop_images\/MS3R0-01-vanrycke-Styloide_-_bracelet_or_rose-1.jpg"
+            }
+          },
+          "1592557405277": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-Bella-Hadid-coachella.jpg",
+              "title": "Bella Hadid",
+              "product_handle": "coachella-1",
+              "product_title": "Coachella",
+              "product_image": "shopify:\/\/shop_images\/OC2R0-04-vanrycke-Coachella_-_mono_boucle_d_oreille_or_rose_XL-1.jpg"
+            }
+          },
+          "1594037211439": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-cara-delevingne-massai.jpg",
+              "title": "Cara Delevingne",
+              "product_handle": "massai-1",
+              "product_title": "Massaï",
+              "product_image": "shopify:\/\/shop_images\/OM5R1-01-vanrycke-Massai_-_mono_boucle_d_oreille_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1592556248209": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-gwyneth-paltrow-massai.jpg",
+              "title": "Gwyneth Paltrow",
+              "product_handle": "massai-1",
+              "product_title": "Massaï",
+              "product_image": "shopify:\/\/shop_images\/OM5R1-01-vanrycke-Massai_-_mono_boucle_d_oreille_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1594029879972": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-jessica-alba-coachella-1.jpg",
+              "title": "Jessica Alba",
+              "product_handle": "coachella-1",
+              "product_title": "Coachella",
+              "product_image": "shopify:\/\/shop_images\/OC2R0-04-vanrycke-Coachella_-_mono_boucle_d_oreille_or_rose_XL-1.jpg"
+            }
+          },
+          "1592556558971": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-chiara-ferragni-necklace-medellin.jpg",
+              "title": "Chiara Ferragni",
+              "product_handle": "medellin-4",
+              "product_title": "Medellin",
+              "product_image": "shopify:\/\/shop_images\/CM6R1-02-vanrycke-Medellin_-_collier_or_rose_et_diamants_horizontal_L-1.jpg"
+            }
+          },
+          "1594027753237": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-beyonce-Lemonade-Clip-Avril-2016-mademoiselle-else.jpg",
+              "title": "Beyoncé",
+              "product_handle": "mademoiselle-else-1",
+              "product_title": "Mademoiselle Else",
+              "product_image": "shopify:\/\/shop_images\/OM1R1-01-vanrycke-Mademoiselle_Else_-_mono_boucle_d_oreille_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1593614405482": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-rihanna-mademoiselle-else.jpg",
+              "title": "Rihanna",
+              "product_handle": "mademoiselle-else-2",
+              "product_title": "Mademoiselle Else",
+              "product_image": "shopify:\/\/shop_images\/JM1R1-01-vanrycke-Mademoiselle_Else_-_jonc_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1593591151437": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-Kate-Bosworth-Fashion-week-New-York-2014-mademoiselle-else.jpg",
+              "title": "Kate Bosworth",
+              "product_handle": "mademoiselle-else-1",
+              "product_title": "Mademoiselle Else",
+              "product_image": "shopify:\/\/shop_images\/OM1R1-01-vanrycke-Mademoiselle_Else_-_mono_boucle_d_oreille_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1592558251473": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-marion-cotillard--styloide.jpg",
+              "title": "Marion Cotillard",
+              "product_handle": "styloide-1",
+              "product_title": "Styloïde",
+              "product_image": "shopify:\/\/shop_images\/MS3R0-01-vanrycke-Styloide_-_bracelet_or_rose-1.jpg"
+            }
+          },
+          "1574954170172": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-laetitia-casta-angie.jpg",
+              "title": "Laetitia Casta",
+              "product_handle": "angie-4",
+              "product_title": "Angie",
+              "product_image": "shopify:\/\/shop_images\/CA2R0-02-vanrycke-Angie_-_collier_or_rose_S-1.jpg"
+            }
+          },
+          "1593613326731": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-julianne-moore-mademoiselle-else.jpg",
+              "title": "Julianne Moore",
+              "product_handle": "mademoiselle-else-1",
+              "product_title": "Mademoiselle Else",
+              "product_image": "shopify:\/\/shop_images\/OM1R1-01-vanrycke-Mademoiselle_Else_-_mono_boucle_d_oreille_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1571595890952": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-camille-cottin-mademoiselle-else.jpg",
+              "title": "Camille Cottin",
+              "product_handle": "mademoiselle-else-1",
+              "product_title": "Mademoiselle Else",
+              "product_image": "shopify:\/\/shop_images\/OM1R1-01-vanrycke-Mademoiselle_Else_-_mono_boucle_d_oreille_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1594036562353": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-Naidra-Ayadi-37eme-ceremonie-des-Cesars-make-a-wish.jpg",
+              "title": "Naidra Ayadi",
+              "product_handle": "make-a-wish-1",
+              "product_title": "Make a Wish",
+              "product_image": "shopify:\/\/shop_images\/CM2R0-01-vanrycke-Make_a_Wish_-_collier_or_rose-1.jpg"
+            }
+          },
+          "1571595806730": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-brigitte-styloide-gala.jpg",
+              "title": "Sylvie Hoarau",
+              "product_handle": "styloide-1",
+              "product_title": "Styloïde",
+              "product_image": "shopify:\/\/shop_images\/MS3R0-01-vanrycke-Styloide_-_bracelet_or_rose-1.jpg"
+            }
+          },
+          "1592556992738": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-brigitte-boucle-coachella-or-rose.jpg",
+              "title": "Aurelie Saada",
+              "product_handle": "coachella-1",
+              "product_title": "Coachella",
+              "product_image": "shopify:\/\/shop_images\/OC2R0-04-vanrycke-Coachella_-_mono_boucle_d_oreille_or_rose_XL-1.jpg"
+            }
+          },
+          "1594027053870": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-audery-fleurot-Festival-de-Deauville-Septembre-2015-medellin.jpg",
+              "title": "Audrey Fleurot",
+              "product_handle": "medellin-2",
+              "product_title": "Medellin",
+              "product_image": "shopify:\/\/shop_images\/OM6R1-02-vanrycke-Medellin_-_mono_boucle_d_oreille_or_rose_et_diamants_L-1.jpg"
+            }
+          },
+          "1592555706416": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-nora-hamzawi-pendentif-bonnie-and-clyde.jpg",
+              "title": "Nora Hamzawi",
+              "product_handle": "bonnie-clyde-2",
+              "product_title": "Bonnie & Clyde",
+              "product_image": "shopify:\/\/shop_images\/CB1R0-01-vanrycke-Bonnie_Clyde-collier_or_rose-1.jpg"
+            }
+          },
+          "1594031045266": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-Marion-Cotillard-Cannes-2013-one.jpg",
+              "title": "Marion Cotillard",
+              "product_handle": "one-6",
+              "product_title": "One",
+              "product_image": "shopify:\/\/shop_images\/JO2R1-S1-vanrycke-One_-_jonc_or_rose_1_diamant-1.jpg"
+            }
+          },
+          "1594031177145": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-marion-cotillard-cannes-coachella.jpg",
+              "title": "Marion Cottilard",
+              "product_handle": "coachella",
+              "product_title": "Coachella",
+              "product_image": "shopify:\/\/shop_images\/BC2R0-01-vanrycke-Coachella-bague_or_rose-1.jpg"
+            }
+          },
+          "1594030947255": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-marion-cotillard-15.10.16-mademoiselle-else.jpg",
+              "title": "Marion Cotillard",
+              "product_handle": "mademoiselle-else-2",
+              "product_title": "Mademoiselle Else",
+              "product_image": "shopify:\/\/shop_images\/JM1R1-01-vanrycke-Mademoiselle_Else_-_jonc_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1594031249738": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-Marion-Cotillard-Londres-margherita.jpg",
+              "title": "Marion Cotillard",
+              "product_handle": "margherita",
+              "product_title": "Margherita",
+              "product_image": "shopify:\/\/shop_images\/BM3R0-02-vanrycke-Margherita_-_bague_or_rose_-_21_anneaux-1.jpg"
+            }
+          },
+          "1594031324795": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-Marion-Cotillard-Premiere-_De-rouille-et-D_os_-NY-one.jpg",
+              "title": "Marion Cotillard",
+              "product_handle": "one",
+              "product_title": "One",
+              "product_image": "shopify:\/\/shop_images\/BO2R1-01-vanrycke-One_-_bague_or_rose_1_diamant-1.jpg"
+            }
+          },
+          "1594031467594": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-Marion-Cottillard-mademoiselle-else-bague-coachella.jpg",
+              "title": "Marion Cotillard",
+              "product_handle": "mademoiselle-else-2",
+              "product_title": "Mademoiselle Else",
+              "product_image": "shopify:\/\/shop_images\/JM1R1-01-vanrycke-Mademoiselle_Else_-_jonc_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1574953331458": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-Bella-Hadid-coachella-2.jpg",
+              "title": "Bella Hadid",
+              "product_handle": "coachella-1",
+              "product_title": "Coachella",
+              "product_image": "shopify:\/\/shop_images\/OC2R0-04-vanrycke-Coachella_-_mono_boucle_d_oreille_or_rose_XL-1.jpg"
+            }
+          },
+          "1574953685109": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-cara_delevingne-massai.jpg",
+              "title": "Cara Delevingne",
+              "product_handle": "massai-1",
+              "product_title": "Massaï",
+              "product_image": "shopify:\/\/shop_images\/OM5R1-01-vanrycke-Massai_-_mono_boucle_d_oreille_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1593612396050": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-beyonce-mademoiselle-else.jpg",
+              "title": "Beyoncé",
+              "product_handle": "mademoiselle-else-1",
+              "product_title": "Mademoiselle Else",
+              "product_image": "shopify:\/\/shop_images\/OM1R1-01-vanrycke-Mademoiselle_Else_-_mono_boucle_d_oreille_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1571595849357": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-beyonce-massai.jpg",
+              "title": "Beyoncé",
+              "product_handle": "massai-1",
+              "product_title": "Massaï",
+              "product_image": "shopify:\/\/shop_images\/OM5R1-01-vanrycke-Massai_-_mono_boucle_d_oreille_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1593613056240": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-gwyneth-paltrow-kate-bosworth-massai.jpg",
+              "title": "Gwyneth Paltrow",
+              "product_handle": "massai",
+              "product_title": "Massaï",
+              "product_image": "shopify:\/\/shop_images\/BM5R1-01-vanrycke-Massai_-_bague_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1594029009896": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-gwyneth-paltrow-margherita.jpg",
+              "title": "Gwyneth Paltrow",
+              "product_handle": "margherita",
+              "product_title": "Margherita",
+              "product_image": "shopify:\/\/shop_images\/BM3R0-02-vanrycke-Margherita_-_bague_or_rose_-_21_anneaux-1.jpg"
+            }
+          },
+          "1574953891453": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-gwyneth-paltrow-massai-2.jpg",
+              "title": "Gwyneth Paltrow",
+              "product_handle": "massai-1",
+              "product_title": "Massaï",
+              "product_image": "shopify:\/\/shop_images\/OM5R1-01-vanrycke-Massai_-_mono_boucle_d_oreille_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1594030268733": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-jessica-alba-mademoiselle-else-3.jpg",
+              "title": "Jessica Alba",
+              "product_handle": "mademoiselle-else-1",
+              "product_title": "Mademoiselle Else",
+              "product_image": "shopify:\/\/shop_images\/OM1R1-01-vanrycke-Mademoiselle_Else_-_mono_boucle_d_oreille_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1593613203668": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-jessica-alba-coachella-2.jpg",
+              "title": "Jessica Alba",
+              "product_handle": "coachella-1",
+              "product_title": "Coachella",
+              "product_image": "shopify:\/\/shop_images\/OC2R0-04-vanrycke-Coachella_-_mono_boucle_d_oreille_or_rose_XL-1.jpg"
+            }
+          },
+          "1594029751626": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-jessica-alba-coachella.jpg",
+              "title": "Jessica Alba",
+              "product_handle": "coachella-1",
+              "product_title": "Coachella",
+              "product_image": "shopify:\/\/shop_images\/OC2R0-04-vanrycke-Coachella_-_mono_boucle_d_oreille_or_rose_XL-1.jpg"
+            }
+          },
+          "1594029630573": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-jessica-alba-has-a-day-out-in-paris-coachella-3.jpg",
+              "title": "Jessica Alba",
+              "product_handle": "coachella-1",
+              "product_title": "Coachella",
+              "product_image": "shopify:\/\/shop_images\/OC2R0-04-vanrycke-Coachella_-_mono_boucle_d_oreille_or_rose_XL-1.jpg"
+            }
+          },
+          "1593613261923": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-jessica-alba-instagram-mademoiselle-else.jpg",
+              "title": "Jessica Alba",
+              "product_handle": "mademoiselle-else-1",
+              "product_title": "Mademoiselle Else",
+              "product_image": "shopify:\/\/shop_images\/OM1R1-01-vanrycke-Mademoiselle_Else_-_mono_boucle_d_oreille_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1593613134631": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-jessica-alba-and-cash-warren-out-in-aspen-4-9-2016-coachella.jpg",
+              "title": "Jessica Alba",
+              "product_handle": "coachella-1",
+              "product_title": "Coachella",
+              "product_image": "shopify:\/\/shop_images\/OC2R0-04-vanrycke-Coachella_-_mono_boucle_d_oreille_or_rose_XL-1.jpg"
+            }
+          },
+          "1594029951148": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-jessica-alba-mademoiselle-else-7.jpg",
+              "title": "Jessica Alba",
+              "product_handle": "mademoiselle-else-1",
+              "product_title": "Mademoiselle Else",
+              "product_image": "shopify:\/\/shop_images\/OM1R1-01-vanrycke-Mademoiselle_Else_-_mono_boucle_d_oreille_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1594030043237": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-jessica-alba-mademoiselle-else-8.jpg",
+              "title": "Jessica Alba",
+              "product_handle": "mademoiselle-else-1",
+              "product_title": "Mademoiselle Else",
+              "product_image": "shopify:\/\/shop_images\/OM1R1-01-vanrycke-Mademoiselle_Else_-_mono_boucle_d_oreille_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1574954702354": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-nathalie-portman-bo-valentine.jpg",
+              "title": "Nathalie Portman",
+              "product_handle": "valentine-1",
+              "product_title": "Valentine",
+              "product_image": "shopify:\/\/shop_images\/OV1R1-01-vanrycke-Valentine_-_mono_boucle_d_oreille_or_rose_et_diamant-1.jpg"
+            }
+          },
+          "1574953745539": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-hailey-baldwin-medellin.jpg",
+              "title": "Hailey Bieber",
+              "product_handle": "medellin-4",
+              "product_title": "Medellin",
+              "product_image": "shopify:\/\/shop_images\/CM6R1-02-vanrycke-Medellin_-_collier_or_rose_et_diamants_horizontal_L-1.jpg"
+            }
+          },
+          "1594028354418": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-chiara-ferragni-Oct-15--mademoiselle-else.jpg",
+              "title": "Chiara Ferragni",
+              "product_handle": "mademoiselle-else",
+              "product_title": "Mademoiselle Else",
+              "product_image": "shopify:\/\/shop_images\/BM1R1-01-Mademoiselle_Else_-_bague_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1592556487615": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-chiara-ferragni-medellin-necklace-white-gold-diamonds.jpg",
+              "title": "Chiara Ferragni",
+              "product_handle": "medellin-4",
+              "product_title": "Medellin",
+              "product_image": "shopify:\/\/shop_images\/CM6R1-02-vanrycke-Medellin_-_collier_or_rose_et_diamants_horizontal_L-1.jpg"
+            }
+          },
+          "1593612653208": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-chiara-ferragni-medellin-2.jpg",
+              "title": "Chiara Ferragni",
+              "product_handle": "medellin-5",
+              "product_title": "Medellin",
+              "product_image": "shopify:\/\/shop_images\/CM6R1-01-vanrycke-Medellin_-_collier_or_rose_et_diamants_horizontal_S-2.jpg"
+            }
+          },
+          "1594028601389": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-chiara-ferragni-Oct-15-mademoiselle_else.jpg",
+              "title": "Chiara Ferragni",
+              "product_handle": "mademoiselle-else",
+              "product_title": "Mademoiselle Else",
+              "product_image": "shopify:\/\/shop_images\/BM1R1-01-Mademoiselle_Else_-_bague_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1574954404962": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-penelope-cruz-stardust.jpg",
+              "title": "Penelope Cruz",
+              "product_handle": "stardust-3",
+              "product_title": "Stardust",
+              "product_image": "shopify:\/\/shop_images\/CS2R1-01-vanrycke-Stardust_-_collier_or_rose_1_diamant-1.jpg"
+            }
+          },
+          "1574954464552": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-rihanna-mademoiselle_else.jpg",
+              "title": "Rihanna",
+              "product_handle": "mademoiselle-else-2",
+              "product_title": "Mademoiselle Else",
+              "product_image": "shopify:\/\/shop_images\/JM1R1-01-vanrycke-Mademoiselle_Else_-_jonc_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1574953262679": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-emilia-clarke-coachella.jpg",
+              "title": "Emilia Clarke",
+              "product_handle": "coachella-1",
+              "product_title": "Coachella",
+              "product_image": "shopify:\/\/shop_images\/OC2R0-04-vanrycke-Coachella_-_mono_boucle_d_oreille_or_rose_XL-1.jpg"
+            }
+          },
+          "1594030560487": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-kate-bosworth-bo-mademoiselle_else.jpg",
+              "title": "Kate Bosworth",
+              "product_handle": "mademoiselle-else-1",
+              "product_title": "Mademoiselle Else",
+              "product_image": "shopify:\/\/shop_images\/OM1R1-01-vanrycke-Mademoiselle_Else_-_mono_boucle_d_oreille_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1574953975189": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-kate-bosworth-bo-mademoiselle-else-2.jpg",
+              "title": "Kate Bosworth",
+              "product_handle": "mademoiselle-else-1",
+              "product_title": "Mademoiselle Else",
+              "product_image": "shopify:\/\/shop_images\/OM1R1-01-vanrycke-Mademoiselle_Else_-_mono_boucle_d_oreille_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1593613401222": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-Kate-Bosworth-Christian-Dior-fashion-show-paris-mademoiselle-else.jpg",
+              "title": "Kate Bosworth",
+              "product_handle": "mademoiselle-else-1",
+              "product_title": "Mademoiselle Else",
+              "product_image": "shopify:\/\/shop_images\/OM1R1-01-vanrycke-Mademoiselle_Else_-_mono_boucle_d_oreille_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1594030409643": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-Kate-Bosworth-Coachella-11.04.15-instagram-mademoiselle_else.jpg",
+              "title": "Kate Bosworth",
+              "product_handle": "mademoiselle-else-1",
+              "product_title": "Mademoiselle Else",
+              "product_image": "shopify:\/\/shop_images\/OM1R1-01-vanrycke-Mademoiselle_Else_-_mono_boucle_d_oreille_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1594030339459": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-kate-bosworth-mademoiselle-else.jpg",
+              "title": "Kate Bosworth",
+              "product_handle": "mademoiselle-else-1",
+              "product_title": "Mademoiselle Else",
+              "product_image": "shopify:\/\/shop_images\/OM1R1-01-vanrycke-Mademoiselle_Else_-_mono_boucle_d_oreille_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1592553636533": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-victoria_beckam-massai.png",
+              "title": "Victoria Beckam",
+              "product_handle": "massai",
+              "product_title": "Massaï",
+              "product_image": "shopify:\/\/shop_images\/BM5R1-01-vanrycke-Massai_-_bague_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1592554122476": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-Victoria_Bekham_-petite_medaille.jpg",
+              "title": "Victoria Beckam",
+              "product_handle": "make-a-wish",
+              "product_title": "Make a Wish",
+              "product_image": "shopify:\/\/shop_images\/GM2R0-01-vanrycke-Make_a_wish-braceletorrose-1.jpg"
+            }
+          },
+          "1593613624756": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-Lena-Perminova-Sept15-mademoiselle-else-2.jpg",
+              "title": "Lena Perminova",
+              "product_handle": "mademoiselle-else-1",
+              "product_title": "Mademoiselle Else",
+              "product_image": "shopify:\/\/shop_images\/OM1R1-01-vanrycke-Mademoiselle_Else_-_mono_boucle_d_oreille_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1593614100320": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-lena-perminova-boucle-mademoiselle-else.jpg",
+              "title": "Lena Perminova",
+              "product_handle": "mademoiselle-else-1",
+              "product_title": "Mademoiselle Else",
+              "product_image": "shopify:\/\/shop_images\/OM1R1-01-vanrycke-Mademoiselle_Else_-_mono_boucle_d_oreille_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1593613998972": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-Lena-Perminova-Instagram-6.07.15-mademoiselle-else.jpg",
+              "title": "Lena Perminova",
+              "product_handle": "mademoiselle-else-1",
+              "product_title": "Mademoiselle Else",
+              "product_image": "shopify:\/\/shop_images\/OM1R1-01-vanrycke-Mademoiselle_Else_-_mono_boucle_d_oreille_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1592555795266": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-Lena-Perminova-Sept15-mademoiselle-else.jpg",
+              "title": "Lena Perminova",
+              "product_handle": "mademoiselle-else-1",
+              "product_title": "Mademoiselle Else",
+              "product_image": "shopify:\/\/shop_images\/OM1R1-01-vanrycke-Mademoiselle_Else_-_mono_boucle_d_oreille_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1574954108974": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-zoe-kravitz-massai-2.jpg",
+              "title": "Zoé Kravitz",
+              "product_handle": "massai-3",
+              "product_title": "Massaï",
+              "product_image": "shopify:\/\/shop_images\/OM5R1-02-vanrycke-Massai_-_mono_boucle_d_oreille_or_rose_pavee_diamants-1.jpg"
+            }
+          },
+          "1592554823849": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-zoe-kravitz-massai.jpg",
+              "title": "Zoé Kravitz",
+              "product_handle": "massai-3",
+              "product_title": "Massaï",
+              "product_image": "shopify:\/\/shop_images\/OM5R1-02-vanrycke-Massai_-_mono_boucle_d_oreille_or_rose_pavee_diamants-1.jpg"
+            }
+          },
+          "1594030829096": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-lili-collins-massai.jpg",
+              "title": "Lily Collins",
+              "product_handle": "mademoiselle-else",
+              "product_title": "Mademoiselle Else",
+              "product_image": "shopify:\/\/shop_images\/OM1R1-01-vanrycke-Mademoiselle_Else_-_mono_boucle_d_oreille_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1574954228211": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-lily-collins-massai.jpg",
+              "title": "Lily Collins",
+              "product_handle": "massai-1",
+              "product_title": "Massaï",
+              "product_image": "shopify:\/\/shop_images\/OM5R1-01-vanrycke-Massai_-_mono_boucle_d_oreille_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1574954591031": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-sharon-stone-coachella.jpg",
+              "title": "Sharon Stone",
+              "product_handle": "coachella",
+              "product_title": "Coachella",
+              "product_image": "shopify:\/\/shop_images\/BC2R1-01-vanrycke-Coachella_-_bague_or_rose_et_diamants-1.jpg"
+            }
+          },
+          "1594030713276": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-Laetitia-Casta-Paris-fashion-week-2014-mademoiselle-else.jpg",
+              "title": "Laetitia Casta",
+              "product_handle": "mademoiselle-else-1",
+              "product_title": "Mademoiselle Else",
+              "product_image": "shopify:\/\/shop_images\/OM1R1-01-vanrycke-Mademoiselle_Else_-_mono_boucle_d_oreille_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1593612875258": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-GALA-DE-CHARITE-REVE-D_ENFANT-6.12.15--2.jpg",
+              "title": "Laetitia Casta",
+              "product_handle": "coachella-1",
+              "product_title": "Coachella",
+              "product_image": "shopify:\/\/shop_images\/OC2R0-04-vanrycke-Coachella_-_mono_boucle_d_oreille_or_rose_XL-1.jpg"
+            }
+          },
+          "1594030624884": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-Laetitia-Casta-Paris-Musee-Grevin-2014-mademoiselle-else.jpg",
+              "title": "Laetitia Casta",
+              "product_handle": "mademoiselle-else-1",
+              "product_title": "Mademoiselle Else",
+              "product_image": "shopify:\/\/shop_images\/OM1R1-01-vanrycke-Mademoiselle_Else_-_mono_boucle_d_oreille_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1593518558937": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-laura_harrier-coachella.jpg",
+              "title": "Laura Harrier",
+              "product_handle": "coachella-1",
+              "product_title": "Coachella",
+              "product_image": "shopify:\/\/shop_images\/OC2R0-04-vanrycke-Coachella_-_mono_boucle_d_oreille_or_rose_XL-1.jpg"
+            }
+          },
+          "1594029277276": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-hilary-duff-in-leggings-shopping-at-bristol-farms-in-la-4-10-2016-mademoiselle-else.jpg",
+              "title": "Hilary Duff",
+              "product_handle": "mademoiselle-else-1",
+              "product_title": "Mademoiselle Else",
+              "product_image": "shopify:\/\/shop_images\/OM1R1-01-vanrycke-Mademoiselle_Else_-_mono_boucle_d_oreille_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1594027209166": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-audery-fleurot-vivement-dimanche-Septembre-2014-one.jpg",
+              "title": "Audrey Fleurot",
+              "product_handle": "one-4",
+              "product_title": "One",
+              "product_image": "shopify:\/\/shop_images\/OO2R1-02-vanrycke-One_-_pendant_d_Oreille_Or_Rose_1_diamant-1.jpg"
+            }
+          },
+          "1574952436134": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-audrey-fleurot-calamity-jane.jpg",
+              "title": "Audrey Fleurot",
+              "product_handle": "bonnie-clyde-2",
+              "product_title": "Bonnie & Clyde",
+              "product_image": "shopify:\/\/shop_images\/CB1R0-01-vanrycke-Bonnie_Clyde-collier_or_rose-1.jpg"
+            }
+          },
+          "1592556835153": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-brigitte-calamity-jane-gala.jpg",
+              "title": "Sylvie Hoarau",
+              "product_handle": "calamity-jane-1",
+              "product_title": "Calamity Jane",
+              "product_image": "shopify:\/\/shop_images\/OC1R0-01-vanrycke-Calamity_Jane-mono_boucle_d_oreille_or_rose-1.jpg"
+            }
+          },
+          "1592556917054": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-brigitte-aurelie-saada-coachella.jpg",
+              "title": "Aurelie Saada",
+              "product_handle": "coachella-1",
+              "product_title": "Coachella",
+              "product_image": "shopify:\/\/shop_images\/OC2R0-04-vanrycke-Coachella_-_mono_boucle_d_oreille_or_rose_XL-1.jpg"
+            }
+          },
+          "1594036665261": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-naidra-bonnie_clyde.jpg",
+              "title": "Naidra Ayadi",
+              "product_handle": "bonnie-clyde-2",
+              "product_title": "Bonnie & Clyde",
+              "product_image": "shopify:\/\/shop_images\/CB1R0-01-vanrycke-Bonnie_Clyde-collier_or_rose-1.jpg"
+            }
+          },
+          "1594036250480": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-Naidra-Ayadi-33rd-Cabourg-Film-Festival-stardust.jpg",
+              "title": "Naidra Ayadi",
+              "product_handle": "stardust-4",
+              "product_title": "Stardust",
+              "product_image": "shopify:\/\/shop_images\/SS2R1-01-vanrycke-Stardust_-_sautoir_or_rose_et_diamant-1.jpg"
+            }
+          },
+          "1594028922974": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-Florence-Foresti-Cesars2016-medellin.jpg",
+              "title": "Florence Foresti",
+              "product_handle": "medellin-4",
+              "product_title": "Medellin",
+              "product_image": "shopify:\/\/shop_images\/CM6R1-01-vanrycke-Medellin_-_collier_or_rose_et_diamants_horizontal_S-2.jpg"
+            }
+          },
+          "1593612809236": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-florence-foresti-medellin.jpg",
+              "title": "Florence Foresti",
+              "product_handle": "medellin-5",
+              "product_title": "Medellin",
+              "product_image": "shopify:\/\/shop_images\/CM6R1-01-vanrycke-Medellin_-_collier_or_rose_et_diamants_horizontal_S-1.jpg"
+            }
+          },
+          "1592557898767": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-nora-hamzawi-bonnie-and-clyde.jpg",
+              "title": "Nora Hamzawi",
+              "product_handle": "bonnie-clyde-2",
+              "product_title": "Bonnie & Clyde",
+              "product_image": "shopify:\/\/shop_images\/CB1R0-01-vanrycke-Bonnie_Clyde-collier_or_rose-1.jpg"
+            }
+          },
+          "1574953177694": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-nora-hamzawi-margherita-massai.jpg",
+              "title": "Nora Hamzawi",
+              "product_handle": "massai",
+              "product_title": "Massaï",
+              "product_image": "shopify:\/\/shop_images\/BM5R1-01-vanrycke-Massai_-_bague_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1594028085963": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-camille-cottin-bonnie-_-clyde.jpg",
+              "title": "Camille Cottin",
+              "product_handle": "bonnie-clyde-2",
+              "product_title": "Bonnie & Clyde",
+              "product_image": "shopify:\/\/shop_images\/CB1R0-01-vanrycke-Bonnie_Clyde-collier_or_rose-1.jpg"
+            }
+          },
+          "1594028237053": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-camille-cottin-bo-mademoiselle-else.jpg",
+              "title": "Camille Cottin",
+              "product_handle": "mademoiselle-else-1",
+              "product_title": "Mademoiselle Else",
+              "product_image": "shopify:\/\/shop_images\/OM1R1-01-vanrycke-Mademoiselle_Else_-_mono_boucle_d_oreille_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1592556752360": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-camille-cottin-collier-abecedaire.jpg",
+              "title": "Camille Cottin",
+              "product_handle": "abecedaire-a",
+              "product_title": "Abécédaire",
+              "product_image": "shopify:\/\/shop_images\/CA1R0-A1-Abecedaire-vanrycke-1.jpg"
+            }
+          },
+          "1593614205836": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-marie-ange-casta-Juin-2018-mademoiselle-else.jpg",
+              "title": "Marie Ange Casta",
+              "product_handle": "mademoiselle-else-1",
+              "product_title": "Mademoiselle Else",
+              "product_image": "shopify:\/\/shop_images\/OM1R1-01-vanrycke-Mademoiselle_Else_-_mono_boucle_d_oreille_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1574953082526": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-maiwenn-make-a-wish.jpg",
+              "title": "Maïwenn",
+              "product_handle": "make-a-wish-1",
+              "product_title": "Make a Wish",
+              "product_image": "shopify:\/\/shop_images\/CM2R0-01-vanrycke-Make_a_Wish_-_collier_or_rose-1.jpg"
+            }
+          },
+          "1592555252610": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-taylor-hill-abecedaire.jpg",
+              "title": "Taylor Hill",
+              "product_handle": "abecedaire-v",
+              "product_title": "Abécédaire",
+              "product_image": "shopify:\/\/shop_images\/CA1R0-V1-Abecedaire-vanrycke-1.jpg"
+            }
+          },
+          "1593613563424": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-taylor-hill-coachella-2.jpg",
+              "title": "Taylor Hill",
+              "product_handle": "coachella-1",
+              "product_title": "Coachella",
+              "product_image": "shopify:\/\/shop_images\/OC2R0-04-vanrycke-Coachella_-_mono_boucle_d_oreille_or_rose_XL-1.jpg"
+            }
+          },
+          "1592557816824": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-taylor-hill-massai-2.jpg",
+              "title": "Taylor Hill",
+              "product_handle": "massai-1",
+              "product_title": "Massaï",
+              "product_image": "shopify:\/\/shop_images\/OM5R1-01-vanrycke-Massai_-_mono_boucle_d_oreille_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1574954640817": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-l_oreal-Taylor-Hill-Mars-2017-coachella.jpg",
+              "title": "Taylor Hill",
+              "product_handle": "coachella-1",
+              "product_title": "Coachella",
+              "product_image": "shopify:\/\/shop_images\/OC2R0-04-vanrycke-Coachella_-_mono_boucle_d_oreille_or_rose_XL-1.jpg"
+            }
+          },
+          "1592555990997": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-jenifer-thevoice-stardust-pendentifs.jpg",
+              "title": "Jennifer",
+              "product_handle": "stardust-6",
+              "product_title": "Stardust",
+              "product_image": "shopify:\/\/shop_images\/CS2R1-03-vanrycke-Stardust_-_collier_or_rose_5_diamants-1.jpg"
+            }
+          },
+          "1592556060424": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-iris-mittenaere-collier-angie.jpg",
+              "title": "Iris Mittenaere",
+              "product_handle": "angie-3",
+              "product_title": "Angie",
+              "product_image": "shopify:\/\/shop_images\/CA2R0-04-vanrycke-Angie_-_collier_or_rose_XL-1.jpg"
+            }
+          },
+          "1592556161942": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-iris-mittenaere-collier-abecedaire-angie.jpg",
+              "title": "Iris Mittenaere",
+              "product_handle": "abecedaire-i",
+              "product_title": "Abécédaire",
+              "product_image": "shopify:\/\/shop_images\/CA1R0-I1-Abecedaire-vanrycke-1.jpg"
+            }
+          },
+          "1592556397680": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-film-josephine-japy-mon-inconnue-coachella-earring-rose-gold.jpg",
+              "title": "Josephine Japy",
+              "product_handle": "coachella-1",
+              "product_title": "Coachella",
+              "product_image": "shopify:\/\/shop_images\/OC2R0-04-vanrycke-Coachella_-_mono_boucle_d_oreille_or_rose_XL-1.jpg"
+            }
+          },
+          "1593612473079": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-charlotte-Le-Bon-3eme-ceremonie-des-hommes-de-l_annee-GQ-2012-one.jpg",
+              "title": "Charlotte Le Bon",
+              "product_handle": "one-3",
+              "product_title": "One",
+              "product_image": "shopify:\/\/shop_images\/CO2R1-01-vanrycke-One_-_collier_or_rose_1_diamant-1.jpg"
+            }
+          },
+          "1593612585524": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-charlotte-le-bon-officiel.jpg",
+              "title": "Charlotte Le Bon",
+              "product_handle": "officiel-2",
+              "product_title": "Officiel",
+              "product_image": "shopify:\/\/shop_images\/OO1R0-01-vanrycke-Officiel_-_creole_or_rose_XS-1.jpg"
+            }
+          },
+          "1592556684962": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-charlotte-lebon-bague-margherita.jpg",
+              "title": "Charlotte Le Bon",
+              "product_handle": "margherita",
+              "product_title": "Margherita",
+              "product_image": "shopify:\/\/shop_images\/BM3R0-02-vanrycke-Margherita_-_bague_or_rose_-_21_anneaux-1.jpg"
+            }
+          },
+          "1592557465569": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-alice-taglioni-bague-margherita.jpg",
+              "title": "Alice Taglioni",
+              "product_handle": "margherita",
+              "product_title": "Margherita",
+              "product_image": "shopify:\/\/shop_images\/BM3R0-02-vanrycke-Margherita_-_bague_or_rose_-_21_anneaux-1.jpg"
+            }
+          },
+          "1592557567472": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-alexandra-golovanoff.jpg",
+              "title": "Alexandra Golovanoff",
+              "product_handle": "coachella-1",
+              "product_title": "Coachella",
+              "product_image": "shopify:\/\/shop_images\/OC2R0-04-vanrycke-Coachella_-_mono_boucle_d_oreille_or_rose_XL-1.jpg"
+            }
+          },
+          "1592557640039": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-vanessa-guide-bo-coachella-2.jpg",
+              "title": "Vanessa Guide",
+              "product_handle": "coachella-1",
+              "product_title": "Coachella",
+              "product_image": "shopify:\/\/shop_images\/OC2R0-04-vanrycke-Coachella_-_mono_boucle_d_oreille_or_rose_XL-1.jpg"
+            }
+          },
+          "1592557715325": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-vanessa-guide-bo-coachella.jpg",
+              "title": "Vanessa Guide",
+              "product_handle": "coachella-1",
+              "product_title": "Coachella",
+              "product_image": "shopify:\/\/shop_images\/OC2R0-04-vanrycke-Coachella_-_mono_boucle_d_oreille_or_rose_XL-1.jpg"
+            }
+          },
+          "1594036966819": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-Vanessa-Guide-Cannes-2014-one.jpg",
+              "title": "Vanessa Guide",
+              "product_handle": "one-4",
+              "product_title": "One",
+              "product_image": "shopify:\/\/shop_images\/OO2R1-02-vanrycke-One_-_pendant_d_Oreille_Or_Rose_1_diamant-1.jpg"
+            }
+          },
+          "1594037098062": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-vanessa-guide-nunchaku.jpg",
+              "title": "Vanessa Guide",
+              "product_handle": "angie-3",
+              "product_title": "Angie",
+              "product_image": "shopify:\/\/shop_images\/CA2R0-04-vanrycke-Angie_-_collier_or_rose_XL-1.jpg"
+            }
+          },
+          "1594037035657": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-vanessa-guide-mademoiselle-else.jpg",
+              "title": "Vanessa Guide",
+              "product_handle": "mademoiselle-else",
+              "product_title": "Mademoiselle Else",
+              "product_image": "shopify:\/\/shop_images\/BM1R1-01-Mademoiselle_Else_-_bague_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1592558040229": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-mira-duma-bonnie-and-clyde.jpg",
+              "title": "Mira Duma",
+              "product_handle": "bonnie-clyde-2",
+              "product_title": "Bonnie & Clyde",
+              "product_image": "shopify:\/\/shop_images\/CB1R0-01-vanrycke-Bonnie_Clyde-collier_or_rose-1.jpg"
+            }
+          },
+          "1592558103037": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-mira-duma-make-a-wish.jpg",
+              "title": "Mira Duma",
+              "product_handle": "make-a-wish-1",
+              "product_title": "Make a Wish",
+              "product_image": "shopify:\/\/shop_images\/CM2R0-01-vanrycke-Make_a_Wish_-_collier_or_rose-1_2d5b363e-4202-4641-95af-f3437f0d8f9d.jpg"
+            }
+          },
+          "1593612248754": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-audrey-tautou-arizona_dream.jpg",
+              "title": "Audrey Tautou",
+              "product_handle": "arizona-dream-2",
+              "product_title": "Arizona Dream",
+              "product_image": "shopify:\/\/shop_images\/CA3R0-01-vanrycke-Arizona_Dream-collier_or_rose-1.jpg"
+            }
+          },
+          "1593612742260": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-eva-green-massai.jpg",
+              "title": "Eva Green",
+              "product_handle": "massai-1",
+              "product_title": "Massaï",
+              "product_image": "shopify:\/\/shop_images\/OM5R1-01-vanrycke-Massai_-_mono_boucle_d_oreille_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1593612996501": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-garance-dore-coachella.jpg",
+              "title": "Garance Dore",
+              "product_handle": "coachella-1",
+              "product_title": "Coachella",
+              "product_image": "shopify:\/\/shop_images\/OC2R0-04-vanrycke-Coachella_-_mono_boucle_d_oreille_or_rose_XL-1.jpg"
+            }
+          },
+          "1594027349281": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-Audrey-Lamy-Vivement-Dimanche-22.04.15-coachella.jpg",
+              "title": "Audrey Lamy",
+              "product_handle": "mademoiselle-else",
+              "product_title": "Mademoiselle Else",
+              "product_image": "shopify:\/\/shop_images\/OM1R1-01-vanrycke-Mademoiselle_Else_-_mono_boucle_d_oreille_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1594028757579": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-elsa-zylberstein-one.jpg",
+              "title": "Elsa Zylberstein",
+              "product_handle": "coachella",
+              "product_title": "Coachella",
+              "product_image": "shopify:\/\/shop_images\/BC2R0-01-vanrycke-Coachella-bague_or_rose-1.jpg"
+            }
+          },
+          "1594028856688": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vanrycke-Emmanuelle-Devos-Film-_Le-temps-de-l_aventure-_one.jpg",
+              "title": "Emmanuelle Devos",
+              "product_handle": "one-3",
+              "product_title": "One",
+              "product_image": "shopify:\/\/shop_images\/CO2R1-01-vanrycke-One_-_collier_or_rose_1_diamant-1_2483c8f4-676a-45c8-b204-63e8e4c1cffa.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "1593614292531",
+          "1592557405277",
+          "1594037211439",
+          "1592556248209",
+          "1594029879972",
+          "1592556558971",
+          "1594027753237",
+          "1593614405482",
+          "1593591151437",
+          "1592558251473",
+          "1574954170172",
+          "1593613326731",
+          "1571595890952",
+          "1594036562353",
+          "1571595806730",
+          "1592556992738",
+          "1594027053870",
+          "1592555706416",
+          "1594031045266",
+          "1594031177145",
+          "1594030947255",
+          "1594031249738",
+          "1594031324795",
+          "1594031467594",
+          "1574953331458",
+          "1574953685109",
+          "1593612396050",
+          "1571595849357",
+          "1593613056240",
+          "1594029009896",
+          "1574953891453",
+          "1594030268733",
+          "1593613203668",
+          "1594029751626",
+          "1594029630573",
+          "1593613261923",
+          "1593613134631",
+          "1594029951148",
+          "1594030043237",
+          "1574954702354",
+          "1574953745539",
+          "1594028354418",
+          "1592556487615",
+          "1593612653208",
+          "1594028601389",
+          "1574954404962",
+          "1574954464552",
+          "1574953262679",
+          "1594030560487",
+          "1574953975189",
+          "1593613401222",
+          "1594030409643",
+          "1594030339459",
+          "1592553636533",
+          "1592554122476",
+          "1593613624756",
+          "1593614100320",
+          "1593613998972",
+          "1592555795266",
+          "1574954108974",
+          "1592554823849",
+          "1594030829096",
+          "1574954228211",
+          "1574954591031",
+          "1594030713276",
+          "1593612875258",
+          "1594030624884",
+          "1593518558937",
+          "1594029277276",
+          "1594027209166",
+          "1574952436134",
+          "1592556835153",
+          "1592556917054",
+          "1594036665261",
+          "1594036250480",
+          "1594028922974",
+          "1593612809236",
+          "1592557898767",
+          "1574953177694",
+          "1594028085963",
+          "1594028237053",
+          "1592556752360",
+          "1593614205836",
+          "1574953082526",
+          "1592555252610",
+          "1593613563424",
+          "1592557816824",
+          "1574954640817",
+          "1592555990997",
+          "1592556060424",
+          "1592556161942",
+          "1592556397680",
+          "1593612473079",
+          "1593612585524",
+          "1592556684962",
+          "1592557465569",
+          "1592557567472",
+          "1592557640039",
+          "1592557715325",
+          "1594036966819",
+          "1594037098062",
+          "1594037035657",
+          "1592558040229",
+          "1592558103037",
+          "1593612248754",
+          "1593612742260",
+          "1593612996501",
+          "1594027349281",
+          "1594028757579",
+          "1594028856688"
+        ],
+        "settings": {
+        }
+      },
+      "list-collections-template": {
+        "type": "list-collections-template",
+        "settings": {
+          "collections_to_show": "all",
+          "image_size": "normal",
+          "add_spacing": true,
+          "expand_collection": false,
+          "apply_overlay": true,
+          "text_color": "#ffffff",
+          "button_color": "#363636"
+        }
+      },
+      "1574274665832": {
+        "type": "featured-argument",
+        "blocks": {
+          "1574274672569": {
+            "type": "Banner",
+            "settings": {
+              "title": "Des Bijoux de Peau",
+              "description": "Des bijoux modernes et sensuels qui se fondent sur la peau de celle qui les porte.",
+              "color_title": "#2d2424",
+              "color_text": "#2d2424"
+            }
+          },
+          "1574274688352": {
+            "type": "Banner",
+            "settings": {
+              "title": "En Or 18k et Diamants",
+              "description": "Des matières premières précieuses en gage de qualité, témoin d'un amour du beau.",
+              "color_title": "#2d2424",
+              "color_text": ""
+            }
+          },
+          "1574274690599": {
+            "type": "Banner",
+            "settings": {
+              "title": "A Vivre au Quotidien",
+              "description": "Des créations qui s’adoptent pour ne plus être quittées, le jour, la nuit, avec amour, pour la vie",
+              "color_title": "",
+              "color_text": ""
+            }
+          }
+        },
+        "block_order": [
+          "1574274672569",
+          "1574274688352",
+          "1574274690599"
+        ],
+        "settings": {
+        }
+      },
+      "1575457180328": {
+        "type": "image-with-text-block",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/savoir-faire-home-2720x1200.jpg",
+          "background": "rgba(0,0,0,0)",
+          "text_color": "#ffffff",
+          "block_size": "normal",
+          "title": "Notre Savoir-Faire",
+          "content": "",
+          "button_label": "Découvrir",
+          "button_link": "shopify:\/\/pages\/le-savoir-faire",
+          "show_parallax": false
+        }
+      },
+      "sub-footer": {
+        "type": "sub-footer",
+        "blocks": {
+          "1578518866891": {
+            "type": "block",
+            "settings": {
+              "title": "Paiement Sécurisé",
+              "richtext": "<p>GRÂCE À DES PARTENAIRES DE CONFIANCE<\/p><p><\/p>"
+            }
+          },
+          "1578518885277": {
+            "type": "block",
+            "settings": {
+              "title": "Livraison Offerte",
+              "richtext": "<p><\/p><p>Pour toute commande en livraison standard<\/p>"
+            }
+          },
+          "1578518903180": {
+            "type": "block",
+            "settings": {
+              "title": "Service Client",
+              "richtext": "<p><\/p><p><a href=\"\/pages\/contact\" title=\"https:\/\/vanrycke-dev.myshopify.com\/pages\/contact\">Ecrivez-nous<\/a><\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1578518866891",
+          "1578518885277",
+          "1578518903180"
+        ],
+        "settings": {
+        }
+      },
+      "page-faq-template-2": {
+        "type": "page-faq-template-2",
+        "blocks": {
+          "1575635424118": {
+            "type": "title",
+            "settings": {
+              "title": "Commande",
+              "title_size": 25,
+              "question-1": "Je n’ai pas reçu le mail de confirmation",
+              "answer-1": "<p>Le message de confirmation s&rsquo;est peut-&ecirc;tre gliss&eacute; dans vos spams : n&rsquo;oubliez pas d&rsquo;y jeter un oeil.<\/p>\n<p>Sinon, rendez-vous dans <a href=\"\/account\">votre&nbsp;espace personnel<\/a>&nbsp;pour retrouver toutes les informations concernant votre commande.<\/p>",
+              "question-2": "Comment modifier ou annuler ma commande ?",
+              "answer-2": "<p>Une fois votre commande valid&eacute;e, nous ne pouvons pas la modifier.<\/p>\n<p>Si vous souhaitez annuler votre commande, contactez directement <a href=\"\/pages\/contact\">le service client<\/a>.<\/p>\n<p>Si vos bijoux ne conviennent pas, vous avez 14 jours pour retourner votre commande, hors bijoux port&eacute;s.<\/p>\n<p>Attention, nous ne faisons pas d&rsquo;&eacute;change pour les achats en ligne &ndash; remboursement uniquement.<\/p>",
+              "question-3": "Comment puis-je accéder à l'historique de mes achats en ligne ?",
+              "answer-3": "<p>rendez-vous dans votre <a href=\"\/account\">votre espace personnel<\/a> pour retrouver tous vos achats<\/p>",
+              "question-4": "",
+              "answer-4": "",
+              "question-5": "",
+              "answer-5": ""
+            }
+          },
+          "1575644589658": {
+            "type": "title",
+            "settings": {
+              "title": "Compte Client",
+              "title_size": 25,
+              "question-1": "J’ai perdu le mot de passe de mon compte Vanrycke comment le réinitialiser ?",
+              "answer-1": "<p>Si vous avez oubli&eacute; votre mot de passe, vous pouvez le r&eacute;initialiser en cliquant sur le lien <a href=\"\/account\/login\">Mot de passe oubli&eacute;<\/a> ?&nbsp; Vous recevrez un lien par e-mail pour en choisir un nouveau.<\/p>",
+              "question-2": "Pourquoi s’inscrire à la newsletter ?",
+              "answer-2": "<p>L&rsquo;inscription &agrave; notre newsletter vous donne acc&egrave;s &agrave; du contenu exclusif :<\/p>\n<p>- Vous serez les premiers clients &agrave; avoir connaissance de nos nouveaut&eacute;s.<br>- Vous pourrez recevoir des conseils et des informations exclusives.<br>- Vous conna&icirc;trez les inspirations et exclusivit&eacute;s que la maison ne r&eacute;v&egrave;le qu&rsquo;&agrave; sa communaut&eacute; proche.<\/p>",
+              "question-3": "Comment se désinscrire de la newsletter Vanrycke ?",
+              "answer-3": "<p>Si vous ne souhaitez plus recevoir la newsletter de la maison Vanrycke, il suffit simplement de cliquer sur «se désinscrire » au bas de chacune de nos newsletters.<\/p>",
+              "question-4": "",
+              "answer-4": "",
+              "question-5": "",
+              "answer-5": ""
+            }
+          },
+          "1575644663480": {
+            "type": "title",
+            "settings": {
+              "title": "Livraison",
+              "title_size": 25,
+              "question-1": "Dans quels pays puis-je faire livrer ma commande ?",
+              "answer-1": "<p>La maison Vanrycke vous livre dans les pays suivants&nbsp;: <\/p>\n<p>Allemagne, Angleterre, Autriche, Belgique, Bulgarie, Chypre, Croatie, Danemark, Ecosse, Eire, Espagne, Estonie, Finlance, France M&eacute;tropolitaine, Gr&egrave;ce, Hongrie, Irlande du Nord, Italie, Letonie, Lituanie, Luxembourg, Malte, Pays de Galles, Pays-bas, Pologne, Portugal, R&eacute;publique Tch&egrave;que, Roumanie, Slovaquie, Slov&eacute;nie, Su&egrave;de.<\/p>",
+              "question-2": "Quels sont vos modes de livraison ?",
+              "answer-2": "<p>Les bijoux Vanrycke sont envoy&eacute;s via UPS. Nous vous proposons deux types de modes d&rsquo;envoi&nbsp;: Le mode standard et le mode express.<\/p>\n<p>Merci de vous r&eacute;f&eacute;rer <a href=\"\/pages\/livraison-et-retour\" title=\"Livraison et retour\">au tableau dans ce lien<\/a>&nbsp;pour connaitre la diff&eacute;rence de tarif et de d&eacute;lai appliqu&eacute; dans votre pays.<\/p>",
+              "question-3": "Quels sont vos délais de livraison ?",
+              "answer-3": "<p>Les d&eacute;lais de livraison d&eacute;pendent du mode de livraison choisi et du pays dans lequel vous voulez &ecirc;tre livr&eacute;.<\/p>\n<p>Merci de vous r&eacute;f&eacute;rer <a href=\"\/pages\/livraison-et-retour\" title=\"Livraison et retour\">au tableau dans ce lien<\/a>&nbsp;pour connaitre la diff&eacute;rence de tarif et de d&eacute;lai appliqu&eacute; dans votre pays<\/p>",
+              "question-4": "Comment suivre ma commande ?",
+              "answer-4": "<p>La maison Vanrycke vous envoie le lien UPS pour le suivi dans le mail de confirmation d'exp&eacute;dition de votre commande.<\/p>\n<p>La maison Vanrycke transmet votre adresse mail&nbsp;&agrave; son transporteur UPS afin que des notifications vous soient transmises pour le suivi de votre commande.<\/p>",
+              "question-5": "",
+              "answer-5": ""
+            }
+          },
+          "1575644730467": {
+            "type": "title",
+            "settings": {
+              "title": "Retours & Remboursements",
+              "title_size": 25,
+              "question-1": "Comment retourner mon bijou Vanrycke ?",
+              "answer-1": "<p>Proc&eacute;der &agrave; un retour est facile. Vous disposez d&rsquo;un d&eacute;lai de 14 jours &agrave; compter de la date de r&eacute;ception de votre commande pour en faire la demande.<\/p>\n<p><\/p>\n<p>Aller dans la rubrique &laquo;&nbsp;mon compte&nbsp;&raquo;, puis &laquo;&nbsp;retour&nbsp;&raquo;. S&eacute;lectionnez la r&eacute;f&eacute;rence de la commande contenant le ou les articles que vous souhaitez retourner. Indiquez la raison pour laquelle vous souhaitez retourner votre ou vos articles. Vous recevrez ensuite par mail une confirmation de retour comportant un bordereau de retour UPS pr&eacute;-imprim&eacute; et pr&eacute;pay&eacute;. Collez le bordereau UPS sur votre colis. Votre colis sera assur&eacute; en cas de perte ou de vol pendant l&rsquo;exp&eacute;dition &agrave; notre atelier. Contactez UPS pour demander l&rsquo;enl&egrave;vement de votre colis sur <a href=\"\/admin\/themes\/77669269556\/www.UPS.com\">www.UPS.com <\/a><\/p>\n<p>Les bijoux doivent &ecirc;tre imp&eacute;rativement renvoy&eacute;s en parfait &eacute;tat et dans leur emballage d&rsquo;origine.<\/p>",
+              "question-2": "Puis-je échanger mon bijou Vanrycke ?",
+              "answer-2": "<p>La maison Vanrycke&nbsp;&nbsp;ne proc&egrave;de &agrave; aucun &eacute;change.<br>Vous devrez faire un retour et nous passer une nouvelle commande.<\/p>",
+              "question-3": "Quand serai-je remboursé(e) ?",
+              "answer-3": "<p>Lorsque vous proc&eacute;dez &agrave; un retour d&rsquo;un bijou Vanrycke, ce dernier est accept&eacute; dans un d&eacute;lai de 3 jours ouvr&eacute;s &agrave; partir de la date de livraison du colis dans nos locaux.<\/p>\n<p>La maison Vanrycke effectue le remboursement dans un d&eacute;lai maximum de 30 jours &agrave; compter de la r&eacute;ception du bijou. Un email de confirmation vous sera envoy&eacute; d&egrave;s validation du remboursement.<\/p>\n<p>Les bijoux retourn&eacute;s &agrave; la marque endommag&eacute;s ou cass&eacute;s ne seront pas rembours&eacute;s mais renvoy&eacute;s au client.<\/p>",
+              "question-4": "",
+              "answer-4": "",
+              "question-5": "",
+              "answer-5": ""
+            }
+          },
+          "1575644789065": {
+            "type": "title",
+            "settings": {
+              "title": "Conseils",
+              "title_size": 25,
+              "question-1": "Comment choisir la taille de mon bijou Vanrycke?",
+              "answer-1": "<p>Tous les d&eacute;tails des bijoux sont disponibles dans chaque fiche produit.<\/p>\n<p>Afin de vous aider &agrave; conna&icirc;tre la taille de bague qu'il vous faut, vous pouvez vous r&eacute;f&eacute;rer &agrave; notre tableau&nbsp;<a href=\"\/pages\/guides-des-tailles\" title=\"Guides des tailles\">guide des tailles<\/a><\/p>\n<p>Pour toute&nbsp;demande particuli&egrave;re,&nbsp;vous pouvez nous contacter via notre <a href=\"\/pages\/contact\" title=\"Contact\">formulaire de contact<\/a><\/p>",
+              "question-2": "Comment prendre soin de mon bijou Vanrycke ?",
+              "answer-2": "<p>Les bijoux Vanrycke sont en or 18k et en diamant.<br>Ils doivent &ecirc;tre trait&eacute;s avec le plus grand soin. Quelques pr&eacute;cautions d&rsquo;usage vous permettront de le conserver en l&rsquo;&eacute;tat :<br>- &Eacute;vitez au maximum les chocs afin de limiter les rayures et accrocs sur les pierres lorsque vous portez votre bijou Vanrycke.<br>- &Eacute;vitez de porter votre bijou Vanrycke lorsque vous pratiquez une activit&eacute; sportive ou effectuez une t&acirc;che m&eacute;nag&egrave;re.<br>- Rangez votre bijou Vanrycke dans son &eacute;crin pour le prot&eacute;ger et qu&rsquo;il ne s&rsquo;emm&ecirc;le pas.<\/p>",
+              "question-3": "",
+              "answer-3": "",
+              "question-4": "",
+              "answer-4": "",
+              "question-5": "",
+              "answer-5": ""
+            }
+          },
+          "1575644833868": {
+            "type": "title",
+            "settings": {
+              "title": "Garanties & Réparation",
+              "title_size": 25,
+              "question-1": "Comment authentifier un bijou Vanrycke ?",
+              "answer-1": "<p>Chaque bijou Vanrycke est reconnaissable gr&acirc;ce &agrave; son poin&ccedil;on et son logo. Cependant, seuls les achats effectu&eacute;s sur notre site Vanrycke.com ou chez l&rsquo;un des <a href=\"\/pages\/store-locator\">revendeurs<\/a> sont accompagn&eacute;s du certificat d&rsquo;authenticit&eacute; prouvant que le bijou a &eacute;t&eacute; fabriqu&eacute; par nos soins.<\/p>",
+              "question-2": "Mon bijou est-il garanti ?",
+              "answer-2": "<p>La garantie Vanrycke&nbsp;prend en charge tout d&eacute;faut ou toute fragilit&eacute; de fabrication identifi&eacute;s comme tels par notre p&ocirc;le Qualit&eacute;, ind&eacute;pendamment de la date d'achat.<\/p>\n<p>Dans tous les autres cas la r&eacute;paration est &agrave; la charge du client, notamment si le bijou a &eacute;t&eacute; accroch&eacute;, tir&eacute; ou d&eacute;t&eacute;rior&eacute;.&nbsp;<\/p>\n<p>Notre garantie ne s&rsquo;applique pas aux rubans 100% coton offerts avec les petites m&eacute;dailles.<\/p>",
+              "question-3": "Comment confier mon bijou en réparation ?",
+              "answer-3": "<p>Nous vous invitons &agrave; contacter directement notre p&ocirc;le qualit&eacute; et service pour confier votre bijou Vanrycke, merci de nous envoyer un <a href=\"mailto:qualite.service@vanrycke.com\"> e-mail<\/a>.<\/p>\n<p><br> <a href=\"\/pages\/contact\">voir les horaires d&rsquo;ouverture<\/a><\/p>",
+              "question-4": "Comment se déroule une réparation ?",
+              "answer-4": "<p>Tout bijou &agrave; r&eacute;parer doit faire l&rsquo;objet d&rsquo;une expertise par notre p&ocirc;le qualit&eacute; pour &eacute;tablir un devis de r&eacute;paration ou confirmer la garantie.<\/p>\n<p><br>Apr&egrave;s cela, la maison Vanrycke s&rsquo;engage &agrave; r&eacute;parer votre bijou ou &agrave; proc&eacute;der &agrave; un &eacute;change sous 5 semaines maximum.<\/p>",
+              "question-5": "Quels sont les délais de réparation ?",
+              "answer-5": "<p>Vanrycke s&rsquo;engage &agrave; vous communiquer un devis de r&eacute;paration ou une confirmation de garantie sous 5 jours ouvr&eacute;s maximum &agrave; compter de la date de r&eacute;ception de votre bijou dans nos ateliers.<\/p>\n<p><br>D&egrave;s confirmation de ce devis, notre d&eacute;lai de traitement est de 5 semaines maximum.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1575635424118",
+          "1575644589658",
+          "1575644663480",
+          "1575644730467",
+          "1575644789065",
+          "1575644833868"
+        ],
+        "settings": {
+          "header": "Vos questions",
+          "bg_color": "#f7f7f7"
+        }
+      },
+      "page-instashop-template": {
+        "type": "page-instashop-template",
+        "settings": {
+        }
+      },
+      "page-template-savoir-faire": {
+        "type": "page-template-savoir-faire",
+        "blocks": {
+          "1592912149128": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/banniere-savoir-faire.jpg",
+              "title": ""
+            }
+          },
+          "1590745325206": {
+            "type": "title",
+            "settings": {
+              "title": "Notre Savoir-Faire",
+              "h2": false,
+              "centered": true
+            }
+          },
+          "1586903988148": {
+            "type": "content",
+            "settings": {
+              "image": "",
+              "revert": false,
+              "title_centered": false,
+              "centered": false,
+              "title": "Précis et Précieux",
+              "richtext": "<p>&laquo;&nbsp;Cr&eacute;er est la plus belle histoire qui me soit arriv&eacute;e. Rencontrer, &eacute;changer et travailler avec tous ces artisans talentueux est une chance et un plaisir.<\/p>\n<p>Chaque jour qui passe, je les remercie de m'avoir ouvert les portes de leurs ateliers. Moi qui aime comprendre leur travail et d&eacute;couvrir leurs incroyables machines, je les remercie pour leur patience et leurs explications.<\/p>\n<p>C&rsquo;est gr&acirc;ce &agrave; la constance, l'exigence et l'extr&ecirc;me qualit&eacute; du travail de ces artisans de l&rsquo;ombre et de leurs &eacute;quipes que tant d&rsquo;&eacute;clat scintille.&nbsp;&raquo;<em>&nbsp;<\/em><\/p>",
+              "image_width": "2\/3|1\/3"
+            }
+          },
+          "1596458925284": {
+            "type": "content",
+            "settings": {
+              "image": "",
+              "revert": false,
+              "title_centered": false,
+              "centered": false,
+              "title": "",
+              "richtext": "<p>TOUS NOS BIJOUX SONT EXCLUSIVEMENT FABRIQU&Eacute;S EN EUROPE.<\/p>\n<p><\/p>",
+              "image_width": "1\/2|1\/2"
+            }
+          },
+          "1596459061285": {
+            "type": "content",
+            "settings": {
+              "image": "",
+              "revert": false,
+              "title_centered": false,
+              "centered": false,
+              "title": "",
+              "richtext": "<p>SELON LES MOD&Egrave;LES CHACUNE DE CES &Eacute;TAPES EST N&Eacute;CESSAIRE &Agrave; LA FABRICATION D'UN BIJOU VANRYCKE :<\/p>",
+              "image_width": "1\/2|1\/2"
+            }
+          },
+          "1597069649392": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/savoir-faire-dessintech-soft.gif",
+              "revert": true,
+              "title_centered": false,
+              "centered": false,
+              "title": "Le dessin 3D",
+              "richtext": "<p>Finaliser le dessin 3D &agrave; l'ordinateur<\/p>",
+              "image_width": "1\/3|2\/3"
+            }
+          },
+          "1586905275709": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/savoir-faire-maquette.gif",
+              "revert": false,
+              "title_centered": false,
+              "centered": false,
+              "title": "La Maquette",
+              "richtext": "<p>Imprimer une maquette en cire<\/p>",
+              "image_width": "1\/3|2\/3"
+            }
+          },
+          "1586905472857": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/savoir-faire-fonte_26bd45a2-d8d7-40a5-bbcf-5134a8b2949e.gif",
+              "revert": true,
+              "title_centered": false,
+              "centered": false,
+              "title": "La Fonte",
+              "richtext": "<p>Fondre en or les pi&egrave;ces en cire<\/p>",
+              "image_width": "1\/3|2\/3"
+            }
+          },
+          "1586905535239": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/savoir-faire-laser-nb.gif",
+              "revert": false,
+              "title_centered": false,
+              "centered": false,
+              "title": "La Découpe Laser",
+              "richtext": "<p>D&eacute;couper les plaques lamin&eacute;es en or<\/p>\n<p>au laser<\/p>",
+              "image_width": "1\/3|2\/3"
+            }
+          },
+          "1586905584394": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/savoir-faire-rattrapage.gif",
+              "revert": true,
+              "title_centered": false,
+              "centered": false,
+              "title": "Le Rattrapage",
+              "richtext": "<p>Limer les jets de fonte et poncer<\/p>\n<p>l'or avant le polissage<\/p>",
+              "image_width": "1\/3|2\/3"
+            }
+          },
+          "1586905740607": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/savoir-faire-polir.gif",
+              "revert": false,
+              "title_centered": false,
+              "centered": false,
+              "title": "Le Polissage",
+              "richtext": "<p>Polir l'or pour le faire briller<\/p>",
+              "image_width": "1\/3|2\/3"
+            }
+          },
+          "1586905820448": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/savoir-faire-serti.gif",
+              "revert": true,
+              "title_centered": false,
+              "centered": false,
+              "title": "Le Sertissage",
+              "richtext": "<p>Ins&eacute;rer&nbsp;des diamants un &agrave; un &agrave; la main<\/p>\n<p>puis rabattre l'or pour sertir<\/p>\n<p>les pierres pr&eacute;cieuses<\/p>",
+              "image_width": "1\/3|2\/3"
+            }
+          },
+          "1586906174158": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/savoir-faire-montage.gif",
+              "revert": false,
+              "title_centered": false,
+              "centered": false,
+              "title": "Le Montage",
+              "richtext": "<p>Emmailler les cha&icirc;nes dans les anneaux<\/p>\n<p>pour les pr&eacute;parer avant&nbsp;les soudures.<\/p>",
+              "image_width": "1\/3|2\/3"
+            }
+          },
+          "1586906664063": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/savoir-faire-soudure.gif",
+              "revert": true,
+              "title_centered": false,
+              "centered": false,
+              "title": "La Soudure",
+              "richtext": "<p>Souder&nbsp;chacun des &eacute;l&eacute;ments &agrave; la flamme<\/p>\n<p>ou au laser selon les mod&egrave;les<\/p>",
+              "image_width": "1\/3|2\/3"
+            }
+          },
+          "1586907062981": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/savoir-faire-nettoyage.gif",
+              "revert": false,
+              "title_centered": false,
+              "centered": false,
+              "title": "Le Nettoyage",
+              "richtext": "<p>Nettoyer les bijoux aux ultra sons pour<\/p>\n<p>enlever toute trace de p&acirc;te &agrave; polir<\/p>",
+              "image_width": "1\/3|2\/3"
+            }
+          },
+          "1593510190794": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/savoir-faire-or.gif",
+              "revert": true,
+              "title_centered": false,
+              "centered": false,
+              "title": "L'Or 18K",
+              "richtext": "<p>L&rsquo;or utilis&eacute; en joaillerie et par la maison Vanrycke<\/p>\n<p>est de l&rsquo;or 750\/1000 dit aussi Or 18 carats.<\/p>\n<p><\/p>\n<p>L&rsquo;or est naturellement jaune mais trop mall&eacute;able<\/p>\n<p>&agrave; l&rsquo;&eacute;tat pur pour &ecirc;tre travaill&eacute; en joaillerie,<\/p>\n<p>on y ajoute donc d&rsquo;autres m&eacute;taux tels que<\/p>\n<p>l'argent et le cuivre pour le durcir<\/p>\n<p>et lui donner diff&eacute;rentes teintes.<\/p>\n<p><\/p>",
+              "image_width": "1\/3|2\/3"
+            }
+          },
+          "1575995676806": {
+            "type": "button",
+            "settings": {
+              "url": "shopify:\/\/pages\/lise-vanrycke-1",
+              "text": "Découvrir la créatrice"
+            }
+          }
+        },
+        "block_order": [
+          "1592912149128",
+          "1590745325206",
+          "1586903988148",
+          "1596458925284",
+          "1596459061285",
+          "1597069649392",
+          "1586905275709",
+          "1586905472857",
+          "1586905535239",
+          "1586905584394",
+          "1586905740607",
+          "1586905820448",
+          "1586906174158",
+          "1586906664063",
+          "1586907062981",
+          "1593510190794",
+          "1575995676806"
+        ],
+        "settings": {
+        }
+      },
+      "page-template-histoire": {
+        "type": "page-template-histoire",
+        "blocks": {
+          "1592907822209": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/banniere-maison.jpg",
+              "title": ""
+            }
+          },
+          "1590745133757": {
+            "type": "title",
+            "settings": {
+              "title": "La Maison",
+              "h2": false,
+              "centered": true
+            }
+          },
+          "1579013233534": {
+            "type": "content",
+            "settings": {
+              "image": "",
+              "revert": false,
+              "title_centered": false,
+              "centered": false,
+              "title": "Luxueuse Simplicité",
+              "richtext": "<p>Susciter une &eacute;motion par un design &eacute;pur&eacute;,<\/p>\n<p>R&eacute;aliser chaque cr&eacute;ation avec la perfection du joaillier,<\/p>\n<p>Vanrycke red&eacute;finit les codes d&rsquo;un nouveau luxe intemporel dans ses collections hautement d&eacute;sirables.<\/p>",
+              "image_width": "1\/2|1\/2"
+            }
+          },
+          "1586608616123": {
+            "type": "content",
+            "settings": {
+              "image": "",
+              "revert": false,
+              "title_centered": false,
+              "centered": false,
+              "title": "Elégante Sobriété",
+              "richtext": "<p>-Less is more- est la signature du style Vanrycke.<\/p>\n<p>La maison cr&eacute;e des bijoux pr&eacute;cieux, rassurants et iconoclastes, mode et intemporels, dans lesquels les oppos&eacute;s s&rsquo;attirent pour une unit&eacute; de cr&eacute;ation.<\/p>\n<p>F&eacute;minin, discret, sensuel,<\/p>\n<p>Bienvenue dans l&rsquo;univers Vanrycke&nbsp;!<\/p>",
+              "image_width": "1\/2|1\/2"
+            }
+          },
+          "1575995458342": {
+            "type": "button",
+            "settings": {
+              "url": "shopify:\/\/pages\/le-savoir-faire",
+              "text": "Découvrir le Savoir-Faire"
+            }
+          }
+        },
+        "block_order": [
+          "1592907822209",
+          "1590745133757",
+          "1579013233534",
+          "1586608616123",
+          "1575995458342"
+        ],
+        "settings": {
+        }
+      },
+      "cart-template": {
+        "type": "cart-template",
+        "settings": {
+          "show_shipping_estimator": false,
+          "shipping_estimator_default_country": "France"
+        }
+      },
+      "1578508747850": {
+        "type": "index-slider",
+        "blocks": {
+          "631f9d74-fdb8-4284-b387-6752b82f8b7c": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/P-3-IMG_7093-_E-shop_1080-72.jpg",
+              "image_mobile": "shopify:\/\/shop_images\/P-3-IMG_7093-_E-shop_1080-72.jpg",
+              "video_url": "",
+              "title": "",
+              "title_color": "#ffffff",
+              "title_size": 50,
+              "subtitle": "",
+              "subtitle_color": "#ffffff",
+              "button_text": "",
+              "title_position_horizontal": "center",
+              "title_position_vertical": "center"
+            }
+          },
+          "1600944355211": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/2020.10.02-P-4-IMG_7624.jpg",
+              "image_mobile": "shopify:\/\/shop_images\/2020.10.02-P-4-IMG_7624.jpg",
+              "video_url": "",
+              "title": "",
+              "title_color": "#ffffff",
+              "title_size": 50,
+              "subtitle": "",
+              "subtitle_color": "#ffffff",
+              "button_text": "",
+              "title_position_horizontal": "center",
+              "title_position_vertical": "center"
+            }
+          },
+          "1600940334394": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/medaille-famille-H20-21-galerie-CADRE-1080-1080.jpg",
+              "image_mobile": "shopify:\/\/shop_images\/medaille-famille-H20-21-galerie-CADRE-1080-1080.jpg",
+              "video_url": "",
+              "title": "",
+              "title_color": "#231e1a",
+              "title_size": 90,
+              "subtitle": "",
+              "subtitle_color": "#ffffff",
+              "button_text": "",
+              "title_position_horizontal": "center",
+              "title_position_vertical": "center"
+            }
+          },
+          "1595407773537": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_4791_VISUEL_3-E-shop_1080-72.jpg",
+              "image_mobile": "shopify:\/\/shop_images\/IMG_4791_VISUEL_3-E-shop_1080-72.jpg",
+              "video_url": "",
+              "title": "",
+              "title_color": "#ffffff",
+              "title_size": 50,
+              "subtitle": "",
+              "subtitle_color": "#ffffff",
+              "button_text": "",
+              "title_position_horizontal": "center",
+              "title_position_vertical": "center"
+            }
+          },
+          "1578509106635": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_4329_VISUEL_2-E-shop_1080-72.jpg",
+              "image_mobile": "shopify:\/\/shop_images\/IMG_4329_VISUEL_2-E-shop_1080-72.jpg",
+              "video_url": "",
+              "title": "",
+              "title_color": "#000000",
+              "title_size": 90,
+              "subtitle": "",
+              "subtitle_color": "#ffffff",
+              "button_text": "",
+              "title_position_horizontal": "center",
+              "title_position_vertical": "center"
+            }
+          },
+          "1591978996750": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_4342_VISUEL_1-E-shop_1080-72.jpg",
+              "image_mobile": "shopify:\/\/shop_images\/IMG_4342_VISUEL_1-E-shop_1080-72.jpg",
+              "video_url": "",
+              "title": "",
+              "title_color": "#ffffff",
+              "title_size": 50,
+              "subtitle": "",
+              "subtitle_color": "#ffffff",
+              "button_text": "",
+              "title_position_horizontal": "center",
+              "title_position_vertical": "center"
+            }
+          },
+          "1591979008443": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_4409_VISUEL_2-E-shop_1080-72.jpg",
+              "image_mobile": "shopify:\/\/shop_images\/IMG_4409_VISUEL_2-E-shop_1080-72.jpg",
+              "video_url": "",
+              "title": "",
+              "title_color": "#ffffff",
+              "title_size": 50,
+              "subtitle": "",
+              "subtitle_color": "#ffffff",
+              "button_text": "",
+              "title_position_horizontal": "center",
+              "title_position_vertical": "center"
+            }
+          },
+          "1591979257189": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_4467_VISUEL_3-E-shop_1080-72.jpg",
+              "image_mobile": "shopify:\/\/shop_images\/IMG_4467_VISUEL_3-E-shop_1080-72.jpg",
+              "video_url": "",
+              "title": "",
+              "title_color": "#ffffff",
+              "title_size": 50,
+              "subtitle": "",
+              "subtitle_color": "#ffffff",
+              "button_text": "",
+              "title_position_horizontal": "center",
+              "title_position_vertical": "center"
+            }
+          },
+          "1595407564174": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_4994_VISUEL_3-E-shop_1080-72.jpg",
+              "image_mobile": "shopify:\/\/shop_images\/IMG_4994_VISUEL_3-E-shop_1080-72.jpg",
+              "video_url": "",
+              "title": "",
+              "title_color": "#ffffff",
+              "title_size": 50,
+              "subtitle": "",
+              "subtitle_color": "#ffffff",
+              "button_text": "",
+              "title_position_horizontal": "center",
+              "title_position_vertical": "center"
+            }
+          },
+          "1595407596776": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_4209_VISUEL_2-E-shop_1080-72.jpg",
+              "image_mobile": "shopify:\/\/shop_images\/IMG_4209_VISUEL_2-E-shop_1080-72.jpg",
+              "video_url": "",
+              "title": "",
+              "title_color": "#ffffff",
+              "title_size": 50,
+              "subtitle": "",
+              "subtitle_color": "#ffffff",
+              "button_text": "",
+              "title_position_horizontal": "center",
+              "title_position_vertical": "center"
+            }
+          },
+          "1595407726253": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_3659_VISUEL_2-_E-shop_1080-72.jpg",
+              "image_mobile": "shopify:\/\/shop_images\/IMG_3659_VISUEL_2-_E-shop_1080-72.jpg",
+              "video_url": "",
+              "title": "",
+              "title_color": "#ffffff",
+              "title_size": 50,
+              "subtitle": "",
+              "subtitle_color": "#ffffff",
+              "button_text": "",
+              "title_position_horizontal": "center",
+              "title_position_vertical": "center"
+            }
+          },
+          "1595407820507": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_4596_VISUEL_1-E-shop_1080-72.jpg",
+              "image_mobile": "shopify:\/\/shop_images\/IMG_4596_VISUEL_1-E-shop_1080-72.jpg",
+              "video_url": "",
+              "title": "",
+              "title_color": "#ffffff",
+              "title_size": 50,
+              "subtitle": "",
+              "subtitle_color": "#ffffff",
+              "button_text": "",
+              "title_position_horizontal": "center",
+              "title_position_vertical": "center"
+            }
+          },
+          "1595407850520": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_4440_VISUEL_3-E-shop_1080-72.jpg",
+              "image_mobile": "shopify:\/\/shop_images\/IMG_4440_VISUEL_3-E-shop_1080-72.jpg",
+              "video_url": "",
+              "title": "",
+              "title_color": "#ffffff",
+              "title_size": 50,
+              "subtitle": "",
+              "subtitle_color": "#ffffff",
+              "button_text": "",
+              "title_position_horizontal": "center",
+              "title_position_vertical": "center"
+            }
+          },
+          "1595407882945": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_4743_VISUEL_2-E-shop_1080-72.jpg",
+              "image_mobile": "shopify:\/\/shop_images\/IMG_4743_VISUEL_2-E-shop_1080-72.jpg",
+              "video_url": "",
+              "title": "",
+              "title_color": "#ffffff",
+              "title_size": 50,
+              "subtitle": "",
+              "subtitle_color": "#ffffff",
+              "button_text": "",
+              "title_position_horizontal": "center",
+              "title_position_vertical": "center"
+            }
+          },
+          "1595407914130": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_4574_VISUEL_3-E-shop_1080-72.jpg",
+              "image_mobile": "shopify:\/\/shop_images\/IMG_4574_VISUEL_3-E-shop_1080-72.jpg",
+              "video_url": "",
+              "title": "",
+              "title_color": "#ffffff",
+              "title_size": 50,
+              "subtitle": "",
+              "subtitle_color": "#ffffff",
+              "button_text": "",
+              "title_position_horizontal": "center",
+              "title_position_vertical": "center"
+            }
+          }
+        },
+        "block_order": [
+          "631f9d74-fdb8-4284-b387-6752b82f8b7c",
+          "1600944355211",
+          "1600940334394",
+          "1595407773537",
+          "1578509106635",
+          "1591978996750",
+          "1591979008443",
+          "1591979257189",
+          "1595407564174",
+          "1595407596776",
+          "1595407726253",
+          "1595407820507",
+          "1595407850520",
+          "1595407882945",
+          "1595407914130"
+        ],
+        "settings": {
+          "autoplay": 3
+        }
+      },
+      "1578512035531": {
+        "type": "index-video",
+        "disabled": true,
+        "settings": {
+          "video_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0078\/6644\/9972\/files\/1591222483.mp4?31683"
+        }
+      },
+      "1578514831104": {
+        "type": "index-collections",
+        "blocks": {
+          "1578514831104-0": {
+            "type": "collection",
+            "settings": {
+              "collection_handle": "bagues",
+              "button_text": "découvrir",
+              "color": "#ffffff",
+              "image": "shopify:\/\/shop_images\/bague-1600.jpg"
+            }
+          },
+          "1578514831104-1": {
+            "type": "collection",
+            "settings": {
+              "collection_handle": "bracelets",
+              "button_text": "découvrir",
+              "color": "#ffffff",
+              "image": "shopify:\/\/shop_images\/bracelet-1600.jpg"
+            }
+          },
+          "1578514831104-2": {
+            "type": "collection",
+            "settings": {
+              "collection_handle": "colliers",
+              "button_text": "découvrir",
+              "color": "#ffffff",
+              "image": "shopify:\/\/shop_images\/home-collier.jpg"
+            }
+          },
+          "1578514906591": {
+            "type": "collection",
+            "settings": {
+              "collection_handle": "mono-boucle-doreille",
+              "button_text": "Découvrir",
+              "color": "#ffffff",
+              "image": "shopify:\/\/shop_images\/home-bo_c08eb8c0-dffb-4adf-93e7-2d194f4474b4.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "1578514831104-0",
+          "1578514831104-1",
+          "1578514831104-2",
+          "1578514906591"
+        ],
+        "settings": {
+        }
+      },
+      "page-template-presse": {
+        "type": "page-template-presse",
+        "blocks": {
+          "1581957152039": {
+            "type": "content",
+            "settings": {
+              "title": "TFJP",
+              "image": "shopify:\/\/shop_images\/vanrycke-tfjp-styloide.jpg",
+              "id_variant": "",
+              "product_handle": "styloide-1",
+              "product_image": "shopify:\/\/shop_images\/MS3R0-01-vanrycke-Styloide_-_bracelet_or_rose-1.jpg"
+            }
+          },
+          "1592490399671": {
+            "type": "content",
+            "settings": {
+              "title": "MADAME FIGARO CHINA",
+              "image": "shopify:\/\/shop_images\/vanrycke-madame-figaro-china.jpg",
+              "id_variant": "",
+              "product_handle": "",
+              "product_image": ""
+            }
+          },
+          "1592489390173": {
+            "type": "content",
+            "settings": {
+              "title": "ELLE US",
+              "image": "shopify:\/\/shop_images\/vanrycke-elle-us-styloide-bracelet.jpg",
+              "id_variant": "",
+              "product_handle": "styloide-1",
+              "product_image": "shopify:\/\/shop_images\/MS3R0-01-vanrycke-Styloide_-_bracelet_or_rose-1.jpg"
+            }
+          },
+          "1581956221461": {
+            "type": "content",
+            "settings": {
+              "title": "L'OFFICIEL",
+              "image": "shopify:\/\/shop_images\/Vanrycke-l_officiel-styloide-bracelet.jpg",
+              "id_variant": "",
+              "product_handle": "styloide-1",
+              "product_image": "shopify:\/\/shop_images\/MS3R0-01-vanrycke-Styloide_-_bracelet_or_rose-1.jpg"
+            }
+          },
+          "1592488706580": {
+            "type": "content",
+            "settings": {
+              "title": "ELLE FRANCE",
+              "image": "shopify:\/\/shop_images\/vanrycke-elle-france-lise-vanrycke.jpg",
+              "id_variant": "",
+              "product_handle": "styloide-1",
+              "product_image": "shopify:\/\/shop_images\/MS3R0-01-vanrycke-Styloide_-_bracelet_or_rose-1.jpg"
+            }
+          },
+          "1592490909334": {
+            "type": "content",
+            "settings": {
+              "title": "MARIE CLAIRE US",
+              "image": "shopify:\/\/shop_images\/vanrycke-marieclaire-us-styloide-bracelet.jpg",
+              "id_variant": "",
+              "product_handle": "styloide-1",
+              "product_image": "shopify:\/\/shop_images\/MS3R1-01-vanrycke-Styloide_-_bracelet_or_rose_pave_diamants-1.jpg"
+            }
+          },
+          "1593694458256": {
+            "type": "content",
+            "settings": {
+              "title": "VOGUE FRANCE",
+              "image": "shopify:\/\/shop_images\/vanrycke-vogue-france---styloide.jpg",
+              "id_variant": "",
+              "product_handle": "styloide-1",
+              "product_image": "shopify:\/\/shop_images\/MS3R0-01-vanrycke-Styloide_-_bracelet_or_rose-1.jpg"
+            }
+          },
+          "1592491376782": {
+            "type": "content",
+            "settings": {
+              "title": "THE TELEGRAPH LUXURY UK",
+              "image": "shopify:\/\/shop_images\/vanrycke-telegraph-luxury-uk-styloide-bracelet.jpg",
+              "id_variant": "",
+              "product_handle": "styloide-1",
+              "product_image": "shopify:\/\/shop_images\/MS3R1-01-vanrycke-Styloide_-_bracelet_or_rose_pave_diamants-1.jpg"
+            }
+          },
+          "1592490342210": {
+            "type": "content",
+            "settings": {
+              "title": "LES ECHOS",
+              "image": "shopify:\/\/shop_images\/vanrycke-lesechos-styloide-bracelet.jpg",
+              "id_variant": "",
+              "product_handle": "styloide-1",
+              "product_image": "shopify:\/\/shop_images\/MS3R1-01-vanrycke-Styloide_-_bracelet_or_rose_pave_diamants-1.jpg"
+            }
+          },
+          "1592489621540": {
+            "type": "content",
+            "settings": {
+              "title": "GRAZIA",
+              "image": "shopify:\/\/shop_images\/vanrycke-grazia-lise-vanrycke.jpg",
+              "id_variant": "",
+              "product_handle": "styloide-1",
+              "product_image": "shopify:\/\/shop_images\/MS3R1-01-vanrycke-Styloide_-_bracelet_or_rose_pave_diamants-1.jpg"
+            }
+          },
+          "1592490604705": {
+            "type": "content",
+            "settings": {
+              "title": "MARIE CLAIRE FRANCE",
+              "image": "shopify:\/\/shop_images\/vanrycke-marie-claire-france-styloide-bracelet.jpg",
+              "id_variant": "",
+              "product_handle": "styloide-1",
+              "product_image": "shopify:\/\/shop_images\/MS3R1-01-vanrycke-Styloide_-_bracelet_or_rose_pave_diamants-1.jpg"
+            }
+          },
+          "1592491735429": {
+            "type": "content",
+            "settings": {
+              "title": "VOGUE.FR",
+              "image": "shopify:\/\/shop_images\/vanrycke-vogue-fr-styloide-boucle-doreille-or-rose.jpg",
+              "id_variant": "",
+              "product_handle": "styloide-2",
+              "product_image": "shopify:\/\/shop_images\/OS3R0-03-vanrycke-Styloide_-_boucle_d_oreille_et_mini_creole_or_rose-1.jpg"
+            }
+          },
+          "1592491240596": {
+            "type": "content",
+            "settings": {
+              "title": "THE TELEGRAPH LUXURY UK",
+              "image": "shopify:\/\/shop_images\/vanrycke-telegraph-luxury-uk-styloide-bracelet-2.jpg",
+              "id_variant": "",
+              "product_handle": "styloide-1",
+              "product_image": "shopify:\/\/shop_images\/MS3R0-01-vanrycke-Styloide_-_bracelet_or_rose-1.jpg"
+            }
+          },
+          "1592491315072": {
+            "type": "content",
+            "settings": {
+              "title": "THE TELEGRAPH LUXURY UK",
+              "image": "shopify:\/\/shop_images\/vanrycke-telegraph-luxury-uk-styloide-bracelet-1.jpg",
+              "id_variant": "",
+              "product_handle": "styloide-1",
+              "product_image": "shopify:\/\/shop_images\/MS3R1-01-vanrycke-Styloide_-_bracelet_or_rose_pave_diamants-1.jpg"
+            }
+          },
+          "1592490550445": {
+            "type": "content",
+            "settings": {
+              "title": "MADAME FIGARO",
+              "image": "shopify:\/\/shop_images\/vanrycke-madame-figaro-styloide-bracelet.jpg",
+              "id_variant": "",
+              "product_handle": "styloide-1",
+              "product_image": "shopify:\/\/shop_images\/MS3R1-01-vanrycke-Styloide_-_bracelet_or_rose_pave_diamants-1.jpg"
+            }
+          },
+          "1581957451118": {
+            "type": "content",
+            "settings": {
+              "title": "GRAZIA",
+              "image": "shopify:\/\/shop_images\/vanrycke-grazia-styloide-bracelet.jpg",
+              "id_variant": "",
+              "product_handle": "styloide-1",
+              "product_image": "shopify:\/\/shop_images\/MS3R0-01-vanrycke-Styloide_-_bracelet_or_rose-1.jpg"
+            }
+          },
+          "1592491515289": {
+            "type": "content",
+            "settings": {
+              "title": "VOGUE FRANCE",
+              "image": "shopify:\/\/shop_images\/vanrycke-vogue-france-bracelet-styloide.jpg",
+              "id_variant": "",
+              "product_handle": "styloide-1",
+              "product_image": "shopify:\/\/shop_images\/MS3R1-01-vanrycke-Styloide_-_bracelet_or_rose_pave_diamants-1.jpg"
+            }
+          },
+          "1592490964314": {
+            "type": "content",
+            "settings": {
+              "title": "L'OFFICIEL",
+              "image": "shopify:\/\/shop_images\/vanrycke-l_officiel-styloide-earring-rose-gold.jpg",
+              "id_variant": "",
+              "product_handle": "styloide-2",
+              "product_image": "shopify:\/\/shop_images\/OS3R0-03-vanrycke-Styloide_-_boucle_d_oreille_et_mini_creole_or_rose-1.jpg"
+            }
+          },
+          "1581958104410": {
+            "type": "content",
+            "settings": {
+              "title": "MADAME FIGARO",
+              "image": "shopify:\/\/shop_images\/vanrycke-madame-figaro-styloide-earring-rose-gold.jpg",
+              "id_variant": "",
+              "product_handle": "styloide",
+              "product_image": "shopify:\/\/shop_images\/OS3R0-05-vanrycke-Styloide_-_mono_boucle_d_oreille_et_mini_creole_or_rose-1.jpg"
+            }
+          },
+          "1581958288341": {
+            "type": "content",
+            "settings": {
+              "title": "VOGUE ALLEMAGNE",
+              "image": "shopify:\/\/shop_images\/vanrycke-vogue-allemagne-styloide-earring-rose-gold.jpg",
+              "id_variant": "",
+              "product_handle": "styloide-2",
+              "product_image": "shopify:\/\/shop_images\/OS3R0-03-vanrycke-Styloide_-_boucle_d_oreille_et_mini_creole_or_rose-1.jpg"
+            }
+          },
+          "1592491459475": {
+            "type": "content",
+            "settings": {
+              "title": "VOGUE FR",
+              "image": "shopify:\/\/shop_images\/vanrycke-vogue.fr-styloide-earring.jpg",
+              "id_variant": "",
+              "product_handle": "styloide-2",
+              "product_image": "shopify:\/\/shop_images\/OS3R0-03-vanrycke-Styloide_-_boucle_d_oreille_et_mini_creole_or_rose-1.jpg"
+            }
+          },
+          "1581958701373": {
+            "type": "content",
+            "settings": {
+              "title": "L'ORIENT",
+              "image": "shopify:\/\/shop_images\/vanrycke-l_orient-lejour-liban-styloide-bracelet.jpg",
+              "id_variant": "",
+              "product_handle": "styloide-1",
+              "product_image": "shopify:\/\/shop_images\/MS3R0-01-vanrycke-Styloide_-_bracelet_or_rose-1.jpg"
+            }
+          },
+          "1593698048167": {
+            "type": "content",
+            "settings": {
+              "title": "MODE PERSONNEL(LE)",
+              "image": "shopify:\/\/shop_images\/vanrycke-mode-personel_le_-lise.jpg",
+              "id_variant": "",
+              "product_handle": "",
+              "product_image": ""
+            }
+          },
+          "1592490485804": {
+            "type": "content",
+            "settings": {
+              "title": "MADAME FIGARO JAPON",
+              "image": "shopify:\/\/shop_images\/vanrycke-madame-figaro-japon-coachella-earring.jpg",
+              "id_variant": "",
+              "product_handle": "coachella-1",
+              "product_image": "shopify:\/\/shop_images\/OC2R0-04-vanrycke-Coachella_-_mono_boucle_d_oreille_or_rose_XL-1.jpg"
+            }
+          },
+          "1581956654308": {
+            "type": "content",
+            "settings": {
+              "title": "AIR FRANCE MADAME",
+              "image": "shopify:\/\/shop_images\/vanrycke-airfrandmadame-coachella.jpg",
+              "id_variant": "",
+              "product_handle": "coachella-1",
+              "product_image": "shopify:\/\/shop_images\/OC2R0-04-vanrycke-Coachella_-_mono_boucle_d_oreille_or_rose_XL-1.jpg"
+            }
+          },
+          "1581956904468": {
+            "type": "content",
+            "settings": {
+              "title": "CONTRIBUTOR MAGAZINE",
+              "image": "shopify:\/\/shop_images\/vanrycke-contributor-magazine-boucle-coachella.jpg",
+              "id_variant": "",
+              "product_handle": "coachella-1",
+              "product_image": "shopify:\/\/shop_images\/OC2R0-04-vanrycke-Coachella_-_mono_boucle_d_oreille_or_rose_XL-1.jpg"
+            }
+          },
+          "1592490702831": {
+            "type": "content",
+            "settings": {
+              "title": "MARIE CLAIRE US",
+              "image": "shopify:\/\/shop_images\/vanrycke-marieclaire-us-cover-claire-danes-coachella-earring.jpg",
+              "id_variant": "",
+              "product_handle": "coachella-1",
+              "product_image": "shopify:\/\/shop_images\/OC2R0-04-vanrycke-Coachella_-_mono_boucle_d_oreille_or_rose_XL-1.jpg"
+            }
+          },
+          "1581957582287": {
+            "type": "content",
+            "settings": {
+              "title": "HARPERS BAZAAR RUSSIE",
+              "image": "shopify:\/\/shop_images\/vanrycke-harpers-bazaar-russie-coachella-earring-rose-gold.jpg",
+              "id_variant": "",
+              "product_handle": "coachella-1",
+              "product_image": "shopify:\/\/shop_images\/OC2R0-04-vanrycke-Coachella_-_mono_boucle_d_oreille_or_rose_XL-1.jpg"
+            }
+          },
+          "1592491796563": {
+            "type": "content",
+            "settings": {
+              "title": "VOGUE RUSSIE",
+              "image": "shopify:\/\/shop_images\/vanrycke-vogue-russie-coachella.jpg",
+              "id_variant": "",
+              "product_handle": "coachella-1",
+              "product_image": "shopify:\/\/shop_images\/OC2R0-04-vanrycke-Coachella_-_mono_boucle_d_oreille_or_rose_XL-1.jpg"
+            }
+          },
+          "1592489813604": {
+            "type": "content",
+            "settings": {
+              "title": "INSTYLE GERMANY",
+              "image": "shopify:\/\/shop_images\/vanrycke-instyle-germany-coachella-earring.jpg",
+              "id_variant": "",
+              "product_handle": "coachella-1",
+              "product_image": "shopify:\/\/shop_images\/OC2R0-04-vanrycke-Coachella_-_mono_boucle_d_oreille_or_rose_XL-1.jpg"
+            }
+          },
+          "1592491078460": {
+            "type": "content",
+            "settings": {
+              "title": "STYLES",
+              "image": "shopify:\/\/shop_images\/vanrycke-styles-coachella-earring-2.jpg",
+              "id_variant": "",
+              "product_handle": "coachella-1",
+              "product_image": "shopify:\/\/shop_images\/OC2R0-04-vanrycke-Coachella_-_mono_boucle_d_oreille_or_rose_XL-1.jpg"
+            }
+          },
+          "1592488434318": {
+            "type": "content",
+            "settings": {
+              "title": "BOX MAGAZINE AUSTRALIE",
+              "image": "shopify:\/\/shop_images\/vanrycke-box-magazine-australie-coachella-earring.jpg",
+              "id_variant": "",
+              "product_handle": "coachella-1",
+              "product_image": "shopify:\/\/shop_images\/OC2R0-04-vanrycke-Coachella_-_mono_boucle_d_oreille_or_rose_XL-1.jpg"
+            }
+          },
+          "1592489716129": {
+            "type": "content",
+            "settings": {
+              "title": "HARPERS BAZAAR BRESIL",
+              "image": "shopify:\/\/shop_images\/vanrycke-harpers-bazaar-bresil-coachella-earring.jpg",
+              "id_variant": "",
+              "product_handle": "coachella-1",
+              "product_image": "shopify:\/\/shop_images\/OC2R0-04-vanrycke-Coachella_-_mono_boucle_d_oreille_or_rose_XL-1.jpg"
+            }
+          },
+          "1592489132703": {
+            "type": "content",
+            "settings": {
+              "title": "ELLE MEXIQUE",
+              "image": "shopify:\/\/shop_images\/vanrycke-elle-mexique-coachella-earring-1.jpg",
+              "id_variant": "",
+              "product_handle": "coachella-1",
+              "product_image": "shopify:\/\/shop_images\/OC2R0-04-vanrycke-Coachella_-_mono_boucle_d_oreille_or_rose_XL-1.jpg"
+            }
+          },
+          "1592489448783": {
+            "type": "content",
+            "settings": {
+              "title": "GRAZIA",
+              "image": "shopify:\/\/shop_images\/vanrycke-grazia-coachella-earring.jpg",
+              "id_variant": "",
+              "product_handle": "coachella-1",
+              "product_image": "shopify:\/\/shop_images\/OC2R0-04-vanrycke-Coachella_-_mono_boucle_d_oreille_or_rose_XL-1.jpg"
+            }
+          },
+          "1581957977891": {
+            "type": "content",
+            "settings": {
+              "title": "MADAME FIGARO CHINE",
+              "image": "shopify:\/\/shop_images\/vanrycke-madame-figaro-chine-bague-coachella-or-rose.jpg",
+              "id_variant": "",
+              "product_handle": "coachella",
+              "product_image": "shopify:\/\/shop_images\/BC2R0-01-vanrycke-Coachella-bague_or_rose-1.jpg"
+            }
+          },
+          "1592490281649": {
+            "type": "content",
+            "settings": {
+              "title": "LE POINT FRANCE",
+              "image": "shopify:\/\/shop_images\/vanrycke-le-point-france-coachella-earring.jpg",
+              "id_variant": "",
+              "product_handle": "coachella-1",
+              "product_image": "shopify:\/\/shop_images\/OC2R0-04-vanrycke-Coachella_-_mono_boucle_d_oreille_or_rose_XL-1.jpg"
+            }
+          },
+          "1581957868035": {
+            "type": "content",
+            "settings": {
+              "title": "MADAME FIGARO",
+              "image": "shopify:\/\/shop_images\/vanrycke-madame-figaro-chine-boucle-doreille-coachella-or-rose_b996a6fd-2754-450f-aa60-8f4475c0eaa1.jpg",
+              "id_variant": "",
+              "product_handle": "coachella-1",
+              "product_image": "shopify:\/\/shop_images\/OC2R0-04-vanrycke-Coachella_-_mono_boucle_d_oreille_or_rose_XL-1.jpg"
+            }
+          },
+          "1581958209216": {
+            "type": "content",
+            "settings": {
+              "title": "OK MAGAZINE",
+              "image": "shopify:\/\/shop_images\/vanrycke-ok-magazine-boucle-coachella.jpg",
+              "id_variant": "",
+              "product_handle": "coachella-1",
+              "product_image": "shopify:\/\/shop_images\/OC2R0-04-vanrycke-Coachella_-_mono_boucle_d_oreille_or_rose_XL-1.jpg"
+            }
+          },
+          "1592491567949": {
+            "type": "content",
+            "settings": {
+              "title": "VOGUE FRANCE",
+              "image": "shopify:\/\/shop_images\/vanrycke-vogue-france-earring-massai.jpg",
+              "id_variant": "",
+              "product_handle": "massai-1",
+              "product_image": "shopify:\/\/shop_images\/OM5R1-01-vanrycke-Massai_-_mono_boucle_d_oreille_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1592491022748": {
+            "type": "content",
+            "settings": {
+              "title": "SO CHIC",
+              "image": "shopify:\/\/shop_images\/vanrycke-so-chic-massai-earring.jpg",
+              "id_variant": "",
+              "product_handle": "massai-1",
+              "product_image": "shopify:\/\/shop_images\/OM5R1-01-vanrycke-Massai_-_mono_boucle_d_oreille_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1581958758597": {
+            "type": "content",
+            "settings": {
+              "title": "VOGUE.RU",
+              "image": "shopify:\/\/shop_images\/vanrycke-vogue-russie-massai.jpg",
+              "id_variant": "",
+              "product_handle": "massai-1",
+              "product_image": "shopify:\/\/shop_images\/OM5R1-01-vanrycke-Massai_-_mono_boucle_d_oreille_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1592488795834": {
+            "type": "content",
+            "settings": {
+              "title": "ELLE ITALIE",
+              "image": "shopify:\/\/shop_images\/vanrycke-elle-italy-ilona-smet-massai.jpg",
+              "id_variant": "",
+              "product_handle": "massai-1",
+              "product_image": "shopify:\/\/shop_images\/OM5R1-01-vanrycke-Massai_-_mono_boucle_d_oreille_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1581958035615": {
+            "type": "content",
+            "settings": {
+              "title": "MADAME FIGARO",
+              "image": "shopify:\/\/shop_images\/vanrycke-madame-figaro-massai-ring-rose-gold-diamonds.jpg",
+              "id_variant": "",
+              "product_handle": "massai",
+              "product_image": "shopify:\/\/shop_images\/BM5R1-01-vanrycke-Massai_-_bague_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1592488536393": {
+            "type": "content",
+            "settings": {
+              "title": "ELLE",
+              "image": "shopify:\/\/shop_images\/vanrycke-elle-beyonce-cover-mademoiselle-else-earring.jpg",
+              "id_variant": "",
+              "product_handle": "mademoiselle-else-1",
+              "product_image": "shopify:\/\/shop_images\/OM1R1-01-vanrycke-Mademoiselle_Else_-_mono_boucle_d_oreille_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1592489280542": {
+            "type": "content",
+            "settings": {
+              "title": "ELLE US",
+              "image": "shopify:\/\/shop_images\/vanrycke-elle-US-beyonce-cover-mademoiselle-else-earring-1.jpg",
+              "id_variant": "",
+              "product_handle": "mademoiselle-else-1",
+              "product_image": "shopify:\/\/shop_images\/OM1R1-01-vanrycke-Mademoiselle_Else_-_mono_boucle_d_oreille_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1592488599928": {
+            "type": "content",
+            "settings": {
+              "title": "ELLE",
+              "image": "shopify:\/\/shop_images\/vanrycke-elle-beyonce-mademoiselle-else-earrin-1.jpg",
+              "id_variant": "",
+              "product_handle": "mademoiselle-else-1",
+              "product_image": "shopify:\/\/shop_images\/OM1R1-01-vanrycke-Mademoiselle_Else_-_mono_boucle_d_oreille_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1592489206290": {
+            "type": "content",
+            "settings": {
+              "title": "ELLE UK",
+              "image": "shopify:\/\/shop_images\/vanrycke-elle-uk-beyonce-cover-mademoiselle-else-earring-1.jpg",
+              "id_variant": "",
+              "product_handle": "mademoiselle-else-1",
+              "product_image": "shopify:\/\/shop_images\/OM1R1-01-vanrycke-Mademoiselle_Else_-_mono_boucle_d_oreille_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1592488661107": {
+            "type": "content",
+            "settings": {
+              "title": "ELLE",
+              "image": "shopify:\/\/shop_images\/vanrycke-elle-beyonce-mademoiselle-else-earring.jpg",
+              "id_variant": "",
+              "product_handle": "mademoiselle-else-1",
+              "product_image": "shopify:\/\/shop_images\/OM1R1-01-vanrycke-Mademoiselle_Else_-_mono_boucle_d_oreille_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1592491130962": {
+            "type": "content",
+            "settings": {
+              "title": "STYLES",
+              "image": "shopify:\/\/shop_images\/vanrycke-styles-mademoiselle-else-ring-1.jpg",
+              "id_variant": "",
+              "product_handle": "mademoiselle-else-2",
+              "product_image": "shopify:\/\/shop_images\/JM1R1-01-vanrycke-Mademoiselle_Else_-_jonc_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1592491616079": {
+            "type": "content",
+            "settings": {
+              "title": "VOGUE GERMANY",
+              "image": "shopify:\/\/shop_images\/vanrycke-vogue-germany-mademoiselle-else-bangle.jpg",
+              "id_variant": "",
+              "product_handle": "mademoiselle-else-2",
+              "product_image": "shopify:\/\/shop_images\/JM1R1-01-vanrycke-Mademoiselle_Else_-_jonc_or_rose_2_diamants-1.jpg"
+            }
+          },
+          "1581956300818": {
+            "type": "content",
+            "settings": {
+              "title": "L'OFFICIEL RUSSIE",
+              "image": "shopify:\/\/shop_images\/Vanrycke-l_officiel-russie-abecedaire.jpg",
+              "id_variant": "",
+              "product_handle": "abecedaire-b",
+              "product_image": "shopify:\/\/shop_images\/CA1R0-B1-Abecedaire-vanrycke-1.jpg"
+            }
+          },
+          "1581958401787": {
+            "type": "content",
+            "settings": {
+              "title": "VOGUE",
+              "image": "shopify:\/\/shop_images\/vanrycke-vogue-collier-abecedaire.jpg",
+              "id_variant": "",
+              "product_handle": "abecedaire-l",
+              "product_image": "shopify:\/\/shop_images\/CA1R0-L1-Abecedaire-vanrycke-1.jpg"
+            }
+          },
+          "1581958439054": {
+            "type": "content",
+            "settings": {
+              "title": "VOGUE.FR",
+              "image": "shopify:\/\/shop_images\/vanrycke-vogue-fr-abecedaire.jpg",
+              "id_variant": "",
+              "product_handle": "abecedaire-v",
+              "product_image": "shopify:\/\/shop_images\/CA1R1-V1-Abecedaire-vanrycke-1.jpg"
+            }
+          },
+          "1581956407073": {
+            "type": "content",
+            "settings": {
+              "title": "AIR FRANCE MADAME",
+              "image": "shopify:\/\/shop_images\/vanrycke-airfrandmadame-abecedaire.jpg",
+              "id_variant": "",
+              "product_handle": "abecedaire-r",
+              "product_image": "shopify:\/\/shop_images\/CA1R0-Z1-Abecedaire-vanrycke-1.jpg"
+            }
+          },
+          "1592488330617": {
+            "type": "content",
+            "settings": {
+              "title": "AIR FRANCE MADAME",
+              "image": "shopify:\/\/shop_images\/vanrycke-airfrancemadame-abecedaire-necklace.jpg",
+              "id_variant": "",
+              "product_handle": "abecedaire-f",
+              "product_image": "shopify:\/\/shop_images\/CA1R0-F1-Abecedaire-vanrycke-1.jpg"
+            }
+          },
+          "1592490008869": {
+            "type": "content",
+            "settings": {
+              "title": "LE MONDE",
+              "image": "shopify:\/\/shop_images\/vanrycke-le-monde-bonnieandclyde-ring.jpg",
+              "id_variant": "",
+              "product_handle": "bonnie-clyde",
+              "product_image": "shopify:\/\/shop_images\/BB1R0-01-vanrycke-Bonnie_Clyde-bague_chevaliere_or_rose-1.jpg"
+            }
+          },
+          "1592489889155": {
+            "type": "content",
+            "settings": {
+              "title": "L'OFFICIEL",
+              "image": "shopify:\/\/shop_images\/vanrycke-l-officiel-bague-chevaliere-bonnie-_-clyde-or-rose_8870b538-1a1f-4031-a528-1ce2daa29b97.jpg",
+              "id_variant": "",
+              "product_handle": "bonnie-clyde",
+              "product_image": "shopify:\/\/shop_images\/BB1R0-01-vanrycke-Bonnie_Clyde-bague_chevaliere_or_rose-1.jpg"
+            }
+          },
+          "1592490061905": {
+            "type": "content",
+            "settings": {
+              "title": "LE MONDE",
+              "image": "shopify:\/\/shop_images\/vanrycke-le-monde-officiel-earring.jpg",
+              "id_variant": "",
+              "product_handle": "officiel-2",
+              "product_image": "shopify:\/\/shop_images\/OO1R0-01-vanrycke-Officiel_-_creole_or_rose_XS-1_d6c828d6-04f8-4df1-b9b4-b9bc78e4f659.jpg"
+            }
+          },
+          "1581957714256": {
+            "type": "content",
+            "settings": {
+              "title": "INSTYLE",
+              "image": "shopify:\/\/shop_images\/vanrycke-instyle-margherita.jpg",
+              "id_variant": "",
+              "product_handle": "margherita",
+              "product_image": "shopify:\/\/shop_images\/BM3R0-02-vanrycke-Margherita_-_bague_or_rose_-_21_anneaux-1.jpg"
+            }
+          },
+          "1592491184332": {
+            "type": "content",
+            "settings": {
+              "title": "TANGENT",
+              "image": "shopify:\/\/shop_images\/vanrycke-tangent-magazine-jeanne-damas.jpg",
+              "id_variant": "",
+              "product_handle": "margherita",
+              "product_image": "shopify:\/\/shop_images\/BM3R0-02-vanrycke-Margherita_-_bague_or_rose_-_21_anneaux-1.jpg"
+            }
+          },
+          "1581957515773": {
+            "type": "content",
+            "settings": {
+              "title": "HARPERS BAZAAR MAGAZINE",
+              "image": "shopify:\/\/shop_images\/vanrycke-harpers-bazaar-magazine-bracelet-make-a-wish.jpg",
+              "id_variant": "",
+              "product_handle": "make-a-wish",
+              "product_image": "shopify:\/\/shop_images\/GM2R0-01-vanrycke-Make_a_wish-braceletorrose-1.jpg"
+            }
+          },
+          "1592490836188": {
+            "type": "content",
+            "settings": {
+              "title": "MARIE CLAIRE US",
+              "image": "shopify:\/\/shop_images\/vanrycke-marieclaire-us-make-a-wish.jpg",
+              "id_variant": "",
+              "product_handle": "make-a-wish-1",
+              "product_image": "shopify:\/\/shop_images\/CM2R0-01-vanrycke-Make_a_Wish_-_collier_or_rose-1_f1ff0b91-c4bd-4a4a-9e99-d9d9dae5d8eb.jpg"
+            }
+          },
+          "1581957922016": {
+            "type": "content",
+            "settings": {
+              "title": "MADAME FIGARO CHINE",
+              "image": "shopify:\/\/shop_images\/vanrycke-madame-figaro-chine-bague-one-or-rose-diamant.jpg",
+              "id_variant": "",
+              "product_handle": "one",
+              "product_image": "shopify:\/\/shop_images\/BO2R1-01-vanrycke-One_-_bague_or_rose_1_diamant-1.jpg"
+            }
+          },
+          "1581958155274": {
+            "type": "content",
+            "settings": {
+              "title": "MY WAY",
+              "image": "shopify:\/\/shop_images\/vanrycke-my-way-angie-necklace-rose-gold.jpg",
+              "id_variant": "",
+              "product_handle": "angie-3",
+              "product_image": "shopify:\/\/shop_images\/CA2R0-04-vanrycke-Angie_-_collier_or_rose_XL-1.jpg"
+            }
+          },
+          "1581957791556": {
+            "type": "content",
+            "settings": {
+              "title": "L'OFFICIEL",
+              "image": "shopify:\/\/shop_images\/vanrycke-lofficiel-collier-makeawish.jpg",
+              "id_variant": "",
+              "product_handle": "make-a-wish-1",
+              "product_image": "shopify:\/\/shop_images\/CM2R0-01-vanrycke-Make_a_Wish_-_collier_or_rose-1_f1ff0b91-c4bd-4a4a-9e99-d9d9dae5d8eb.jpg"
+            }
+          },
+          "1592488868191": {
+            "type": "content",
+            "settings": {
+              "title": "ELLE ITALIE",
+              "image": "shopify:\/\/shop_images\/vanrycke-elle-italy-ilona-smet-shola-ama.jpg",
+              "id_variant": "",
+              "product_handle": "",
+              "product_image": ""
+            }
+          },
+          "1592489059790": {
+            "type": "content",
+            "settings": {
+              "title": "ELLE MEXIQUE",
+              "image": "shopify:\/\/shop_images\/vanrycke-elle-mexique-medellin-necklace-2.jpg",
+              "id_variant": "",
+              "product_handle": "medellin-5",
+              "product_image": "shopify:\/\/shop_images\/CM6R1-01-vanrycke-Medellin_-_collier_or_rose_et_diamants_horizontal_S-1.jpg"
+            }
+          },
+          "1581957665255": {
+            "type": "content",
+            "settings": {
+              "title": "HARPERS BAZAR POLOGNE",
+              "image": "shopify:\/\/shop_images\/vanrycke-harpers-bazar-pologne-stardust-earring-rose-gold-diamond.jpg",
+              "id_variant": "",
+              "product_handle": "stardust-1",
+              "product_image": "shopify:\/\/shop_images\/OS2R1-02-vanrycke-Stardust_-_creole_or_rose_1_diamant_M-1.jpg"
+            }
+          },
+          "1592491681328": {
+            "type": "content",
+            "settings": {
+              "title": "VOGUE GERMANY",
+              "image": "shopify:\/\/shop_images\/vanrycke-vogue-germany-officiel-earring.jpg",
+              "id_variant": "",
+              "product_handle": "officiel-1",
+              "product_image": "shopify:\/\/shop_images\/OO1R0-01-vanrycke-Officiel_-_creole_or_rose_XS-1_d6c828d6-04f8-4df1-b9b4-b9bc78e4f659.jpg"
+            }
+          },
+          "1581955964849": {
+            "type": "content",
+            "settings": {
+              "title": "KOMMERSANT",
+              "image": "shopify:\/\/shop_images\/Vanrycke-kommersant-angie.jpg",
+              "id_variant": "",
+              "product_handle": "angie-3",
+              "product_image": "shopify:\/\/shop_images\/CA2R0-04-vanrycke-Angie_-_collier_or_rose_XL-1.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "1581957152039",
+          "1592490399671",
+          "1592489390173",
+          "1581956221461",
+          "1592488706580",
+          "1592490909334",
+          "1593694458256",
+          "1592491376782",
+          "1592490342210",
+          "1592489621540",
+          "1592490604705",
+          "1592491735429",
+          "1592491240596",
+          "1592491315072",
+          "1592490550445",
+          "1581957451118",
+          "1592491515289",
+          "1592490964314",
+          "1581958104410",
+          "1581958288341",
+          "1592491459475",
+          "1581958701373",
+          "1593698048167",
+          "1592490485804",
+          "1581956654308",
+          "1581956904468",
+          "1592490702831",
+          "1581957582287",
+          "1592491796563",
+          "1592489813604",
+          "1592491078460",
+          "1592488434318",
+          "1592489716129",
+          "1592489132703",
+          "1592489448783",
+          "1581957977891",
+          "1592490281649",
+          "1581957868035",
+          "1581958209216",
+          "1592491567949",
+          "1592491022748",
+          "1581958758597",
+          "1592488795834",
+          "1581958035615",
+          "1592488536393",
+          "1592489280542",
+          "1592488599928",
+          "1592489206290",
+          "1592488661107",
+          "1592491130962",
+          "1592491616079",
+          "1581956300818",
+          "1581958401787",
+          "1581958439054",
+          "1581956407073",
+          "1592488330617",
+          "1592490008869",
+          "1592489889155",
+          "1592490061905",
+          "1581957714256",
+          "1592491184332",
+          "1581957515773",
+          "1592490836188",
+          "1581957922016",
+          "1581958155274",
+          "1581957791556",
+          "1592488868191",
+          "1592489059790",
+          "1581957665255",
+          "1592491681328",
+          "1581955964849"
+        ],
+        "settings": {
+        }
+      },
+      "page-template-concept": {
+        "type": "page-template-concept",
+        "blocks": {
+          "1592912511505": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Lise_3fois-1-1500-388.jpg",
+              "title": ""
+            }
+          },
+          "1590745252615": {
+            "type": "title",
+            "settings": {
+              "title": "Lise",
+              "h2": false,
+              "centered": true
+            }
+          },
+          "1579271781648": {
+            "type": "content",
+            "settings": {
+              "image": "",
+              "revert": false,
+              "title_centered": false,
+              "centered": false,
+              "title": "L'amour du Détail",
+              "richtext": "<p>&laquo;&nbsp;Je cr&eacute;e les bijoux que j'ai envie de porter, des incontournables, dans des mati&egrave;res pr&eacute;cieuses avec lesquels une femme peut vivre facilement et se sentir belle.<\/p>\n<p>Le confort est important, jamais de pi&egrave;ces lourdes ou compliqu&eacute;es. J'aime la pr&eacute;cision des proportions, l'&eacute;quilibre et la mobilit&eacute;.<\/p>\n<p>Je me concentre sur l'essentiel.<\/p>\n<p>Je fais encore et toujours les m&ecirc;mes bijoux depuis mes d&eacute;buts. Je leur apporte de subtiles &eacute;volutions pour donner &agrave; l'ensemble une unit&eacute; claire.<\/p>\n<p>Simple, sobre, sensuel, voil&agrave; comment je qualifie mes petits tr&eacute;sors en or.<\/p>\n<p>Cr&eacute;er des bijoux d'une luxueuse simplicit&eacute; et d'une &eacute;l&eacute;gante sobri&eacute;t&eacute;, telle est ma d&eacute;marche depuis&nbsp;20 ans.&raquo;<\/p>\n<p><\/p>",
+              "image_width": "1\/2|1\/2"
+            }
+          },
+          "1595505136232": {
+            "type": "content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/banniere-lise-vanrycke-le-styloide.jpg",
+              "revert": false,
+              "title_centered": false,
+              "centered": false,
+              "title": "Title",
+              "richtext": "",
+              "image_width": "1\/2|1\/2"
+            }
+          },
+          "1589206189339": {
+            "type": "content",
+            "settings": {
+              "image": "",
+              "revert": false,
+              "title_centered": false,
+              "centered": false,
+              "title": "",
+              "richtext": "<p>&laquo;&nbsp;Mais la cr&eacute;ation qui me caract&eacute;rise le mieux c'est le bracelet stylo&iuml;de, ma raison d&rsquo;&ecirc;tre&nbsp;!<\/p>\n<p>L'essence de mon travail se concentre dans ce bijou qui enlace l'os que nous avons sur le c&ocirc;t&eacute; du poignet.<\/p>\n<p>Il est ma cr&eacute;ation la plus personnelle et intime.<\/p>\n<p>En 2005, le fond national d'art contemporain acqui&egrave;re les 3 premi&egrave;res versions du stylo&iuml;de et en 2017 la derni&egrave;re version rentre dans la collection permanente du mus&eacute;e des Arts D&eacute;coratifs &agrave; Paris.&raquo;<\/p>",
+              "image_width": "1\/2|1\/2"
+            }
+          },
+          "1592817285885": {
+            "type": "divider",
+            "settings": {
+              "desktop": "margin:50px 0px",
+              "mobile": "margin:10px 0px"
+            }
+          },
+          "1586950255189": {
+            "type": "button",
+            "settings": {
+              "url": "shopify:\/\/pages\/le-savoir-faire",
+              "text": "Découvrir le savoir-faire"
+            }
+          }
+        },
+        "block_order": [
+          "1592912511505",
+          "1590745252615",
+          "1579271781648",
+          "1595505136232",
+          "1589206189339",
+          "1592817285885",
+          "1586950255189"
+        ],
+        "settings": {
+        }
+      },
+      "password-template": {
+        "type": "password-template",
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/logo_geant2.png",
+          "logo_max_width": 140,
+          "mobile_logo_max_width": 90,
+          "background_image": "shopify:\/\/shop_images\/BANNIERE-CHARLIE-B3_ee3f7d30-1e8d-42b0-b2e8-933c633a6766.jpg",
+          "text_color": "#ffffff",
+          "heading": "Ouverture bientôt",
+          "show_newsletter_signup": true,
+          "newsletter_text": "<p>Encore un instant et notre nouveau site sera en ligne .. &agrave; tout de suite !<\/p>",
+          "show_social_sharing": false,
+          "social_message": "Spread the word"
+        }
+      }
+    },
+    "content_for_index": [
+      "1578508747850",
+      "1578512035531",
+      "1574274665832",
+      "1578514831104",
+      "1575457180328"
+    ]
+  },
+  "presets": {
+    "Allure": {
+      "heading_color": "#1c1b1b",
+      "text_color": "#1c1b1b",
+      "text_light_color": "#6a6a6a",
+      "link_color": "#6a6a6a",
+      "background": "#efefef",
+      "light_background": "#ffffff",
+      "product_on_sale_color": "#f94c43",
+      "button_background": "#1c1b1b",
+      "button_text_color": "#ffffff",
+      "header_background": "#ffffff",
+      "header_heading_color": "#1c1b1b",
+      "header_light_color": "#6a6a6a",
+      "footer_background": "#ffffff",
+      "footer_heading_color": "#1c1b1b",
+      "footer_text_color": "#6a6a6a",
+      "newsletter_popup_background": "#1c1b1b",
+      "newsletter_popup_text_color": "#ffffff",
+      "secondary_elements_background": "#1c1b1b",
+      "secondary_elements_text_color": "#ffffff",
+      "navigation_background": "#1c1b1b",
+      "navigation_text_color": "#ffffff",
+      "heading_font": "montserrat_n5",
+      "heading_size": "small",
+      "uppercase_heading": true,
+      "text_font": "nunito_sans_n4",
+      "base_text_font_size": 14,
+      "currency_conversion_enabled": false,
+      "currency_conversion_round_amounts": true,
+      "currency_conversion_supported_currencies": "USD CAD EUR GBP",
+      "currency_conversion_money_format": "money_format",
+      "show_page_transition": true,
+      "search_mode": "product,article",
+      "product_show_price_on_hover": false,
+      "product_show_secondary_image": false,
+      "product_info_alignment": "center",
+      "product_image_size": "natural",
+      "product_list_horizontal_spacing": "medium",
+      "product_list_vertical_spacing": "small",
+      "cart_type": "drawer",
+      "cart_enable_notes": true,
+      "cart_show_free_shipping_threshold": false,
+      "cart_free_shipping_threshold": "50",
+      "checkout_logo_position": "center",
+      "checkout_logo_size": "small",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_color": "#efefef",
+      "checkout_accent_color": "#1c1b1b",
+      "checkout_button_color": "#1c1b1b",
+      "sections": {
+        "sidebar-menu": {
+          "type": "sidebar-menu",
+          "settings": {
+            "primary_menu": "main-menu",
+            "show_social_media": true
+          }
+        },
+        "announcement": {
+          "type": "announcement",
+          "settings": {
+            "background": "#000000",
+            "text_color": "#ffffff",
+            "content": "Announce something here"
+          }
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "use_sticky_header": true,
+            "logo_max_width": 140,
+            "navigation_menu": "main-menu",
+            "navigation_style": "inline",
+            "enable_transparent_header": true,
+            "transparent_text_color": "#ffffff"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "text",
+              "settings": {
+                "title": "About the shop",
+                "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>",
+                "show_social_media": true
+              }
+            },
+            "footer-1": {
+              "type": "links",
+              "settings": {
+                "menu": "footer"
+              }
+            },
+            "footer-2": {
+              "type": "newsletter",
+              "settings": {
+                "title": "Newsletter"
+              }
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "footer-1",
+            "footer-2"
+          ],
+          "settings": {
+            "show_payment_methods": true
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slide-0": {
+              "type": "image",
+              "settings": {
+                "apply_overlay": true,
+                "content_position": "bottomLeft",
+                "subheading": "Slide title",
+                "title": "Tell your story"
+              }
+            },
+            "slide-1": {
+              "type": "image",
+              "settings": {
+                "apply_overlay": true,
+                "content_position": "bottomLeft",
+                "subheading": "Slide title",
+                "title": "Tell your story"
+              }
+            }
+          },
+          "block_order": [
+            "slide-0",
+            "slide-1"
+          ],
+          "settings": {
+            "show_fullscreen": true,
+            "show_arrow": false,
+            "autoplay": true,
+            "cycle_speed": 5,
+            "text_color": "#ffffff",
+            "button_color": "#363636"
+          }
+        },
+        "featured-collections": {
+          "type": "featured-collections",
+          "blocks": {
+            "featured-collection-0": {
+              "type": "collection",
+              "settings": {
+                "grid_items_count": 8,
+                "button_text": "View all products"
+              }
+            }
+          },
+          "block_order": [
+            "featured-collection-0"
+          ],
+          "settings": {
+            "title": "Featured collection",
+            "layout_mode": "grid",
+            "show_product_info": true,
+            "grid_mobile_items_per_row": "2",
+            "grid_desktop_items_per_row": 4
+          }
+        },
+        "collection-list": {
+          "type": "collection-list",
+          "blocks": {
+            "collection-0": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            },
+            "collection-1": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            },
+            "collection-2": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            }
+          },
+          "block_order": [
+            "collection-0",
+            "collection-1",
+            "collection-2"
+          ],
+          "settings": {
+            "add_spacing": true,
+            "expand_collection": false,
+            "text_color": "#ffffff",
+            "button_color": "#363636"
+          }
+        },
+        "featured-product": {
+          "type": "featured-product",
+          "settings": {
+            "title": "Featured product",
+            "show_vendor": true,
+            "show_description": true,
+            "show_color_swatch": false,
+            "show_color_carousel": false,
+            "show_quantity_selector": true,
+            "show_inventory_quantity": false,
+            "inventory_quantity_threshold": 3
+          }
+        },
+        "timeline": {
+          "type": "timeline",
+          "blocks": {
+            "item-0": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2000",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            },
+            "item-1": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2001",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            },
+            "item-2": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2002",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "item-0",
+            "item-1",
+            "item-2"
+          ],
+          "settings": {
+            "text_color": "#ffffff"
+          }
+        },
+        "blog-posts": {
+          "type": "blog-posts",
+          "blocks": {
+            "blog-0": {
+              "type": "blog",
+              "settings": {
+                "blog": "news"
+              }
+            }
+          },
+          "block_order": [
+            "blog-0"
+          ],
+          "settings": {
+            "title": "Featured article",
+            "show_category": false,
+            "button_text": "View all articles"
+          }
+        },
+        "shop-the-look": {
+          "type": "shop-the-look",
+          "blocks": {
+            "look-0": {
+              "type": "look",
+              "settings": {
+                "dot_style": "light",
+                "product_1_horizontal_position": 30,
+                "product_1_vertical_position": 40,
+                "product_2_horizontal_position": 45,
+                "product_2_vertical_position": 65,
+                "product_3_horizontal_position": 70,
+                "product_3_vertical_position": 50
+              }
+            },
+            "look-1": {
+              "type": "look",
+              "settings": {
+                "dot_style": "light",
+                "product_1_horizontal_position": 25,
+                "product_1_vertical_position": 45,
+                "product_2_horizontal_position": 55,
+                "product_2_vertical_position": 30,
+                "product_3_horizontal_position": 65,
+                "product_3_vertical_position": 60
+              }
+            }
+          },
+          "block_order": [
+            "look-0",
+            "look-1"
+          ],
+          "settings": {
+            "subheading": "Shop",
+            "title": "Our looks"
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "show_collection_info": true,
+            "show_collection_image": false,
+            "show_sort_by": true,
+            "show_layout_switch": false,
+            "toolbar_position": "bottom",
+            "filter_position": "sidebar",
+            "filter_mode": "tag",
+            "show_filter_color_swatch": true,
+            "grid_items_per_page": 16,
+            "grid_mobile_items_per_row": "2",
+            "grid_desktop_items_per_row": 4
+          }
+        },
+        "recently-viewed-products": {
+          "type": "recently-viewed-products",
+          "settings": {
+            "show_section": true,
+            "title": "Recently viewed",
+            "show_product_info": true
+          }
+        },
+        "collection-footer": {
+          "type": "collection-footer",
+          "settings": {
+            "show_section": false,
+            "text_color": "#ffffff",
+            "apply_overlay": true,
+            "title": "Our story",
+            "content": "<p>Add your own custom content to explain your processes...<\/p>"
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "show_share_buttons": true,
+            "show_vendor": true,
+            "show_color_swatch": false,
+            "show_color_carousel": false,
+            "show_quantity_selector": true,
+            "show_inventory_quantity": false,
+            "inventory_quantity_threshold": 3,
+            "image_size": "large",
+            "stack_images": true,
+            "show_thumbnails": false,
+            "enable_image_zoom": true,
+            "reviews_enabled": false
+          }
+        },
+        "product-recommendations": {
+          "type": "product-recommendations",
+          "settings": {
+            "show_product_recommendations": true,
+            "show_product_info": true
+          }
+        }
+      },
+      "content_for_index": [
+        "slideshow",
+        "featured-collections",
+        "collection-list",
+        "featured-product",
+        "timeline",
+        "blog-posts",
+        "shop-the-look"
+      ]
+    },
+    "Couture": {
+      "heading_color": "#5c5c5c",
+      "text_color": "#5c5c5c",
+      "text_light_color": "#939393",
+      "link_color": "#323232",
+      "background": "#ffffff",
+      "light_background": "#ffffff",
+      "product_on_sale_color": "#f94c43",
+      "button_background": "#5c5c5c",
+      "button_text_color": "#ffffff",
+      "header_background": "#ffffff",
+      "header_heading_color": "#5c5c5c",
+      "header_light_color": "#939393",
+      "footer_background": "#ffffff",
+      "footer_heading_color": "#5c5c5c",
+      "footer_text_color": "#939393",
+      "newsletter_popup_background": "#ffffff",
+      "newsletter_popup_text_color": "#1c1b1b",
+      "secondary_elements_background": "#5c5c5c",
+      "secondary_elements_text_color": "#ffffff",
+      "navigation_background": "#ffffff",
+      "navigation_text_color": "#5c5c5c",
+      "heading_font": "futura_n4",
+      "heading_size": "large",
+      "uppercase_heading": false,
+      "text_font": "century_gothic_n4",
+      "base_text_font_size": 15,
+      "currency_conversion_enabled": false,
+      "currency_conversion_round_amounts": true,
+      "currency_conversion_supported_currencies": "USD CAD EUR GBP",
+      "currency_conversion_money_format": "money_format",
+      "show_page_transition": true,
+      "search_mode": "product,article",
+      "product_show_price_on_hover": true,
+      "product_show_secondary_image": false,
+      "product_info_alignment": "left",
+      "product_image_size": "natural",
+      "product_list_horizontal_spacing": "small",
+      "product_list_vertical_spacing": "small",
+      "cart_type": "drawer",
+      "cart_enable_notes": true,
+      "cart_show_free_shipping_threshold": false,
+      "cart_free_shipping_threshold": "50",
+      "checkout_logo_position": "center",
+      "checkout_logo_size": "small",
+      "checkout_body_background_color": "#fff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_accent_color": "#323232",
+      "checkout_button_color": "#5c5c5c",
+      "sections": {
+        "sidebar-menu": {
+          "type": "sidebar-menu",
+          "settings": {
+            "primary_menu": "main-menu",
+            "show_social_media": true
+          }
+        },
+        "announcement": {
+          "type": "announcement",
+          "settings": {
+            "background": "#f3f3f3",
+            "text_color": "#5c5c5c",
+            "content": "Announce something here"
+          }
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "use_sticky_header": true,
+            "logo_max_width": 140,
+            "navigation_menu": "main-menu",
+            "navigation_style": "center",
+            "enable_transparent_header": true,
+            "transparent_text_color": "#ffffff"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "text",
+              "settings": {
+                "title": "About the shop",
+                "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>",
+                "show_social_media": true
+              }
+            },
+            "footer-1": {
+              "type": "links",
+              "settings": {
+                "menu": "footer"
+              }
+            },
+            "footer-2": {
+              "type": "newsletter",
+              "settings": {
+                "title": "Newsletter"
+              }
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "footer-1",
+            "footer-2"
+          ],
+          "settings": {
+            "show_payment_methods": true
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slide-0": {
+              "type": "image",
+              "settings": {
+                "apply_overlay": true,
+                "content_position": "bottomLeft",
+                "subheading": "Slide title",
+                "title": "Tell your story"
+              }
+            },
+            "slide-1": {
+              "type": "image",
+              "settings": {
+                "apply_overlay": true,
+                "content_position": "bottomLeft",
+                "subheading": "Slide title",
+                "title": "Tell your story"
+              }
+            }
+          },
+          "block_order": [
+            "slide-0",
+            "slide-1"
+          ],
+          "settings": {
+            "show_fullscreen": true,
+            "show_arrow": false,
+            "autoplay": true,
+            "cycle_speed": 5,
+            "text_color": "#ffffff",
+            "button_color": "#363636"
+          }
+        },
+        "featured-collections": {
+          "type": "featured-collections",
+          "blocks": {
+            "featured-collection-0": {
+              "type": "collection",
+              "settings": {
+                "grid_items_count": 8,
+                "button_text": "View all products"
+              }
+            }
+          },
+          "block_order": [
+            "featured-collection-0"
+          ],
+          "settings": {
+            "title": "Featured collection",
+            "layout_mode": "grid",
+            "show_product_info": true,
+            "grid_mobile_items_per_row": "2",
+            "grid_desktop_items_per_row": 4
+          }
+        },
+        "collection-list": {
+          "type": "collection-list",
+          "blocks": {
+            "collection-0": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            },
+            "collection-1": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            },
+            "collection-2": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            }
+          },
+          "block_order": [
+            "collection-0",
+            "collection-1",
+            "collection-2"
+          ],
+          "settings": {
+            "add_spacing": true,
+            "expand_collection": false,
+            "text_color": "#ffffff",
+            "button_color": "#363636"
+          }
+        },
+        "featured-product": {
+          "type": "featured-product",
+          "settings": {
+            "title": "Featured product",
+            "show_vendor": true,
+            "show_description": true,
+            "show_color_swatch": false,
+            "show_color_carousel": false,
+            "show_quantity_selector": true,
+            "show_inventory_quantity": false,
+            "inventory_quantity_threshold": 3
+          }
+        },
+        "timeline": {
+          "type": "timeline",
+          "blocks": {
+            "item-0": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2000",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            },
+            "item-1": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2001",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            },
+            "item-2": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2002",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "item-0",
+            "item-1",
+            "item-2"
+          ],
+          "settings": {
+            "text_color": "#ffffff"
+          }
+        },
+        "blog-posts": {
+          "type": "blog-posts",
+          "blocks": {
+            "blog-0": {
+              "type": "blog",
+              "settings": {
+                "blog": "news"
+              }
+            }
+          },
+          "block_order": [
+            "blog-0"
+          ],
+          "settings": {
+            "title": "Featured article",
+            "show_category": false,
+            "button_text": "View all articles"
+          }
+        },
+        "shop-the-look": {
+          "type": "shop-the-look",
+          "blocks": {
+            "look-0": {
+              "type": "look",
+              "settings": {
+                "dot_style": "light",
+                "product_1_horizontal_position": 30,
+                "product_1_vertical_position": 40,
+                "product_2_horizontal_position": 45,
+                "product_2_vertical_position": 65,
+                "product_3_horizontal_position": 70,
+                "product_3_vertical_position": 50
+              }
+            },
+            "look-1": {
+              "type": "look",
+              "settings": {
+                "dot_style": "light",
+                "product_1_horizontal_position": 25,
+                "product_1_vertical_position": 45,
+                "product_2_horizontal_position": 55,
+                "product_2_vertical_position": 30,
+                "product_3_horizontal_position": 65,
+                "product_3_vertical_position": 60
+              }
+            }
+          },
+          "block_order": [
+            "look-0",
+            "look-1"
+          ],
+          "settings": {
+            "subheading": "Shop",
+            "title": "Our looks"
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "show_collection_info": true,
+            "show_collection_image": false,
+            "show_sort_by": true,
+            "show_layout_switch": false,
+            "toolbar_position": "bottom",
+            "filter_position": "sidebar",
+            "filter_mode": "tag",
+            "show_filter_color_swatch": true,
+            "grid_items_per_page": 16,
+            "grid_mobile_items_per_row": "2",
+            "grid_desktop_items_per_row": 4
+          }
+        },
+        "recently-viewed-products": {
+          "type": "recently-viewed-products",
+          "settings": {
+            "show_section": true,
+            "title": "Recently viewed",
+            "show_product_info": true
+          }
+        },
+        "collection-footer": {
+          "type": "collection-footer",
+          "settings": {
+            "show_section": false,
+            "text_color": "#ffffff",
+            "apply_overlay": true,
+            "title": "Our story",
+            "content": "<p>Add your own custom content to explain your processes...<\/p>"
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "show_share_buttons": true,
+            "show_vendor": true,
+            "show_color_swatch": false,
+            "show_color_carousel": false,
+            "show_quantity_selector": true,
+            "show_inventory_quantity": false,
+            "inventory_quantity_threshold": 3,
+            "image_size": "large",
+            "stack_images": true,
+            "show_thumbnails": false,
+            "enable_image_zoom": true,
+            "reviews_enabled": false
+          }
+        },
+        "product-recommendations": {
+          "type": "product-recommendations",
+          "settings": {
+            "show_product_recommendations": true,
+            "show_product_info": true
+          }
+        }
+      },
+      "content_for_index": [
+        "slideshow",
+        "featured-collections",
+        "collection-list",
+        "featured-product",
+        "timeline",
+        "blog-posts",
+        "shop-the-look"
+      ]
+    },
+    "Vogue": {
+      "heading_color": "#454545",
+      "text_color": "#454545",
+      "text_light_color": "#9d9d9d",
+      "link_color": "#a17c5e",
+      "background": "#ffffff",
+      "light_background": "#ffffff",
+      "product_on_sale_color": "#f94c43",
+      "button_background": "#c2a284",
+      "button_text_color": "#ffffff",
+      "header_background": "#ffffff",
+      "header_heading_color": "#454545",
+      "header_light_color": "#9d9d9d",
+      "footer_background": "#ffffff",
+      "footer_heading_color": "#454545",
+      "footer_text_color": "#9d9d9d",
+      "newsletter_popup_background": "#454545",
+      "newsletter_popup_text_color": "#ffffff",
+      "secondary_elements_background": "#f1e4d8",
+      "secondary_elements_text_color": "#373737",
+      "navigation_background": "#454545",
+      "navigation_text_color": "#ffffff",
+      "heading_font": "din_neuzeit_grotesk_n3",
+      "heading_size": "small",
+      "uppercase_heading": true,
+      "text_font": "futura_n4",
+      "base_text_font_size": 14,
+      "currency_conversion_enabled": false,
+      "currency_conversion_round_amounts": true,
+      "currency_conversion_supported_currencies": "USD CAD EUR GBP",
+      "currency_conversion_money_format": "money_format",
+      "show_page_transition": true,
+      "show_element_staggering": false,
+      "search_mode": "product,article",
+      "product_show_price_on_hover": true,
+      "product_show_secondary_image": false,
+      "product_info_alignment": "center",
+      "product_image_size": "natural",
+      "product_list_horizontal_spacing": "medium",
+      "product_list_vertical_spacing": "small",
+      "cart_type": "drawer",
+      "cart_enable_notes": true,
+      "cart_show_free_shipping_threshold": false,
+      "cart_free_shipping_threshold": "50",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "medium",
+      "checkout_body_background_color": "#fff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_accent_color": "#a17c5e",
+      "checkout_button_color": "#454545",
+      "sections": {
+        "sidebar-menu": {
+          "type": "sidebar-menu",
+          "settings": {
+            "primary_menu": "main-menu",
+            "show_social_media": true
+          }
+        },
+        "announcement": {
+          "type": "announcement",
+          "settings": {
+            "background": "#f1e4d8",
+            "text_color": "#343434",
+            "content": "Announce something here"
+          }
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "use_sticky_header": true,
+            "logo_max_width": 140,
+            "navigation_menu": "main-menu",
+            "navigation_style": "inline",
+            "enable_transparent_header": true,
+            "transparent_text_color": "#ffffff"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "text",
+              "settings": {
+                "title": "About the shop",
+                "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>",
+                "show_social_media": true
+              }
+            },
+            "footer-1": {
+              "type": "links",
+              "settings": {
+                "menu": "footer"
+              }
+            },
+            "footer-2": {
+              "type": "newsletter",
+              "settings": {
+                "title": "Newsletter"
+              }
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "footer-1",
+            "footer-2"
+          ],
+          "settings": {
+            "show_payment_methods": true
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slide-0": {
+              "type": "image",
+              "settings": {
+                "apply_overlay": true,
+                "content_position": "bottomLeft",
+                "subheading": "Slide title",
+                "title": "Tell your story"
+              }
+            },
+            "slide-1": {
+              "type": "image",
+              "settings": {
+                "apply_overlay": true,
+                "content_position": "bottomLeft",
+                "subheading": "Slide title",
+                "title": "Tell your story"
+              }
+            }
+          },
+          "block_order": [
+            "slide-0",
+            "slide-1"
+          ],
+          "settings": {
+            "show_fullscreen": true,
+            "show_arrow": false,
+            "autoplay": true,
+            "cycle_speed": 5,
+            "text_color": "#ffffff",
+            "button_color": "#363636"
+          }
+        },
+        "featured-collections": {
+          "type": "featured-collections",
+          "blocks": {
+            "featured-collection-0": {
+              "type": "collection",
+              "settings": {
+                "grid_items_count": 8,
+                "button_text": "View all products"
+              }
+            }
+          },
+          "block_order": [
+            "featured-collection-0"
+          ],
+          "settings": {
+            "title": "Featured collection",
+            "layout_mode": "grid",
+            "show_product_info": true,
+            "grid_mobile_items_per_row": "2",
+            "grid_desktop_items_per_row": 4
+          }
+        },
+        "collection-list": {
+          "type": "collection-list",
+          "blocks": {
+            "collection-0": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            },
+            "collection-1": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            },
+            "collection-2": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            }
+          },
+          "block_order": [
+            "collection-0",
+            "collection-1",
+            "collection-2"
+          ],
+          "settings": {
+            "add_spacing": true,
+            "expand_collection": false,
+            "text_color": "#ffffff",
+            "button_color": "#363636"
+          }
+        },
+        "featured-product": {
+          "type": "featured-product",
+          "settings": {
+            "title": "Featured product",
+            "show_vendor": true,
+            "show_description": true,
+            "show_color_swatch": false,
+            "show_color_carousel": false,
+            "show_quantity_selector": true,
+            "show_inventory_quantity": false,
+            "inventory_quantity_threshold": 3
+          }
+        },
+        "timeline": {
+          "type": "timeline",
+          "blocks": {
+            "item-0": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2000",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            },
+            "item-1": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2001",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            },
+            "item-2": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2002",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "item-0",
+            "item-1",
+            "item-2"
+          ],
+          "settings": {
+            "text_color": "#ffffff"
+          }
+        },
+        "blog-posts": {
+          "type": "blog-posts",
+          "blocks": {
+            "blog-0": {
+              "type": "blog",
+              "settings": {
+                "blog": "news"
+              }
+            }
+          },
+          "block_order": [
+            "blog-0"
+          ],
+          "settings": {
+            "title": "Featured article",
+            "show_category": false,
+            "button_text": "View all articles"
+          }
+        },
+        "shop-the-look": {
+          "type": "shop-the-look",
+          "blocks": {
+            "look-0": {
+              "type": "look",
+              "settings": {
+                "dot_style": "light",
+                "product_1_horizontal_position": 30,
+                "product_1_vertical_position": 40,
+                "product_2_horizontal_position": 45,
+                "product_2_vertical_position": 65,
+                "product_3_horizontal_position": 70,
+                "product_3_vertical_position": 50
+              }
+            },
+            "look-1": {
+              "type": "look",
+              "settings": {
+                "dot_style": "light",
+                "product_1_horizontal_position": 25,
+                "product_1_vertical_position": 45,
+                "product_2_horizontal_position": 55,
+                "product_2_vertical_position": 30,
+                "product_3_horizontal_position": 65,
+                "product_3_vertical_position": 60
+              }
+            }
+          },
+          "block_order": [
+            "look-0",
+            "look-1"
+          ],
+          "settings": {
+            "subheading": "Shop",
+            "title": "Our looks"
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "show_collection_info": true,
+            "show_collection_image": false,
+            "show_sort_by": true,
+            "show_layout_switch": false,
+            "toolbar_position": "bottom",
+            "filter_position": "sidebar",
+            "filter_mode": "tag",
+            "show_filter_color_swatch": true,
+            "grid_items_per_page": 16,
+            "grid_mobile_items_per_row": "2",
+            "grid_desktop_items_per_row": 4
+          }
+        },
+        "recently-viewed-products": {
+          "type": "recently-viewed-products",
+          "settings": {
+            "show_section": true,
+            "title": "Recently viewed",
+            "show_product_info": true
+          }
+        },
+        "collection-footer": {
+          "type": "collection-footer",
+          "settings": {
+            "show_section": false,
+            "text_color": "#ffffff",
+            "apply_overlay": true,
+            "title": "Our story",
+            "content": "<p>Add your own custom content to explain your processes...<\/p>"
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "show_share_buttons": true,
+            "show_vendor": true,
+            "show_color_swatch": false,
+            "show_color_carousel": false,
+            "show_quantity_selector": true,
+            "show_inventory_quantity": false,
+            "inventory_quantity_threshold": 3,
+            "image_size": "large",
+            "stack_images": true,
+            "show_thumbnails": false,
+            "enable_image_zoom": true,
+            "reviews_enabled": false
+          }
+        },
+        "product-recommendations": {
+          "type": "product-recommendations",
+          "settings": {
+            "show_product_recommendations": true,
+            "show_product_info": true
+          }
+        }
+      },
+      "content_for_index": [
+        "slideshow",
+        "featured-collections",
+        "collection-list",
+        "featured-product",
+        "timeline",
+        "blog-posts",
+        "shop-the-look"
+      ]
+    }
+  }
+}

@@ -1,0 +1,29 @@
+<div class="minicart__footer">
+  <form class="cart-form{% if cart.items.size == 0 %} cart-empty{% endif %}" action="/cart" method="post" data-cart-form>
+  <section class="Cart__NoteContainer ">
+    <textarea
+      class="Cart__Note Form__Textarea text text--s"
+      name="note"
+      rows="2"
+      placeholder="{{ 'cart.general.note_placeholder' | t }}"
+      aria-label="{{ 'cart.notes' | t }}">{{ cart.note }}</textarea>
+  </section>
+  <div class="cart-attribute__field ">
+    <input class="cart-attribute__item cart-attribute__checkbox" type="checkbox" name="attributes[cadeau]"
+    value="Yes"{% if cart.attributes['cadeau'] == "Yes" %} checked{% endif %}>
+    <label>
+      <span class="text text--s">{{ 'cart.general.gift_message' | t }}</span>
+    </label>
+  </div>
+  <div class="text text--b minicart__total">
+    <span>Total </span><span rv-text="kercambreCartJS.CartJS.cart.total_price | money "></span>
+  </div>
+  <button
+    class="Button Button--primary Button--full minicart__button"
+    type="submit"
+    name="checkout">
+    <span>Payer</span>
+  </button>
+  </section>
+  </form>
+</div>

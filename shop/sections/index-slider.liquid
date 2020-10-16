@@ -1,0 +1,201 @@
+
+<div class="slider"  
+     data-autoplay="{{section.settings.autoplay | times: 1000 }}"
+     data-flickityy='{ "wrapAround": true, "cellAlign": "left", "imagesLoaded": true, "arrowShape": { "x0": 20, "x1": 60, "y1": 40, "x2": 60, "y2": 35, "x3": 25}, "prevNextButtons": true, "contain": true, "pageDots": false, "autoPlay": "{{section.settings.autoplay | times: 1000 }}" }'>
+  {%- for block in section.blocks -%}
+    <div class="slide slide--{{ block.settings.title_position_vertical }}">
+      {%- if block.settings.video_url != "" -%}
+        <video class="slide__media" autoplay loop playsinline muted>
+          <source src="{{ block.settings.video_url }}" type="video/mp4">
+        </video>
+      {%- else -%}
+        {%- include 'smart-image' with {
+          image: block.settings.image,
+          class: 'slide__media hidden--pocket',
+          w: 1000,
+          lazyload: false
+        }  -%}
+        {%- if block.settings.image_mobile != blank -%}
+          {%- include 'smart-image' with {
+            image: block.settings.image_mobile,
+            class: 'slide__media hidden--lap-and-up',
+            w: 200,
+            lazyload: true
+          }  -%}
+        {%- endif -%}
+      {%- endif -%}
+      <div class="slide__content slide__content--{{ block.settings.title_position_horizontal }}">
+        <h2 style="color:{{block.settings.title_color}};font-size:{{block.settings.title_size}}px"
+            class="h1-k slide__title">{{ block.settings.title }}</h2>
+        {%- if block.settings.subtitle != "" -%}
+          <p style="color:{{block.settings.subtitle_color}}" class="slide__subtitle text text--b">{{ block.settings.subtitle }}</p>
+        {%- endif -%}
+        {%- if block.settings.button_text != "" -%}
+          <a href="{{ block.settings.url }}">
+            <button class="Button Button--primary" type="button" name="button">
+                {{ block.settings.button_text }}
+            </button>
+          </a>
+        {%- endif -%}
+      </div>
+    </div>
+  {%- endfor -%}
+</div>
+
+
+{% schema %}
+{
+  "name": "Slider",
+  "class": "mb",
+  "settings": [
+    {
+      "type":      "range",
+      "id":        "autoplay",
+      "min":       0,
+      "max":       10,
+      "step":       1,
+      "unit":       "s",
+      "label":     "Speed",
+      "default":   2,
+      "info":     "Put 0 to prevent autplay"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Slide",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Media"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_mobile",
+          "label": "Mobile image"
+        },
+        {
+          "type": "text",
+          "id": "video_url",
+          "label": "Video url",
+          "info": "Upload your video [here](/admin/files)"
+        },
+        {
+          "type": "header",
+          "content": "Title"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "color",
+          "id": "title_color",
+          "label": "Color",
+          "default": "#FFFFFF"
+        },
+        {
+          "type":      "range",
+          "id":        "title_size",
+          "min":       10,
+          "max":       200,
+          "step":      5,
+          "unit":      "px",
+          "label":     "Title size",
+          "default":   50
+        },
+        {
+          "type": "header",
+          "content": "Subtitle"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Subtitle"
+        },
+
+        {
+          "type": "color",
+          "id": "subtitle_color",
+          "label": "Subtitle color",
+          "default": "#FFFFFF"
+        },
+        {
+          "type": "header",
+          "content": "Button"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button text",
+          "default": "Découvrir",
+          "info": "leave empty to hide button"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Button destination"
+        },
+        {
+          "type": "header",
+          "content": "Position"
+        },
+        {
+           "type":      "select",
+           "id":        "title_position_horizontal",
+           "label":     "Horizontal position",
+           "options": [
+             {
+               "value": "left",
+               "label": "Left"
+             },
+             {
+               "value": "center",
+               "label": "Center"
+             },
+             {
+               "value": "right",
+               "label": "Right"
+             }
+           ],
+           "default":   "center",
+           "info":      "Decide where to show your title"
+        },
+        {
+           "type":      "select",
+           "id":        "title_position_vertical",
+           "label":     "Vertical position",
+           "options": [
+             {
+               "value": "top",
+               "label": "Top"
+             },
+             {
+               "value": "center",
+               "label": "Center"
+             },
+             {
+               "value": "bottom",
+               "label": "Bottom"
+             }
+           ],
+           "default":   "center",
+           "info":      "Decide where to show your title"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Slider (NEW)",
+      "category": "Media"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,1005 @@
+{%- capture section_settings -%}
+{
+  "enableHistoryState": true,
+  "templateSuffix": {{ product.template_suffix | json }},
+  "showInventoryQuantity": {{ section.settings.show_inventory_quantity | json }},
+  "showSku": {{ section.settings.show_sku | json }},
+  "stackProductImages": {{ section.settings.stack_images | json }},
+  "showThumbnails": {{ section.settings.show_thumbnails | json }},
+  "inventoryQuantityThreshold": {{ section.settings.inventory_quantity_threshold }},
+  "showPriceInButton": {{ section.settings.show_price_in_button | json }},
+  "enableImageZoom": {{ section.settings.enable_image_zoom | json }},
+  "showPaymentButton": {{ section.settings.show_payment_button | json }},
+  "useAjaxCart": {% if settings.cart_type == 'drawer' %}true{% else %}false{% endif %}
+}
+{%- endcapture -%}
+
+
+
+<script type="application/json" data-json-product data-variant-selected="{{product.selected_or_first_available_variant.id}}">
+  {{ product | json }}
+</script>
+<script type="application/json" data-json-variants>
+  {
+  {% for variant in product.variants  %}
+  "{{variant.id}}": {
+    "fra": {
+      "subtitle": "{{variant.metafields.global.subtitle }}",
+      "detail": "{{variant.metafields.global.details }}"
+    }
+  }
+  {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+  }
+</script>
+
+
+{% capture abcd %}
+  {%- if product.title contains "Abécédaire" -%}
+    <div class="Collapsible abecedaire__collapsible">
+      <div
+          class="Collapsible__Button Collapsible__Button variant__detail-title "
+          data-action="toggle-collapsible" aria-expanded="false"
+          id="span_abcd">
+          <div class="variant__selector">{{ section.settings.abcd }}</div>
+          <div class="Collapsible__Plus"></div>
+      </div>
+      <div class="metafields-list Collapsible__Inner">
+        <div class="Collapsible__Content">
+          <div class="language language-fra ">
+            <div class="product__abcd">
+              {%- comment %}
+              <div class="product__abcd-title">
+                Abécédaire
+              </div>
+              {% endcomment -%}
+              <div class="product__abcd-nav">
+                <a href="/collections/abecedaire-1/products/abecedaire-a" id="circle">A</a>
+                <a href="/collections/abecedaire-1/products/abecedaire-B" id="circle">B</a>
+                <a href="/collections/abecedaire-1/products/abecedaire-C" id="circle">C</a>
+                <a href="/collections/abecedaire-1/products/abecedaire-D" id="circle">D</a>
+                <a href="/collections/abecedaire-1/products/abecedaire-E" id="circle">E</a>
+                <a href="/collections/abecedaire-1/products/abecedaire-F" id="circle">F</a>
+                <a href="/collections/abecedaire-1/products/abecedaire-G" id="circle">G</a>
+                <a href="/collections/abecedaire-1/products/abecedaire-H" id="circle">H</a>
+                <a href="/collections/abecedaire-1/products/abecedaire-I" id="circle">I</a>
+                <a href="/collections/abecedaire-1/products/abecedaire-J" id="circle">J</a>
+                <a href="/collections/abecedaire-1/products/abecedaire-K" id="circle">K</a>
+                <a href="/collections/abecedaire-1/products/abecedaire-L" id="circle">L</a>
+                <a href="/collections/abecedaire-1/products/abecedaire-M" id="circle">M</a>
+                <a href="/collections/abecedaire-1/products/abecedaire-N" id="circle">N</a>
+                <a href="/collections/abecedaire-1/products/abecedaire-O" id="circle">O</a>
+                <a href="/collections/abecedaire-1/products/abecedaire-P" id="circle">P</a>
+                <a href="/collections/abecedaire-1/products/abecedaire-Q" id="circle">Q</a>
+                <a href="/collections/abecedaire-1/products/abecedaire-R" id="circle">R</a>
+                <a href="/collections/abecedaire-1/products/abecedaire-S" id="circle">S</a>
+                <a href="/collections/abecedaire-1/products/abecedaire-T" id="circle">T</a>
+                <a href="/collections/abecedaire-1/products/abecedaire-U" id="circle">U</a>
+                <a href="/collections/abecedaire-1/products/abecedaire-V" id="circle">V</a>
+                <a href="/collections/abecedaire-1/products/abecedaire-W" id="circle">W</a>
+                <a href="/collections/abecedaire-1/products/abecedaire-X" id="circle">X</a>
+                <a href="/collections/abecedaire-1/products/abecedaire-Y" id="circle">Y</a>
+                <a href="/collections/abecedaire-1/products/abecedaire-Z" id="circle">Z</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  {%- endif -%}
+{%- endcapture -%}
+
+<section class="product__header">
+  <div class="Grid">
+    <div class="Grid__Cell 2/3--lap-and-up">
+      <div class="Grid">
+        <div class="Grid__Cell 1/7--lap-and-up">
+          {%- assign variants_ids = "" -%}
+          {%- for image in product.images -%}
+            {%- if image.variants.size > 0 -%}
+              {%- assign variants_ids = image.variants | map : 'id' | join: ' ' -%}
+            {%- endif -%}
+            {%- include 'smart-image' with   {
+             image: image ,
+             class: 'product__gallery-thubnail',
+             w: 90,
+             variant_ids,
+             lazyload: false
+             } -%}
+          {%- endfor -%}
+        </div>
+        <div class="Grid__Cell 6/7--lap-and-up">
+          <div class="product__gallery">
+            {%- assign variants_ids = "" -%}
+            {%- for image in product.images -%}
+              {%- if image.variants.size > 0 -%}
+                {%- assign variants_ids = image.variants | map : 'id' | join: ' ' -%}
+              {%- endif -%}
+              {%- include 'smart-image' with   {
+               image: image ,
+               class: 'product__gallery-image',
+               w: 400,
+               lazyload: true
+               } -%}
+             </a>
+            {%- endfor -%}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Grid__Cell 1/3--lap-and-up">
+      <div class="product__header-info">
+
+        <h1 class="h1-k product__header-title">{{ product.title }}</h1>
+        <div class="product__variant-subtitle text text--b" rv-text="productPage.selected_variant.extra.fra.subtitle">
+         {{ product.selected_or_first_available_variant.metafields.global.subtitle }}
+        </div>
+        {%- if product.template_suffix != 'coming-soon' -%}
+          <div class="ProductMeta__PriceList Heading text text--b product__price">
+            {%- if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price -%}
+              <span class="ProductMeta__Price Price Price--highlight Text--subdued u-h4 subtitle subtitle__price subtitle__price-2" data-money-convertible>{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</span>
+              <span class="ProductMeta__Price Price Price--compareAt Text--subdued u-h4 subtitle subtitle__price subtitle__price-2" data-money-convertible>{{ product.selected_or_first_available_variant.compare_at_price | money_without_trailing_zeros }}</span>
+            {%- else -%}
+              <span class="ProductMeta__Price Price Text--subdued u-h4 subtitle subtitle__price subtitle__price-2" data-money-convertible>{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</span>
+            {%- endif -%}
+
+            {% assign show_subtitle_price = false %}
+            {%- if section.settings.price_subtitle != "" -%}
+              {% assign show_subtitle_price = true %}
+              {%- if section.settings.collection_show_price_sub != "" -%}
+                {% assign show_subtitle_price = false %}
+                {%- for collection in product.collections -%}
+                  {%- if collection.title contains section.settings.collection_show_price_sub -%}
+                      {% assign show_subtitle_price = true %}
+                  {%- endif -%}
+                {%- endfor -%}
+              {%- endif -%}
+              {%- if show_subtitle_price == true -%}
+                <div class="ProductMeta__Price Price Text--subdued u-h4 subtitle subtitle__price subtitle__price-3" >{{ section.settings.price_subtitle }}</div>
+              {%- endif -%}
+            {%- endif -%}
+          </div>
+        {%- endif -%}
+
+        <div class="product__description text">
+          {{ product.description }}
+        </div>
+        {{ abcd }}
+        {%- include 'product-options' -%}
+
+        {%- for block in section.blocks -%}
+          {%- if block.type == "guide"  -%}
+            <div class="text text--s u r"
+              action-show-popup
+              data-target="guidetaille">
+              Guide des tailles
+            </div>
+            {%- include 'popup' with {
+              id: "guidetaille",
+              title: pages[block.settings.page_handle].title,
+              content: pages[block.settings.page_handle].content
+            } -%}
+          {%- endif -%}
+        {%- endfor -%}
+
+        {% assign showQuantity = true %}
+        {%- if section.settings.showQuantityFor == true -%}
+          {% assign showQuantity = false %}
+          {% for collection in product.collections %}
+            {%- if  collection.title contains section.settings.collectionName -%}
+                {% assign showQuantity = true %}
+            {%- endif -%}
+          {% endfor %}
+        {%- endif -%}
+
+        {%- if section.settings.show_quantity_selector and showQuantity == true -%}
+
+          <div class="option text quantity">
+            <div class="option__name">
+              Quantité
+            </div>
+            <div class="option__values">
+              <div class="option__value quantity">
+                <div class="ProductForm__quantity">
+                <div class="ProductForm__QuantitySelector">
+                  <div class="QuantitySelector QuantitySelector--large">
+                    <span class="QuantitySelector__Button Link Link--secondary" action-decrease-quantity>{% include 'icon' with 'minus' %}</span>
+                    <span type="text" class="QuantitySelector__CurrentQuantity" name="quantity" rv-text="productPage.selected_quantity"></span>
+                    <span class="QuantitySelector__Button Link Link--secondary" action-increase-quantity>{% include 'icon' with 'plus' %}</span>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        {%- endif -%}
+
+        <div class="product__add-to-cart">
+          {%- assign message = section.settings.availability_message -%}
+          {%- for tag in product.tags -%}
+            {%- if tag == "edition limitée"-%}
+              {% assign message = section.settings.limited_message %}
+            {%- else tag == "edition limitée medaille" -%}
+              {% assign message = section.settings.medaille_message %}
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+
+
+        <div class="product__alert" >
+          <a class="klaviyo-bis-trigger Button Button--primary" style="width:100%"
+             rv-hide="product.selected_variant.available"
+             href="#">
+            {{ message }}
+          </a>
+
+         
+        </div>
+
+
+
+        <div class="product__addToCart">
+          <button action-add-to-cart
+          data-cart-quantity="1"
+          class="Button Button--primary product__button"
+           type="button" name="button">
+            Ajouter au panier
+          </button>
+          <div class="text text--xs" id="message"></div>
+        </div>
+        </div>
+
+
+{%- comment %}
+{%- form 'product', product, class: 'ProductForm' -%}
+  <select class="" name="id" title="variant" id="product-select-{{product.id}}">
+    {%- for variant in product.variants -%}
+    <option value="{{variant.id}}">{{ variant.title }} - {{ v.price | money }}</option>
+    {%- endfor -%}
+  </select>
+
+  <button data-action="add-to-cart" type="submit" class="ProductForm__AddToCart Button Button--secondary Button--full" rv-disabled="productPage.selected_variant.available | not">
+    VALIDER LE FORMULAIRE
+  </button>
+{%- endform -%}
+{% endcomment -%}
+
+
+
+        {% assign tab = section.settings.tab %}
+        {% assign page_handle = section.settings.page_handle %}
+
+
+        <div class="producttabs product__informations text description__wrapper ">
+          <div class="producttabs__header product__informations-header tab__info">
+            <div class="producttabs__title">
+              <span id="span-details" class="tab__list producttabs__title selected" >Détails</span>
+            </div>
+            <div class="producttabs__title">
+              <span id="span-tab_1" class="tab__list producttabs__title ">
+                {{ pages[tab].title }}
+              </span>
+            </div>
+          </div>
+          <div class="product__informations-body text text--s">
+            <div class="variant__detail  Rte tab__content tab__content-details"
+             rv-html="productPage.selected_variant.extra.fra.detail">
+                  {{ product.selected_or_first_available_variant.metafields.global.details }}
+            </div>
+            <div class="variant__detail  Rte tab__content tab__content-1">
+              {{pages[tab].content}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{%- comment %}
+	This is a foo
+<section class="Product Product--{{ section.settings.image_size }}" data-section-id="{{ section.id }}" data-section-type="product" data-section-settings='{{ section_settings }}'>
+  <div class="Product__Wrapper">
+    {%- capture action_list_items -%}
+      {%- if section.settings.enable_image_zoom -%}
+        <div class="Product__ActionItem hidden-lap-and-up">
+          <button class="RoundButton RoundButton--small RoundButton--flat" data-action="open-product-zoom">{% include 'icon' with 'plus' %}</button>
+        </div>
+      {%- endif -%}
+
+      {%- if section.settings.show_share_buttons -%}
+        <div class="Product__ActionItem hidden-lap-and-up">
+          <button class="RoundButton RoundButton--small RoundButton--flat" data-action="toggle-social-share" data-animate-bottom aria-expanded="false">
+            <span class="RoundButton__PrimaryState">{% include 'icon' with 'share' %}</span>
+            <span class="RoundButton__SecondaryState">{% include 'icon' with 'close' %}</span>
+          </button>
+
+          {%- assign share_url = shop.url | append: product.url -%}
+          {%- assign twitter_text = product.title -%}
+          {%- assign pinterest_description = product.description | strip_html | truncatewords: 15 | url_param_escape -%}
+          {%- assign pinterest_image = product.featured_image | img_url: 'large' | prepend: 'https:' -%}
+
+          <div class="Product__ShareList" aria-hidden="true">
+            <a class="Product__ShareItem" href="https://www.facebook.com/sharer.php?u={{ share_url }}" target="_blank" rel="noopener">{%- include 'icon' with 'facebook' -%} Facebook</a>
+            <a class="Product__ShareItem" href="https://pinterest.com/pin/create/button/?url={{ share_url }}{% if pinterest_image != blank %}&media={{ pinterest_image }}{% endif %}&description={{ pinterest_description }}" target="_blank" rel="noopener">{%- include 'icon' with 'pinterest' -%} Pinterest</a>
+            <a class="Product__ShareItem" href="https://twitter.com/share?{% if twitter_text != blank %}text={{twitter_text}}&{% endif %}url={{ share_url }}" target="_blank" rel="noopener">{%- include 'icon' with 'twitter' -%} Twitter</a>
+          </div>
+        </div>
+      {%- endif -%}
+    {%- endcapture -%}
+
+    {%- comment -%}
+    --------------------------------------------------------------------------------------------------------------------
+    PRODUCT GALLERY
+    --------------------------------------------------------------------------------------------------------------------
+    {%- endcomment -%}
+
+    {%- assign initial_image_id = product.featured_image.id -%}
+    {%- assign initial_image_index = 0 -%}
+    {%- assign image_count = 0 -%}
+
+    {%- capture slideshow_images -%}
+      {%- for image in product.images -%}
+        {%- if image.alt == 'featured' or image.alt == 'featured mobile' -%}
+          {%- continue -%}
+        {%- endif -%}
+
+        {%- if image.id == product.selected_or_first_available_variant.image.id -%}
+          {%- assign initial_image_index = image_count -%}
+          {%- assign initial_image_id = image.id -%}
+        {%- endif -%}
+
+        {%- include 'image-size', sizes: '200,400,600,700,800,900,1000,1200,1400,1600', image: image -%}
+
+        {%- assign is_video = false -%}
+
+        {%- if image.alt contains 'youtube.com/embed' or image.alt contains 'player.vimeo.com' -%}
+          {%- assign is_video = true -%}
+        {%- endif -%}
+
+        <div id="Image{{ image.id }}" class="Product__SlideItem Product__SlideItem-kercambre Product__SlideItem--{% if is_video %}video{% else %}image{% endif %} Carousel__Cell {% if initial_image_id == image.id %}is-selected{% endif %}"
+             {% if is_video %}data-action="open-modal" aria-controls="modal-video-{{ image.id }}"{% endif %}
+             {% unless is_video %}data-image-position-ignoring-video="{% increment image_position_without_video %}"{% endunless %}
+             data-image-position="{% increment image_position %}"
+             data-image-id-select="{{ product.selected_or_first_available_variant.image.id }}"
+             data-image-id="{{ image.id }}" data-image-variant-id="{{ image.variant_ids }}">
+
+          <div class="AspectRatio AspectRatio--withFallback" style="padding-bottom: {{ 100.0 | divided_by: image.aspect_ratio }}%; --aspect-ratio: {{ image.aspect_ratio }};">
+            {% assign image_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+
+            <img class="Image--lazyLoad Image--fadeIn"
+                 {% if initial_image_id == image.id %}src="{{ image | img_url: '250x' }}"{% endif %}
+                 data-src="{{ image_url }}"
+                 data-widths="[{{ supported_sizes }}]"
+                 data-sizes="auto"
+                 data-expand="-100"
+                 alt="{{ image.alt | escape }}"
+                 data-max-width="{{ image.width }}"
+                 data-max-height="{{ image.height }}"
+                 data-original-src="{{ image | img_url: 'master' }}">
+
+            <span class="Image__Loader"></span>
+
+            {%- if is_video -%}
+              <button type="button" class="Video__PlayButton" aria-label="{{ 'home_page.featured_video.play' | t }}">{% include 'icon' with 'play' %}</button>
+            {%- endif -%}
+
+            <noscript>
+              <img src="{{ image | img_url: '800x' }}" alt="{{ image.alt | escape }}">
+            </noscript>
+          </div>
+        </div>
+
+        {%- assign image_count = image_count | plus: 1 -%}
+      {%- endfor -%}
+    {%- endcapture -%}
+
+    {%- if product.images.size > 0 -%}
+    {%- comment %}
+    <div class="Product__Gallery  if section.settings.stack_images Product__Gallery--stack{% endif %} {% if section.settings.show_thumbnails and image_count > 1 %}Product__Gallery--withThumbnails{% else %}Product__Gallery--withDots{% endif %}">
+
+    {% endcomment -%}
+      <div class="Product__Gallery  {% if section.settings.show_thumbnails and image_count > 1 %}Product__Gallery--withThumbnails{% else %}Product__Gallery--withDots{% endif %}">
+        <span id="ProductGallery" class="Anchor"></span>
+
+        {%- if action_list_items != blank -%}
+          <div class="Product__ActionList hidden-lap-and-up">
+          {{ action_list_items }}
+          </div>
+        {%- endif -%}
+
+        {%- capture slideshow_nav -%}
+          {%- if image_count > 1 -%}
+            {%- if section.settings.show_thumbnails -%}
+              <div class="Product__SlideshowNav Product__SlideshowNav--thumbnails">
+                <div class="Product__SlideshowNavScroller">
+                  {%- for image in product.images -%}
+                    {%- if image.alt == 'featured' or image.alt == 'featured mobile' -%}
+                      {%- continue -%}
+                    {%- endif -%}
+
+                    {%- assign is_video = false -%}
+
+                    {%- if image.alt contains 'youtube.com/embed' or image.alt contains 'player.vimeo.com' -%}
+                      {%- assign is_video = true -%}
+                    {%- endif -%}
+
+                    {%- if section.settings.stack_images -%}
+                      <a href="#Image{{ image.id }}" data-image-id="{{ image.id }}" class="Product__SlideshowNavImage Product__SlideshowNavImage-kercambre {% if is_video %}Product__SlideshowNavImage--video{% endif %} AspectRatio {% if forloop.first %}is-selected{% endif %}" style="--aspect-ratio: {{ image.aspect_ratio }}">
+                        <img src="{{ image | img_url: '160x' }}">
+
+                        {%- if is_video -%}
+                          <button type="button" class="Product__SlideshowNavPlay" data-action="play-video" aria-label="{{ 'home_page.featured_video.play' | t }}">{% include 'icon' with 'play' %}</button>
+                        {%- endif -%}
+                      </a>
+                    {%- else -%}
+                      <span data-image-id="{{ image.id }}" class="Product__SlideshowNavImage Product__SlideshowNavImage-kercambre{% if is_video %}Product__SlideshowNavImage--video{% endif %} AspectRatio {% if forloop.first %}is-selected{% endif %}" style="--aspect-ratio: {{ image.aspect_ratio }}">
+                        <img src="{{ image | img_url: '160x' }}">
+
+                        {%- if is_video -%}
+                          <button type="button" class="Product__SlideshowNavPlay" data-action="play-video" aria-label="{{ 'home_page.featured_video.play' | t }}">{% include 'icon' with 'play' %}</button>
+                        {%- endif -%}
+                      </span>
+                    {%- endif -%}
+                  {%- endfor -%}
+                </div>
+              </div>
+            {%- endif -%}
+
+            {%- if section.settings.stack_images -%}
+              <div class="Product__SlideshowNav Product__SlideshowNav--dots">
+                <div class="Product__SlideshowNavScroller">
+                  {%- for image in product.images -%}
+                    {%- if image.alt == 'featured' or image.alt == 'featured mobile' -%}
+                      {%- continue -%}
+                    {%- endif -%}
+                    <a href="#Image{{ image.id }}" class="Product__SlideshowNavDot {% if forloop.first %}is-selected{% endif %}"></a>
+                  {%- endfor -%}
+                </div>
+              </div>
+            {%- endif -%}
+          {%- endif -%}
+        {%- endcapture -%}
+
+
+
+        {%- capture flickity_options -%}
+        {
+          "prevNextButtons": true,
+          "draggable": true,
+          "pageDots": {% if image_count > 1 %}true{% else %}false{% endif %},
+          "adaptiveHeight": true,
+          "watchCSS": true,
+          "dragThreshold": 8,
+          "initialIndex": {{ initial_image_index }},
+          "arrowShape": {"x0": 20, "x1": 60, "y1": 40, "x2": 60, "y2": 35, "x3": 25},
+          "imagesLoaded": true
+        }
+        {%- endcapture -%}
+
+        {%- if section.settings.stack_images -%}
+          {{- slideshow_nav -}}
+        {%- endif -%}
+
+        {%- unless section.settings.stack_images -%}
+          {{- slideshow_nav -}}
+        {%- endunless -%}
+
+        <div class="Product__Slideshow Product__Slideshow-kercambre{% if section.settings.enable_image_zoom %}Product__Slideshow--zoomable{% endif %} Carousel"
+         data-flickity-config='{{ flickity_options }}'>
+          {{ slideshow_images }}
+        </div>
+
+
+      </div>
+    {%- endif -%}
+
+    {%- capture product_aside -%}
+      {%- comment -%}
+      --------------------------------------------------------------------------------------------------------------------
+      PRODUCT TABS
+      --------------------------------------------------------------------------------------------------------------------
+      {%- endcomment -%}
+
+      {%- include 'product-tabs' -%}
+
+      {%- comment -%}
+      --------------------------------------------------------------------------------------------------------------------
+      PRODUCT WEAR IT WITH
+
+      We allow merchants to add a tag that looks like __with:product-handle to feature an additional product
+      --------------------------------------------------------------------------------------------------------------------
+      {%- endcomment -%}
+
+      {%- for tag in product.tags -%}
+        {%- if tag contains '__with' -%}
+          {%- assign product_handle = tag | split: '__with:' | last -%}
+          {%- assign associated_product = all_products[product_handle] -%}
+
+          {%- if associated_product != empty -%}
+            <div class="Section Section--spacingNormal">
+              <header class="SectionHeader SectionHeader--center">
+                <h3 class="SectionHeader__Heading Heading u-h4">{{ 'product.buy_it_with.title' | t }}</h3>
+              </header>
+
+              {% include 'product-item', product: associated_product, use_horizontal: true, show_labels: false, show_product_info: true, show_vendor: false, show_price_on_hover: false %}
+            </div>
+
+            {%- break -%}
+          {%- endif -%}
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endcapture -%}
+
+    <div class="Product__InfoWrapper">
+      <div class="Product__Info {% if image_count == 0 %}Product__Info--noGallery{% endif %}">
+        <div class="Container">
+          {%- include 'product-meta', show_description: true -%}
+
+          {%- if product.template_suffix != 'coming-soon' -%}
+            {%- include 'product-form' -%}
+          {%- endif -%}
+
+          {%- if section.settings.description_below_add_to_cart -%}
+            <div class="ProductMeta__Description">
+              <div class="Rte">
+                {%- comment -%}
+                We have figured out that some merchants were copy-pasting huge chunk of code into the product description,
+                which can make the theme crashes if it contains some special attributes used by the theme. We therefore make sure to process this
+                {%- endcomment -%}
+
+                {{ product.description | replace: 'data-section-type', 'data-section-type-placeholder' }}
+              </div>
+
+              {%- if section.settings.show_share_buttons -%}
+                <div class="ProductMeta__ShareButtons hidden-pocket">
+                  <span class="ProductMeta__ShareTitle Heading Text--subdued u-h7">{{ 'product.form.share' | t }}</span>
+
+                  {%- assign share_url = shop.url | append: product.url -%}
+                  {%- assign twitter_text = product.title -%}
+                  {%- assign pinterest_description = product.description | strip_html | truncatewords: 15 | url_param_escape -%}
+                  {%- assign pinterest_image = product.featured_image | img_url: 'large' | prepend: 'https:' -%}
+
+                  <div class="ProductMeta__ShareList Text--subdued">
+                    <a class="ProductMeta__ShareItem" href="https://www.facebook.com/sharer.php?u={{ share_url }}" target="_blank" rel="noopener" aria-label="Facebook">{%- include 'icon' with 'facebook' -%}</a>
+                    <a class="ProductMeta__ShareItem" href="https://twitter.com/share?{% if twitter_text != blank %}text={{twitter_text}}&{% endif %}url={{ share_url }}" target="_blank" rel="noopener" aria-label="Twitter">{%- include 'icon' with 'twitter' -%}</a>
+                    <a class="ProductMeta__ShareItem" href="https://pinterest.com/pin/create/button/?url={{ share_url }}{% if pinterest_image != blank %}&media={{ pinterest_image }}{% endif %}&description={{ pinterest_description }}" target="_blank" rel="noopener" aria-label="Pinterest">{%- include 'icon' with 'pinterest' -%}</a>
+                  </div>
+                </div>
+              {%- endif -%}
+            </div>
+          {%- endif -%}
+
+          {%- if section.settings.stack_images and product_aside != blank and image_count > 0 -%}
+            <div class="Product__QuickNav hidden-pocket">
+              <div class="Product__QuickNavWrapper">
+                <a href="#ProductAside" class="Heading Link Link--secondary u-h7">{{ 'product.form.view_info' | t }} {% include 'icon' with 'select-arrow-right' %}</a>
+                <a href="#ProductGallery" class="Heading Link Link--secondary u-h7">{{ 'product.form.view_images' | t }} {% include 'icon' with 'select-arrow-right' %}</a>
+              </div>
+            </div>
+          {%- endif -%}
+        </div>
+      </div>
+
+      {%- if action_list_items != blank -%}
+        <div class="Product__ActionList hidden-pocket">
+          {{ action_list_items }}
+        </div>
+      {%- endif -%}
+    </div>
+
+    {%- if product_aside != blank -%}
+      <div class="Product__Aside">
+        <span id="ProductAside" class="Anchor"></span>
+        {{- product_aside -}}
+      </div>
+    {%- endif -%}
+  </div>
+
+  {%- comment -%}
+  --------------------------------------------------------------------------------------------------------------------
+  OFF SCREEN ELEMENTS
+  --------------------------------------------------------------------------------------------------------------------
+  {%- endcomment -%}
+  {%- if show__popover == true -%}
+    {{- product_popovers -}}
+    {{- product_modals -}}
+  {%- endif -%}
+
+</section>
+
+{% endcomment -%}
+
+
+{%- comment -%}
+--------------------------------------------------------------------------------------------------------------------
+FEATURED IMAGE
+
+We allow merchants to use one image as a "featured image" by adding the alt tag "featured"
+--------------------------------------------------------------------------------------------------------------------
+{%- endcomment -%}
+
+{%- for image in product.images -%}
+  {%- if image.alt == 'featured' -%}
+    {%- assign desk_featured_image = image -%}
+  {%- endif -%}
+
+  {%- if image.alt == 'featured mobile' -%}
+    {%- assign mobile_featured_image = image -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- if desk_featured_image or mobile_featured_image -%}
+  {%- assign mobile_featured_image = mobile_featured_image | default: desk_featured_image -%}
+  {%- assign desk_featured_image = desk_featured_image | default: mobile_featured_image -%}
+
+  <div class="Product__FeatureImageWrapper" style="background: url({{ desk_featured_image | img_url: '1x1', format: 'jpg' }})">
+    <div class="Product__FeatureImage Product__FeatureImage--{{ section.settings.featured_image_size }} Image--lazyLoad Image--zoomOut hide-no-js" data-expand="-25" data-bgset="{{ mobile_featured_image | img_url: 'x850' }} [(max-width: 640px)] | {{ desk_featured_image | img_url: '1500x' }}"></div>
+
+    <noscript>
+      <div class="Product__FeatureImage Product__FeatureImage--{{ section.settings.featured_image_size }}" style="background-image: url({{ desk_featured_image | img_url: '1500x' }})"></div>
+    </noscript>
+  </div>
+
+  <style>
+    #shopify-section-{{ section.id }} + .shopify-section--bordered {
+      border-top: 0;
+    }
+  </style>
+{%- else -%}
+  <style>
+    /* This is a bit hacky but allows to circumvent the complete independency of section (as next section included in the page does not know anything about this page) */
+
+    @media screen and (max-width: 640px) {
+      #shopify-section-{{ section.id }} + .shopify-section--bordered {
+        border-top: 0;
+      }
+
+      #shopify-section-{{ section.id }} + .shopify-section--bordered > .Section {
+        padding-top: 0;
+      }
+    }
+  </style>
+{%- endif -%}
+
+{%- comment -%}
+--------------------------------------------------------------------------------------------------------------------
+MODALS
+
+If we have some videos, we implement them as modal
+--------------------------------------------------------------------------------------------------------------------
+{%- endcomment -%}
+
+{%- for image in product.images -%}
+  {%- if image.alt contains 'youtube.com/embed' or image.alt contains 'player.vimeo.com' -%}
+    <div id="modal-video-{{ image.id }}" class="Modal Modal--fullScreen Modal--videoContent" aria-hidden="true" role="dialog" data-scrollable>
+      <div class="Modal__Content">
+        <div class="Container Container--narrow">
+          <div class="VideoWrapper">
+            {% if image.alt contains 'youtube.com/embed' %}
+              <iframe class="Image--lazyLoad" data-src="{{ image.alt }}?autoplay=1&showinfo=0&controls=1&rel=0&modestbranding=1" frameborder="0" allowfullscreen></iframe>
+            {% else %}
+              <iframe class="Image--lazyLoad" data-src="{{ image.alt }}?autoplay=1&portrait=0&byline=0&color={{ settings.accent_color | remove_first: '#' }}" frameborder="0"></iframe>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+
+      <button class="Modal__Close Modal__Close--outside" data-animate-bottom data-action="close-modal">{% include 'icon' with 'close' %}</button>
+    </div>
+  {%- endif -%}
+{%- endfor -%}
+
+{%- comment -%}
+--------------------------------------------------------------------------------------------------------------------
+PHOTO SWIPE
+
+This is the root container for the zoom functionality. Must not be removed, as order element is important.
+--------------------------------------------------------------------------------------------------------------------
+{%- endcomment -%}
+
+{%- if section.settings.enable_image_zoom -%}
+  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+      <!-- Container that holds slides. Do not remove as content is dynamically added -->
+      <div class="pswp__container">
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+      </div>
+
+      <!-- Main UI bar -->
+      <div class="pswp__ui pswp__ui--hidden">
+        <button class="pswp__button pswp__button--prev RoundButton" data-animate-left title="{{ 'product.slideshow.previous' | t }}">{% include 'icon' with 'arrow-left' %}</button>
+        <button class="pswp__button pswp__button--close RoundButton RoundButton--large" data-animate-bottom title="{{ 'product.slideshow.close' | t }}">{% include 'icon' with 'close' %}</button>
+        <button class="pswp__button pswp__button--next RoundButton" data-animate-right title="{{ 'product.slideshow.next' | t }}">{% include 'icon' with 'arrow-right' %}</button>
+      </div>
+    </div>
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Product page",
+  "class": "shopify-section--bordered",
+  "settings": [
+    {
+      "type": "text",
+      "id": "abcd",
+      "label": "Name on abécédaire choice",
+      "default": "Coup de foudre pour une autre lettre ?"
+    },
+  {
+      "type": "text",
+      "id": "availability_message",
+      "label": "Product unavailability message",
+      "default": "Bientôt disponible",
+      "info": "Write here the message when the product is unavailable",
+      "placeholder": "Bientôt disponible"
+    },
+    {
+      "type": "text",
+      "id": "limited_message",
+      "label": "Product edition limited message",
+      "default": "Épuisée",
+      "info": "Write here the message when the product is a limited edition",
+      "placeholder": "Épuisée"
+    },
+    {
+      "type": "text",
+      "id": "medaille_message",
+      "label": "Product limited edition médaille message",
+      "default": "toutes nos petites médailles sont épuisées ! Rendez-vous le mois prochain pour découvrir le nouveau petit message",
+      "info": "Write here the message when the product is a limited edition medaille",
+      "placeholder": "toutes nos petites médailles sont épuisées! Rendez-vous le mois prochain pour découvrir le nouveau petit message"
+    },
+    {
+      "type": "header",
+      "content": "Extra information",
+      "info": "You have the option to enable extra fields for more information on your product."
+    },
+    {
+      "type": "page",
+      "id": "tab",
+      "label": "Livraison et retour page"
+    },
+    {
+      "type": "header",
+      "content": "Display elements"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_share_buttons",
+      "label": "Show social sharing buttons",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_vendor",
+      "label": "Show vendor",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_sku",
+      "label": "Show SKU",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "description_below_add_to_cart",
+      "label": "Description below add to cart",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "price_subtitle",
+      "label": "Price subtitle",
+      "info": "Fill in this field if you want to show a price subtitle",
+      "placeholder": "Prix unitaire"
+    },
+    {
+      "type": "text",
+      "id": "collection_show_price_sub",
+      "label": "The collection name on which you want to display the price subtitle",
+      "info": "fill in this field if you want to display the price subtitle on a specific collection",
+      "placeholder": "mono boucle d'oreille"
+    },
+    {
+      "type": "select",
+      "id": "selector_mode",
+      "label": "Selector type",
+      "options": [
+        {
+          "value": "block",
+          "label": "Block"
+        },
+        {
+          "value": "dropdown",
+          "label": "Dropdown"
+        }
+      ],
+      "default": "dropdown"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_color_swatch",
+      "label": "Show color swatch",
+      "default": false,
+      "info": "Some colors appear white? [Learn more](http://support.maestrooo.com/article/80-product-uploading-custom-color-for-color-swatch)."
+    },
+    {
+      "type": "checkbox",
+      "id": "show_color_carousel",
+      "label": "Show color carousel",
+      "info": "A pop-up selector with variant images for choosing colors. Only enables when color swatch is disabled.",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_quantity_selector",
+      "label": "Show quantity selector",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "showQuantityFor",
+      "label": "Show quantity selector for a single collection only ",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "collectionName",
+      "label": "Collection name",
+      "info": "The name of the collection on which you want to display the quantity selector",
+      "placeholder": "Mono boucle d'oreille"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_inventory_quantity",
+      "label": "Show inventory quantity",
+      "info": "Make sure that your inventory is tracked. [Learn more](https://help.shopify.com/manual/products/inventory#set-up-inventory-tracking).",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "inventory_quantity_threshold",
+      "label": "Inventory quantity threshold",
+      "info": "Only show inventory quantity if below threshold. Choose 0 to always show.",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "default": 0
+    },
+    {
+      "type": "checkbox",
+      "id": "show_price_in_button",
+      "label": "Show price in add to cart button",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_payment_button",
+      "label": "Show dynamic checkout button",
+      "info": "Each customer will see their preferred payment method from those available on your store, such as PayPal or Apple Pay. [Learn more](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Product images"
+    },
+    {
+      "type": "select",
+      "id": "image_size",
+      "label": "Size",
+      "options": [
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "medium",
+          "label": "Medium"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        },
+        {
+          "value": "fill",
+          "label": "Fill screen"
+        }
+      ],
+      "default": "large"
+    },
+    {
+      "type": "checkbox",
+      "id": "stack_images",
+      "label": "Stack images on desktop",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_thumbnails",
+      "label": "Show thumbnails on desktop",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_image_zoom",
+      "label": "Enable zoom",
+      "default": true
+    },
+    {
+      "type": "paragraph",
+      "content": "The theme also allows you to add specific tabs for a given product only. [Learn more about this feature](http://support.maestrooo.com/article/83-product-adding-different-tabs-per-product)."
+    },
+    {
+      "type": "header",
+      "content": "Reviews"
+    },
+    {
+      "type": "paragraph",
+      "content": "You need to install [Shopify's free Product Reviews](https://apps.shopify.com/product-reviews) app before enabling this option."
+    },
+    {
+      "type": "checkbox",
+      "id": "reviews_enabled",
+      "label": "Enable",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Featured image"
+    },
+    {
+      "type": "paragraph",
+      "content": "You can highlight an image after product tabs by adding the ALT tag \"featured\" to a given image. [Learn more](http://support.maestrooo.com/article/152-product-highlight-a-featured-image)."
+    },
+    {
+      "type": "select",
+      "id": "featured_image_size",
+      "label": "Section size",
+      "options": [
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "normal",
+          "label": "Normal"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        }
+      ],
+      "default": "large"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "guide",
+      "name": "Guide des tailles",
+      "settings": [
+        {
+          "type": "text",
+          "id": "product_type",
+          "label": "Product type",
+          "info": "Has to be the same as product type in product page"
+        },
+        {
+          "type": "page",
+          "id": "page_handle",
+          "label": "Page"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

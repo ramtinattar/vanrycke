@@ -1,0 +1,30 @@
+{% assign size_checked = false %}
+{% for product_option in product.options_with_values %}
+  {%- if product_option.name contains "Size" or product_option.name contains "Taille" -%}
+    {% assign size_checked = true %}
+  {%- endif -%}
+{%- endfor -%}
+
+{% for product_option in product.options_with_values %}
+  {%- assign optionRank = forloop.index0 -%}
+  <div class="option text {{ product_option.name | handleize }}">
+    <div class="option__name " data-size-checked= "{{ size_checked }}">
+      {{ product_option.name }}
+    </div>
+    <div class="option__values">
+      {% for value in product_option.values %}
+        {% assign value_handle = value | handleize %}
+          <div
+              class="option__value{% if product_option.selected_value == value %} option__value--selected{% endif %} {{ product_option.name | handleize }}"
+              data-option-rank='{{optionRank}}'
+              data-option-name='{{ product_option.name }}'
+              data-option-value='{{ value }}'
+              data-option-name-handle='{{ product_option.name | handleize }}'
+              data-option-value-handle='{{ value | handleize }}'>
+          {{- value -}}
+        </div>
+
+      {% endfor %}
+    </div>
+  </div>
+{% endfor %}

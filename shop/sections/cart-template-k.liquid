@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="PageHeader h1-k centered">
+    Panier
+  </div>
+  <button class="Modal__Close Modal__Close--outside" action-cart-close >{%- include 'icon' with 'close' -%}</button>
+  <div class="Grid" data-cart-k>
+    <div class="Grid__Cell 3/5">
+      {%- include 'minicart-body' -%}
+    </div>
+    <div class="Grid__Cell 2/5  cart__footer">
+      <h2 class="h2-k">
+        Récapitulatif
+      </h2>
+        {%- include 'minicart-footer' -%}
+    </div>
+  </div>
+</div>
